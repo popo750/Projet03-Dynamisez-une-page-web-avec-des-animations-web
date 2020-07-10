@@ -1,0 +1,121 @@
+* {
+  /* Enlever Padding ET Margin */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 160vh;
+}
+
+/* Position tout en haut : header 
+    Avec le code ci-dessus ( * {... } 
+    Pas besoin de positionner le header tout en haut 
+    avec le code ci-dessous
+    header { ... } */
+/*header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+/* Position tout en bas : footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header,
+footer {
+  background-color: #00897B;
+  color: gold;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* *************************************************
+ * Position div class container 
+ ************************************************ */
+.container {
+  width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.container .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .nav .box {
+  border: 3px solid #455A64;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .nav .box .content h1 {
+  padding-top: 20px;
+}
+
+.container > .nav > .note-enchantee h2 {
+  color: greenyellow;
+}
+.container > .nav > .note-enchantee h2:hover {
+  color: hotpink;
+}
+
+/* ****************************************************
+ * div class="note-enchantee"
+ ***************************************************** */
+.note-enchantee > .content i {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+/*
+.note-enchantee > .test {
+    background-color: fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.note-enchantee > .content .test {
+  width: 150px;
+  height: 5px;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8512b;
+}
+.note-enchantee > .content .test span {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  background-color: #00897B;
+}
+
+/* ***********************************************************
+ * footer > div class="mentions" 
+ * AND
+ * footer > div class="contact" 
+ *********************************************************** */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=menu01.css.map */
