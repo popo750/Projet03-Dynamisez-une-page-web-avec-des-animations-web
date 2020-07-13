@@ -1,0 +1,155 @@
+* {
+    /* Enlever Padding ET Margin */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 175vh;
+}
+
+/* Position tout en haut : header 
+    Avec le code ci-dessus ( * {... } 
+    Pas besoin de positionner le header tout en haut 
+    avec le code ci-dessous
+    header { ... } */
+/*header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
+/* Position tout en bas : footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header,
+footer {
+    background-color: #00897B;
+    color: gold;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* *************************************************
+ * Position div class container 
+ ************************************************ */
+h3 {
+    text-align: center;
+    /* padding: Haut Gauche Bas Droite */
+    padding: 50px 0 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .menu {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 100px 50px 150px 50px;
+        /*
+        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 150px;*/
+        background-color: #EC407A;
+
+        & .title {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.container>.nav>.note-enchantee h2 {
+    color: greenyellow;
+
+    &:hover {
+        color: hotpink;
+    }
+}
+
+/* ****************************************************
+ * Tous les div class="submenu" ( 01, 02 et 03 )
+ ***************************************************** */
+.submenu01 {
+    width: 500px;
+    height: 5px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+
+    & span {
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: #00897B;
+        font-size: 20px;
+    }
+}
+
+.submenu02 {
+    width: 500px;
+    height: 5px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+
+    & span {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #00897B;
+        font-size: 20px;
+    }
+}
+
+.submenu03 {
+    width: 500px;
+    height: 5px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+
+    & span {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #00897B;
+        font-size: 20px;
+    }
+}
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste > div class repas
+ ************************************************************************* */
+ .repas {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+/* ***********************************************************
+ * footer > div class="mentions" 
+ * AND
+ * footer > div class="contact" 
+ *********************************************************** */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-size: 20px;
+}

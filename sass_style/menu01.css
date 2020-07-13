@@ -7,7 +7,7 @@
 
 body {
   position: relative;
-  height: 160vh;
+  height: 175vh;
 }
 
 /* Position tout en haut : header 
@@ -43,29 +43,35 @@ header {
 /* *************************************************
  * Position div class container 
  ************************************************ */
-.container {
-  width: 1000px;
-  padding: 20px;
-  margin: 0 auto;
-}
-.container .nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.container .nav .box {
-  border: 3px solid #455A64;
-  width: 300px;
-  height: 400px;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h3 {
   text-align: center;
 }
-.container .nav .box .content h1 {
-  padding-top: 20px;
+
+.little h3 {
+  /* padding: Haut Gauche Bas Droite */
+  padding: 50px 0 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .menu {
+  padding: 50px;
+  background-color: #EC407A;
+}
+.container .menu .title {
+  text-align: center;
+}
+.container .menu .title i {
+  font-size: 60px;
+}
+.container .menu .pied {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container > .nav > .note-enchantee h2 {
@@ -76,34 +82,64 @@ header {
 }
 
 /* ****************************************************
- * div class="note-enchantee"
+ * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
-.note-enchantee > .content i {
-  margin-bottom: 5px;
-  font-size: 40px;
+.submenu01 {
+  width: 500px;
+  height: 5px;
+  /* margin: Haut-Bas px Gauche-Droite px */
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.submenu01 span {
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #00897B;
+  font-size: 20px;
 }
 
-/*
-.note-enchantee > .test {
-    background-color: fuchsia;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-.note-enchantee > .content .test {
-  width: 150px;
+.submenu02 {
+  width: 500px;
   height: 5px;
   margin: 32px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e8512b;
+  background-color: #000;
 }
-.note-enchantee > .content .test span {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-transform: uppercase;
+.submenu02 span {
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #00897B;
+  font-size: 20px;
+}
+
+.submenu03 {
+  width: 500px;
+  height: 5px;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+.submenu03 span {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #00897B;
+  font-size: 20px;
+}
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste > div class repas
+ ************************************************************************* */
+.repas {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 /* ***********************************************************
