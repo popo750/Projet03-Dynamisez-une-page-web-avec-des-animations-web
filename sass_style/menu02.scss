@@ -32,22 +32,45 @@ footer {
 
 header,
 footer {
-    background-color: #00897B;
-    color: gold;
+    background-color: #579c87;
+    color: #fdcb46;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
+     /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* Aktiv Grotesk Medium */
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -2px;
 }
 
 /* *************************************************
  * Position div class container 
  ************************************************ */
-h3 {
+h2 {
     text-align: center;
     /* padding: Haut Gauche Bas Droite */
     padding: 50px 0 20px 0;
+}
+
+.little {
+    & h2 {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 50px 0 20px 0;
+        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+         * du site : https://fonts.adobe.com/
+         */
+        /* Aktiv Grotesk Bold */
+        font-family: aktiv-grotesk, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
 }
 
 .container {
@@ -57,16 +80,24 @@ h3 {
 
     & .menu {
         /* padding: Haut Gauche Bas Droite */
-        padding: 100px 50px 150px 50px;
+        padding: 20px 25px 150px 25px;
         /*
         padding: 50px;
         padding-top: 100px;
         padding-bottom: 150px;*/
-        background-color: #EC407A;
+        background-color: #fff5fe;
+        /* background-color: #a2e58e; */
 
         & .title {
             text-align: center;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
+            /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
+            background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: 'Croissant One', cursive;
+            font-size: 22px;
         }
 
     }
@@ -84,55 +115,296 @@ h3 {
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
 .submenu01 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+
+    & .bord-left {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 160px solid #c67412;
+
+        position: relative;
+        right: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            left: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 20px solid #c67412;
+
+        }
+    }
+
+    & h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #fff5fe;
+        color: #c67412;
+        font-size: 20px;
+        /* Baltica Bold */
+        font-family: baltica, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
 
     & span {
-        padding-left: 60px;
-        padding-right: 60px;
-        background-color: #00897B;
-        font-size: 20px;
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 160px solid #c67412;
+
+        position: relative;
+        left: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            right: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 20px solid #c67412;
+
+        }
     }
 }
 
 .submenu02 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+
+    & .bord-left {
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 160px solid #a56799;
+
+        position: relative;
+        right: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            left: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 20px solid #a56799;
+
+        }
+    }
+
+    & h3 {
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: #fff5fe;
+        color: #a56799;
+        font-size: 20px;
+        /* Baltica Bold */
+        font-family: baltica, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
 
     & span {
-        padding-left: 40px;
-        padding-right: 40px;
-        background-color: #00897B;
-        font-size: 20px;
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 160px solid #a56799;
+
+        position: relative;
+        left: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            right: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 20px solid #a56799;
+
+        }
     }
 }
 
 .submenu03 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
 
-    & span {
+    & .bord-left {
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 160px solid #6e4ccc;
+
+        position: relative;
+        right: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            left: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 20px solid #6e4ccc;
+
+        }
+    }
+
+    & h3 {
         padding-left: 20px;
         padding-right: 20px;
-        background-color: #00897B;
+        background-color: #fff5fe;
+        color: #6e4ccc;
         font-size: 20px;
+        /* Baltica Bold */
+        font-family: baltica, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 160px solid #6e4ccc;
+
+        position: relative;
+        left: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            right: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 20px solid #6e4ccc;
+
+        }
     }
 }
+
+.liste {
+    /* padding: Haut Gauche Bas Droite */
+    /* padding: 0px 50px 0px 50px; */
+    /* ou */
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 70px;
+}
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste
+ ************************************************************************* */
+.sub01 {
+    color: #c67412;
+}
+
+.sub02 {
+    color: #a56799;
+}
+
+.sub03 {
+    color: #6e4ccc;
+}
+
 
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
@@ -140,7 +412,16 @@ h3 {
  .repas {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    /* Capitolina regular */
+    font-family: capitolina, serif;
+    font-weight: 400;
+    font-style: normal;
+
+    & .price {
+        margin-left: 20px;
+    }
+
 }
 /* ***********************************************************
  * footer > div class="mentions" 
@@ -152,4 +433,10 @@ footer {
     justify-content: space-between;
     padding: 15px 50px;
     font-size: 20px;
+
+    & a {
+        color: #fdcb46;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
