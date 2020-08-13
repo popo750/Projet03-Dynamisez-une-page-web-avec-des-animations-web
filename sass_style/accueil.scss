@@ -1,3 +1,7 @@
+/* @import must be at top of file, otherwise CSS will not work 
+ * pour font-family: SegoePrint */
+@import url("//hello.myfonts.net/count/3bf52d");
+
 * {
     /* Enlever Padding ET Margin */
     padding: 0;
@@ -6,8 +10,7 @@
 }
 
 body {
-    position: relative;
-    height: 160vh;
+    height: 165vh;
 }
 
 /* Position tout en haut : header 
@@ -43,6 +46,44 @@ footer {
 header {
     text-align: center;
     padding: 20px 0;
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* 
+     * Tussilago Regular = font-weight: 500
+     * Tussilago Heavy = font-weight: 900 */
+    /*
+    font-family: tussilago, sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+    /* Aktiv Grotesk Medium */
+
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
+/* Kaushan_scriptregular pour le titre "La palette du gout" */
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('../FontsPolice/KaushanScript-FontZillion/Fonts/kaushanscript-regular.ttf') format('truetype');
+    src: url('../FontsPolice/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('../FontsPolice/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* segoe print pour les titres "menu" 
+ * de "Le délice des papilles" ET "La palette du gout" */
+@font-face {
+    font-family: 'SegoePrint';
+    src: url('../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2') format('woff2'),
+        url('../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* *************************************************
@@ -60,7 +101,7 @@ header {
         align-items: center;
 
         & .box {
-            border: 3px solid #455A64;
+            //border: 3px solid #455A64;
             width: 300px;
             height: 400px;
             margin: 20px;
@@ -76,14 +117,24 @@ header {
     }
 }
 
+
 /* ****************************************************
  * div class="note-enchantee"
  ***************************************************** */
 .note-enchantee {
     background-color: #fcdfdb;
     color: #3c1218;
+    /* box-shadow: 0px 0px 10px #e91414, 
+    0px 0px 20px #e91414,
+    0px 0px 30px #e91414,
+    0px 0px 40px #e91414; */
+    box-shadow: inset 0px 0px 5px #ededed,
+        0px 0px 10px #ededed,
+        0px 0px 20px #ededed,
+        0px 0px 30px #ededed;
 
     &>.content {
+
         & i {
             background: linear-gradient(to right, #f15861, #f78f6a);
             background-clip: text;
@@ -93,33 +144,114 @@ header {
             font-size: 40px;
         }
 
+        & h2 {
+            /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+             * du site : https://fonts.adobe.com/
+             */
+            font-family: ccsignlanguage, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         & h2:hover {
             color: hotpink;
+        }
+
+        & h3 {
+            /* Pour le titre "menu" avec la balise h1
+         * Peopriétés css initiales de la balise h1
+
+            .container .nav .box .content h1 {
+	            padding-top: 20px;
+            }
+
+            h1 {
+	            display: block;
+	            font-size: 2em;
+	            font-weight: bold;
+	            margin-block-start: .67em;
+	            margin-block-end: .67em;
+            }
+        */
+
+            /* Faire en sorte que la balise h3 
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+         */
+            padding-top: 20px;
+            font-size: 2em;
+            font-weight: bold;
+
         }
 
         & a {
             text-decoration: none;
             color: #3c1218;
+            text-transform: uppercase;
+            /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+             * du site : https://fonts.adobe.com/
+             * Autres possibilités de
+             * font-family: sketchnote-text,  sofia-pro-soft, */
+            font-family: montag, sans-serif;
+            font-weight: 400;
+            font-style: italic;
         }
     }
 }
+
 
 /* ****************************************************
  * div class="chic-francaise"
  ***************************************************** */
 .chic-francaise {
     background-color: #fff5fe;
+    /*box-shadow: 0px 0px 10px #e91414, 
+    0px 0px 20px #e91414,
+    0px 0px 30px #e91414; */
+    box-shadow: inset 0px 0px 5px #ededed,
+        0px 0px 10px #ededed,
+        0px 0px 20px #ededed,
+        0px 0px 30px #ededed;
 
     &>.content h2 {
-        background: linear-gradient(to bottom right, #d8852e 45%, #905bfd 55%);
+        /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
+        background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        font-family: 'Croissant One', cursive;
+        font-size: 20px;
+    }
+
+    /* Pour le titre "menu" avec la balise h3
+
+        h3, :is(article, aside, nav, section) 
+        :is(article, aside, nav, section) h1 {
+	        display: block;
+	        font-size: 1.17em;
+	        font-weight: bold;
+	        margin-block-start: 1em;
+	        margin-block-end: 1em;
+        }
+    */
+
+    /* Faire en sorte que la balise h3 
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+    */
+    &>.content h3 {
+        padding-top: 20px;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     &>.content a {
         color: #c77412;
         text-decoration: none;
+        font-family: casus, questa, serif;
+        font-style: normal;
     }
 }
 
@@ -129,17 +261,50 @@ header {
  ***************************************************** */
 .delice-papilles {
     background-color: #f9f9f9;
+    /*box-shadow: 0px 0px 10px #e91414, 
+    0px 0px 20px #e91414,
+    0px 0px 30px #e91414; */
+    box-shadow: inset 0px 0px 5px #ededed,
+        0px 0px 10px #ededed,
+        0px 0px 20px #ededed,
+        0px 0px 30px #ededed;
 
     &>.content h2 {
-        background: linear-gradient(to right, #0235e1 60%, #0889fb 40%);
+        background: linear-gradient(to right, #0235e1, #0889fb);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        //font-family: 'Parisienne', cursive;
+        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+         * du site : https://fonts.adobe.com/
+         */
+        /* alana bold */
+        /*
+        font-family: alana, sans-serif;
+        font-weight: 700;
+        font-style: normal;*/
+        /* alana regular */
+        font-family: alana, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    /* Faire en sorte que la balise h3 
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+    */
+    &>.content h3 {
+        //padding-top: 20px;
+        font-size: 2em;
+        //font-weight: bold;
     }
 
     &>.content a {
         color: #0887fb;
         text-decoration: none;
+        font-family: 'SegoePrint';
     }
 
 }
@@ -150,19 +315,40 @@ header {
  ***************************************************** */
 .palette-gout {
     background-color: #fdfffd;
+    /*box-shadow: 0px 0px 10px #e91414, 
+    0px 0px 20px #e91414,
+    0px 0px 30px #e91414; */
+    box-shadow: inset 0px 0px 5px #ededed,
+        0px 0px 10px #ededed,
+        0px 0px 20px #ededed,
+        0px 0px 30px #ededed;
 
     &>.content h2 {
-        background: linear-gradient(to right, #499c40 50%, #beff7f 50%);
+        background: linear-gradient(to right, #499c40, #beff7f);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        font-family: 'kaushan_scriptregular';
+    }
+
+    /* Faire en sorte que la balise h3 
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+    */
+    &>.content h3 {
+        padding-top: 20px;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     &>.content a {
         color: #72bf56;
         text-decoration: none;
+        font-family: 'SegoePrint';
     }
 }
+
 
 /* **********************************************************
  * div class="prochainement"
@@ -171,9 +357,59 @@ header {
     margin: auto;
     padding: 5px 0;
     border-radius: 10px;
-    width: 15%;
+    width: 25%;
     text-align: center;
     font-size: 25px;
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* font-family: Montserrat Medium */
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        padding-right: 10px;
+    }
+
+    & span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        //color: #fdcb46;
+        background-color: #fdcb46;
+        margin: 0 10px;
+
+        -webkit-animation: dottedPreloader 1s linear infinite alternate;
+        -moz-animation: dottedPreloader 1s linear infinite alternate;
+        animation: dottedPreloader 1s linear infinite alternate;
+
+        &:nth-child(1) {
+            animation-delay: -0.8s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+
+        &:nth-child(6) {
+            animation-delay: -0.2s;
+        }
+    }
+}
+
+@keyframes dottedPreloader {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* ***********************************************************
@@ -186,4 +422,84 @@ footer {
     justify-content: space-between;
     padding: 15px 50px;
     font-size: 20px;
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* font-family: Montserrat Medium */
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    & a {
+        display: inline-block;
+        color: #fdcb46;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    div {
+        position: relative;
+        display: inline-block;
+        animation-name: animateText;
+        animation-duration: 0.8s;
+        transform-origin: 50% 50%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        /*
+        &:hover,
+        &:focus {
+            animation-name: animateText;
+            animation-duration: 0.8s;
+            transform-origin: 50% 50%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        } */
+    }
+}
+
+
+@keyframes animateText {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(0px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
