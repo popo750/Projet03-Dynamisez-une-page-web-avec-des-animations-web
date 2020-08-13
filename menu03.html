@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass_style/menu03.css">
+    <!-- URL Adobe font Police (= avant TypeKit) 
+        pour font-family suivants :
+        Aktiv Grotesk Medium, Aktiv Grotesk Bold, CCSignLanguage Regular 
+        -->
+    <link rel="stylesheet" href="https://use.typekit.net/sgk8ijc.css">
+    <!-- URL fonts.googleapis.com -- font-family Parisienne POUR le titre "Le delice des papilles" -->
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <title>Le délice des papilles</title>
 </head>
+
 <body>
     <header>
         <h1>ohmyfood</h1>
     </header>
 
-    <h3>Le délice des papilles</h3>
-    
+    <div class="little">
+        <h2>Le délice des papilles</h2>
+    </div>
+
     <div class="container">
 
         <div class="menu">
 
             <div class="title">
-                <h1>Le délice des papilles</h1>
+                <h2>Le délice des papilles</h2>
             </div>
 
             <!-- DEBUT DE du bloc entrée -->
             <div class="submenu01">
-                <span>Pour bien commencer</span>
+                <div class="bord-left"></div>
+                <h3><span>Pour bien commencer</span></h3>
+                <div class="bord-right"></div>
             </div>
 
             <div class="liste">
@@ -39,7 +52,7 @@
 
                 <div class="repas">
                     <div class="name">
-                        <p>Bouchée de homard croustillant et sa farandole de petis légumes</p>
+                        <p>Bouchée de homard croustillant et sa farandole de petits légumes</p>
                     </div>
                     <div class="price">
                         <p>89&#8364;</p>
@@ -54,13 +67,15 @@
                         <p>56&#8364;</p>
                     </div>
                 </div>
-                
+
             </div>
             <!-- FIN DE du bloc entrée -->
 
             <!-- DEBUT DE du bloc plat -->
             <div class="submenu02">
-                <span>Pour bien continuer</span>
+                <div class="bord-left"></div>
+                <h3><span>Pour bien continuer</span></h3>
+                <div class="bord-right"></div>
             </div>
 
             <div class="liste">
@@ -91,13 +106,15 @@
                         <p>115&#8364;</p>
                     </div>
                 </div>
-               
+
             </div>
             <!-- FIN DE du bloc plat -->
 
             <!-- DEBUT DE du bloc dessert -->
             <div class="submenu03">
-                <span>Pour bien terminer</span>
+                <div class="bord-left"></div>
+                <h3><span>Pour bien terminer</span></h3>
+                <div class="bord-right"></div>
             </div>
 
             <div class="liste">
@@ -128,7 +145,7 @@
                         <p>55&#8364;</p>
                     </div>
                 </div>
-             
+
             </div>
             <!-- FIN DE du bloc dessert -->
 
@@ -137,8 +154,9 @@
     </div> <!-- FIN DE div class="container" -->
 
     <footer>
-        <div>Mentions légales</div>
-        <div>Contactez-nous</div>
+        <div class="mentions"><a href="mentions.html">Mentions légales</a></div>
+        <div class="contact"><a href="mailto:ohmyfood@resto.com">Contactez-nous</a></div>
     </footer>
 </body>
+
 </html>
