@@ -1,3 +1,7 @@
+/* @import must be at top of file, otherwise CSS will not work 
+ * pour font-family: SegoePrint */
+@import url("//hello.myfonts.net/count/3bf52d");
+
 * {
     /* Enlever Padding ET Margin */
     padding: 0;
@@ -6,7 +10,6 @@
 }
 
 body {
-    position: relative;
     height: 175vh;
 }
 
@@ -32,22 +35,65 @@ footer {
 
 header,
 footer {
-    background-color: #00897B;
-    color: gold;
+    background-color: #579c87;
+    color: #fdcb46;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* Aktiv Grotesk Medium */
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
+/* Kaushan_scriptregular pour le titre "La palette du gout" */
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('../FontsPolice/KaushanScript-FontZillion/Fonts/kaushanscript-regular.ttf') format('truetype');
+    src: url('../FontsPolice/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('../FontsPolice/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* segoe print pour les titres "menu" 
+ * de "Le délice des papilles" ET "La palette du gout" */
+@font-face {
+    font-family: 'SegoePrint';
+    src: url('../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2') format('woff2'),
+        url('../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* *************************************************
  * Position div class container 
  ************************************************ */
-h3 {
+h2 {
     text-align: center;
     /* padding: Haut Gauche Bas Droite */
     padding: 50px 0 20px 0;
+}
+
+.little {
+    & h2 {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 50px 0 20px 0;
+        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+         * du site : https://fonts.adobe.com/
+         */
+        /* Aktiv Grotesk Bold */
+        font-family: aktiv-grotesk, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
 }
 
 .container {
@@ -57,16 +103,23 @@ h3 {
 
     & .menu {
         /* padding: Haut Gauche Bas Droite */
-        padding: 100px 50px 150px 50px;
+        padding: 20px 25px 150px 25px;
         /*
         padding: 50px;
         padding-top: 100px;
         padding-bottom: 150px;*/
-        background-color: #EC407A;
+        background-color: #fdfffd;
+        font-family: 'SegoePrint';
 
         & .title {
             text-align: center;
             padding-bottom: 20px;
+            background: linear-gradient(to right, #499c40, #beff7f);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: 'kaushan_scriptregular';
+            font-size: 42px;
         }
     }
 }
@@ -83,63 +136,150 @@ h3 {
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
 .submenu01 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+
+    & .bord-left {
+        width: 280px;
+        height: 5px;
+        background: linear-gradient(to right, #499c40, #beff7f);
+    }
+
+    & h3 {
+        padding-left: 70px;
+        padding-right: 70px;
+        background-color: #fdfffd;
+        font-size: 20px;
+    }
 
     & span {
-        padding-left: 60px;
-        padding-right: 60px;
-        background-color: #00897B;
-        font-size: 20px;
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #499c40 0%, #499c40 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        width: 280px;
+        height: 5px;
+        background: linear-gradient(to left, #499c40, #beff7f);
     }
 }
 
 .submenu02 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+
+    & .bord-left {
+        width: 270px;
+        height: 5px;
+        background: linear-gradient(to right, #499c40, #beff7f);
+    }
+
+    & h3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #fdfffd;
+        font-size: 20px;
+    }
 
     & span {
-        padding-left: 40px;
-        padding-right: 40px;
-        background-color: #00897B;
-        font-size: 20px;
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #89d262 0%, #89d262 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        width: 270px;
+        height: 5px;
+        background: linear-gradient(to left, #499c40, #beff7f);
     }
 }
 
 .submenu03 {
-    width: 500px;
-    height: 5px;
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
 
-    & span {
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: #00897B;
+    & .bord-left {
+        width: 270px;
+        height: 5px;
+        background: linear-gradient(to right, #499c40, #beff7f);
+    }
+
+    & h3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #fdfffd;
         font-size: 20px;
     }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #beff7f 0%, #beff7f 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        width: 270px;
+        height: 5px;
+        background: linear-gradient(to left, #499c40, #beff7f);
+    }
+}
+
+.liste {
+    /* padding: Haut Gauche Bas Droite */
+    /* padding: 0px 50px 0px 50px; */
+    /* ou */
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 70px;
 }
 
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
- .repas {
+.repas {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+
+    & .price {
+        margin-left: 5px;
+        margin-top: -5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 
 /* ***********************************************************
@@ -152,4 +292,10 @@ footer {
     justify-content: space-between;
     padding: 15px 50px;
     font-size: 20px;
+
+    & a {
+        color: #fdcb46;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
