@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sass_style/menu02.css">
+    <!-- URL Adobe font Police (= avant TypeKit) 
+        pour font-family suivants :
+        Aktiv Grotesk Medium, Aktiv Grotesk Bold, CCSignLanguage Regular 
+        -->
+    <link rel="stylesheet" href="https://use.typekit.net/sgk8ijc.css">
+    <!-- URL fonts.googleapis.com -- font-family CroissantOne POUR le titre "Le chic à la francaise" -->
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
     <title>Le chic à la française</title>
 </head>
+
 <body>
     <header>
         <h1>ohmyfood</h1>
     </header>
-    
-    <h3>Le chic à la française</h3>
+
+    <div class="little">
+        <h2>Le chic à la française</h2>
+    </div>
 
     <div class="container">
 
         <div class="menu">
 
             <div class="title">
-                <h1>Le chic à la française</h1>
+                <h2>Le chic à la française</h2>
             </div>
 
             <!-- DEBUT DE du bloc entrée -->
             <div class="submenu01">
-                <span>Pour se mettre en appétit</span>
+                <div class="bord-left"></div>
+                <h3><span>Pour se mettre en appétit</span></h3>
+                <div class="bord-right"></div>
             </div>
 
-            <div class="liste">
+            <div class="liste sub01">
 
                 <div class="repas">
                     <div class="name">
@@ -54,16 +67,18 @@
                         <p>57&#8364;</p>
                     </div>
                 </div>
-            
+
             </div>
             <!-- FIN DE du bloc entrée -->
 
             <!-- DEBUT DE du bloc plat -->
             <div class="submenu02">
-                <span>Plaisir des papilles</span>
+                <div class="bord-left"></div>
+                <h3><span>Plaisir des papilles</span></h3>
+                <div class="bord-right"></div>
             </div>
 
-            <div class="liste">
+            <div class="liste sub02">
 
                 <div class="repas">
                     <div class="name">
@@ -73,7 +88,7 @@
                         <p>95&#8364;</p>
                     </div>
                 </div>
-                
+
                 <div class="repas">
                     <div class="name">
                         <p>Magret de canard et parmentier de pommes de terre</p>
@@ -91,16 +106,18 @@
                         <p>175&#8364;</p>
                     </div>
                 </div>
-            
+
             </div>
             <!-- FIN DE du bloc plat -->
 
             <!-- DEBUT DE du bloc dessert -->
             <div class="submenu03">
-                <span>Gourmandises sucrées</span>
+                <div class="bord-left"></div>
+                <h3><span>Gourmandises sucrées</span></h3>
+                <div class="bord-right"></div>
             </div>
 
-            <div class="liste">
+            <div class="liste sub03">
 
                 <div class="repas">
                     <div class="name">
@@ -113,13 +130,13 @@
                         <p>Fondant au chocolat revisité</p>
                     </div>
                 </div>
-                
+
                 <div class="repas">
                     <div class="name">
                         <p>Millefeuille croustillant</p>
                     </div>
                 </div>
-                 
+
             </div>
             <!-- FIN DE du bloc dessert -->
 
@@ -128,8 +145,9 @@
     </div> <!-- FIN DE div class="container" -->
 
     <footer>
-        <div>Mentions légales</div>
-        <div>Contactez-nous</div>
+        <div class="mentions"><a href="mentions.html">Mentions légales</a></div>
+        <div class="contact"><a href="mailto:ohmyfood@resto.com">Contactez-nous</a></div>
     </footer>
 </body>
+
 </html>
