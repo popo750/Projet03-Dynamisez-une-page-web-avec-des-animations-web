@@ -2,6 +2,17 @@
  * pour font-family: SegoePrint */
 @import url("//hello.myfonts.net/count/3bf52d");
 
+@mixin box-shadow-around-boxmenu {
+    /* box-shadow: 0px 0px 10px #e91414, 
+    0px 0px 20px #e91414,
+    0px 0px 30px #e91414,
+    0px 0px 40px #e91414; */
+    box-shadow: inset 0px 0px 5px #ededed,
+        0px 0px 10px #ededed,
+        0px 0px 20px #ededed,
+        0px 0px 30px #ededed;
+}
+
 * {
     /* Enlever Padding ET Margin */
     padding: 0;
@@ -57,7 +68,6 @@ header {
     font-weight: 500;
     font-style: normal; */
     /* Aktiv Grotesk Medium */
-
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -124,14 +134,7 @@ header {
 .note-enchantee {
     background-color: #fcdfdb;
     color: #3c1218;
-    /* box-shadow: 0px 0px 10px #e91414, 
-    0px 0px 20px #e91414,
-    0px 0px 30px #e91414,
-    0px 0px 40px #e91414; */
-    box-shadow: inset 0px 0px 5px #ededed,
-        0px 0px 10px #ededed,
-        0px 0px 20px #ededed,
-        0px 0px 30px #ededed;
+    @include box-shadow-around-boxmenu;
 
     &>.content {
 
@@ -206,13 +209,7 @@ header {
  ***************************************************** */
 .chic-francaise {
     background-color: #fff5fe;
-    /*box-shadow: 0px 0px 10px #e91414, 
-    0px 0px 20px #e91414,
-    0px 0px 30px #e91414; */
-    box-shadow: inset 0px 0px 5px #ededed,
-        0px 0px 10px #ededed,
-        0px 0px 20px #ededed,
-        0px 0px 30px #ededed;
+    @include box-shadow-around-boxmenu;
 
     &>.content h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
@@ -261,13 +258,7 @@ header {
  ***************************************************** */
 .delice-papilles {
     background-color: #f9f9f9;
-    /*box-shadow: 0px 0px 10px #e91414, 
-    0px 0px 20px #e91414,
-    0px 0px 30px #e91414; */
-    box-shadow: inset 0px 0px 5px #ededed,
-        0px 0px 10px #ededed,
-        0px 0px 20px #ededed,
-        0px 0px 30px #ededed;
+    @include box-shadow-around-boxmenu;
 
     &>.content h2 {
         background: linear-gradient(to right, #0235e1, #0889fb);
@@ -315,13 +306,7 @@ header {
  ***************************************************** */
 .palette-gout {
     background-color: #fdfffd;
-    /*box-shadow: 0px 0px 10px #e91414, 
-    0px 0px 20px #e91414,
-    0px 0px 30px #e91414; */
-    box-shadow: inset 0px 0px 5px #ededed,
-        0px 0px 10px #ededed,
-        0px 0px 20px #ededed,
-        0px 0px 30px #ededed;
+    @include box-shadow-around-boxmenu;
 
     &>.content h2 {
         background: linear-gradient(to right, #499c40, #beff7f);
