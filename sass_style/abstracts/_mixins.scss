@@ -1,4 +1,6 @@
-/* mixins for file "accueil.scss" */
+/* *******************************************
+ * mixins for all files in repo "pages"
+ ******************************************* */
 @mixin background-text($degrade) {
     background: linear-gradient($degrade);
     background-clip: text;
@@ -6,6 +8,32 @@
     color: transparent;
 }
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin repas {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+
+/* *******************************************
+ * mixins for file "footer.scss" 
+ ******************************************* */
+@mixin footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-size: 20px;
+}
+
+/* *******************************************
+ * mixins for file "accueil.scss" 
+ ******************************************* */
 @mixin h3-become-h1 {
     /* Pour le titre "menu" avec la balise h1
      * Peopriétés css initiales de la balise h1
