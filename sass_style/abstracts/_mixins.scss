@@ -1,0 +1,34 @@
+/* mixins for file "accueil.scss" */
+@mixin background-text($degrade) {
+    background: linear-gradient($degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin h3-become-h1 {
+    /* Pour le titre "menu" avec la balise h1
+     * Peopriétés css initiales de la balise h1
+
+    .container .nav .box .content h1 {
+	    padding-top: 20px;
+    }
+
+    h1 {
+	    display: block;
+	    font-size: 2em;
+	    font-weight: bold;
+	    margin-block-start: .67em;
+	    margin-block-end: .67em;
+    }
+    */
+
+    /* Faire en sorte que la balise h3 
+     * ressemble à peu près au niveau :
+     * taille du font ET son positionnement
+     * aux caractéristiques initiales de la balise h1 
+     */
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
