@@ -1,0 +1,45 @@
+
+/* Position tout en haut : header 
+    Avec le code ci-dessus ( * {... } 
+    Pas besoin de positionner le header tout en haut 
+    avec le code ci-dessous
+    header { ... } */
+/*header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
+header,
+.prochainement,
+footer {
+    /*
+    background-color: #00897B;
+    color: gold; */
+    background-color: #579c87;
+    color: #fdcb46;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* 
+     * Tussilago Regular = font-weight: 500
+     * Tussilago Heavy = font-weight: 900 */
+    /*
+    font-family: tussilago, sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+    /* Aktiv Grotesk Medium */
+
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
