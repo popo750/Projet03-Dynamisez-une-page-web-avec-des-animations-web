@@ -61,6 +61,16 @@
     font-style: normal;
 }
 
+@mixin font-montag {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     * Autres possibilités de
+     * font-family: sketchnote-text,  sofia-pro-soft, */
+    font-family: montag, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 @mixin font-alana-regular {
     /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
      * du site : https://fonts.adobe.com/
