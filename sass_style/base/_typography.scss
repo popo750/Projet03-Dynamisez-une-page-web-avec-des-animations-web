@@ -32,3 +32,57 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin font-Aktiv-Grotesk-Medium {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* 
+     * Tussilago Regular = font-weight: 500
+     * Tussilago Heavy = font-weight: 900 */
+    /*
+    font-family: tussilago, sans-serif;
+    font-weight: 500;
+    font-style: normal; */
+
+    /* Aktiv Grotesk Medium */
+    font-family: aktiv-grotesk,
+        sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin font-ccsignlanguage {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    font-family: ccsignlanguage, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-alana-regular {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* alana bold */
+    /*
+        font-family: alana, sans-serif;
+        font-weight: 700;
+        font-style: normal;*/
+    /* alana regular */
+    font-family: alana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+@mixin font-montserrat-medium {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+     * du site : https://fonts.adobe.com/
+     */
+    /* font-family: Montserrat Medium */
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
