@@ -75,7 +75,7 @@ header {
  * de "Le délice des papilles" ET "La palette du gout" */
 @font-face {
   font-family: "SegoePrint";
-  src: url("../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2") format("woff2"), url("../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff") format("woff");
+  src: url("../../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2") format("woff2"), url("../../FontsPolice/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
