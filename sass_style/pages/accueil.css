@@ -104,6 +104,19 @@ header {
   align-items: center; */
   text-align: center;
 }
+.container .nav .box > .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .nav .box > .content:hover {
+  transform: scale(1.5);
+  opacity: 0.6;
+}
 
 /* ****************************************************
  * div class="note-enchantee"
@@ -116,17 +129,26 @@ header {
   0px 0px 30px #e91414,
   0px 0px 40px #e91414; */
   box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
+  /*
+  &>.content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all .8s linear;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      /*
+      &:hover {
+          transform: scale(1.5);
+          opacity: .6;
+      } 
+  } */
 }
-.note-enchantee > .content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.8s linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.note-enchantee > .content i {
+.note-enchantee i {
   background: linear-gradient(to right, #f15861, #f78f6a);
   background-clip: text;
   -webkit-background-clip: text;
@@ -134,7 +156,7 @@ header {
   margin-bottom: 5px;
   font-size: 40px;
 }
-.note-enchantee > .content h2 {
+.note-enchantee h2 {
   /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
    * du site : https://fonts.adobe.com/
    */
@@ -142,23 +164,23 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-.note-enchantee > .content h2:hover {
+.note-enchantee h2:hover {
   color: hotpink;
 }
-.note-enchantee > .content h3 {
+.note-enchantee h3 {
   /* Pour le titre "menu" avec la balise h1
    * Peopriétés css initiales de la balise h1
 
       .container .nav .box .content h1 {
-       padding-top: 20px;
+          padding-top: 20px;
       }
 
       h1 {
-       display: block;
-       font-size: 2em;
-       font-weight: bold;
-       margin-block-start: .67em;
-       margin-block-end: .67em;
+          display: block;
+          font-size: 2em;
+          font-weight: bold;
+          margin-block-start: .67em;
+          margin-block-end: .67em;
       }
   */
   /* Faire en sorte que la balise h3 
@@ -170,7 +192,7 @@ header {
   font-size: 2em;
   font-weight: bold;
 }
-.note-enchantee > .content a {
+.note-enchantee a {
   text-decoration: none;
   color: #3c1218;
   text-transform: uppercase;
@@ -181,10 +203,6 @@ header {
   font-family: montag, sans-serif;
   font-weight: 400;
   font-style: italic;
-}
-.note-enchantee > .content:hover {
-  transform: scale(1.5);
-  opacity: 0.6;
 }
 
 /* ****************************************************
