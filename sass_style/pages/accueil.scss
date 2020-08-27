@@ -142,6 +142,55 @@ header {
             transform: scale(1.5);
             opacity: .6;
         }
+
+        & .effect-color-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Pour le titre "menu" avec la balise h3 
+
+        h3,
+        :is(article, aside, nav, section) :is(article, aside, nav, section) h1 {
+            display: block;
+            font-size: 1.17em;
+            font-weight: bold;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        } */
+
+        /* Faire en sorte que la balise h3 
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+        */
+
+        /* Pour le titre "menu" avec la balise h1
+         * Propriétés css initiales de la balise h1
+         * origine mozilla firefox
+
+        .container .nav .box .content h1 {
+            padding-top: 20px;
+        }
+        
+        h1 {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            margin-block-start: .67em;
+            margin-block-end: .67em;
+        }
+        */
+        & h3 {
+            padding-top: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        & a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -162,7 +211,7 @@ header {
         font-size: 40px;
     }
 
-    & h2 {
+    & .no-effect {
         /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
          * du site : https://fonts.adobe.com/
          */
@@ -171,36 +220,7 @@ header {
         font-style: normal;
     }
 
-    & h3 {
-        /* Pour le titre "menu" avec la balise h1
-     * Peopriétés css initiales de la balise h1
-
-        .container .nav .box .content h1 {
-            padding-top: 20px;
-        }
-
-        h1 {
-            display: block;
-            font-size: 2em;
-            font-weight: bold;
-            margin-block-start: .67em;
-            margin-block-end: .67em;
-        }
-    */
-
-        /* Faire en sorte que la balise h3 
-     * ressemble à peu près au niveau :
-     * taille du font ET son positionnement
-     * aux caractéristiques initiales de la balise h1 
-     */
-        padding-top: 20px;
-        font-size: 2em;
-        font-weight: bold;
-
-    }
-
-    & a {
-        text-decoration: none;
+    & .link-menu01 {
         color: #3c1218;
         text-transform: uppercase;
         /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
@@ -223,39 +243,12 @@ header {
     & h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
         background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
         font-family: 'Croissant One', cursive;
         font-size: 20px;
     }
 
-    /* Pour le titre "menu" avec la balise h3
-    
-            h3, :is(article, aside, nav, section) 
-            :is(article, aside, nav, section) h1 {
-                display: block;
-                font-size: 1.17em;
-                font-weight: bold;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-            }
-        */
-
-    /* Faire en sorte que la balise h3 
-             * ressemble à peu près au niveau :
-             * taille du font ET son positionnement
-             * aux caractéristiques initiales de la balise h1 
-        */
-    & h3 {
-        padding-top: 20px;
-        font-size: 2em;
-        font-weight: bold;
-    }
-
-    & a {
+    & .link-menu02 {
         color: #c77412;
-        text-decoration: none;
         font-family: casus, questa, serif;
         font-style: normal;
     }
@@ -270,9 +263,6 @@ header {
 
     & h2 {
         background: linear-gradient(to right, #0235e1, #0889fb);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
         //font-family: 'Parisienne', cursive;
         /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
              * du site : https://fonts.adobe.com/
@@ -289,20 +279,8 @@ header {
         font-size: 30px;
     }
 
-    /* Faire en sorte que la balise h3 
-             * ressemble à peu près au niveau :
-             * taille du font ET son positionnement
-             * aux caractéristiques initiales de la balise h1 
-        */
-    & h3 {
-        //padding-top: 20px;
-        font-size: 2em;
-        //font-weight: bold;
-    }
-
-    & a {
+    & .link-menu03 {
         color: #0887fb;
-        text-decoration: none;
         font-family: 'SegoePrint';
     }
 
@@ -317,9 +295,6 @@ header {
 
     & h2 {
         background: linear-gradient(to right, #499c40, #beff7f);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
         font-family: 'kaushan_scriptregular';
     }
 
@@ -334,9 +309,8 @@ header {
         font-weight: bold;
     }
 
-    & a {
+    & .link-menu04 {
         color: #72bf56;
-        text-decoration: none;
         font-family: 'SegoePrint';
     }
 }
