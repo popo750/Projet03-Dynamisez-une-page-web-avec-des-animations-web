@@ -197,15 +197,24 @@ header {
   0px 0px 30px #e91414,
   0px 0px 40px #e91414; */
   box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
+}
+.chic-francaise > .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Pour le titre "menu" avec la balise h3
 
       h3, :is(article, aside, nav, section) 
       :is(article, aside, nav, section) h1 {
-       display: block;
-       font-size: 1.17em;
-       font-weight: bold;
-       margin-block-start: 1em;
-       margin-block-end: 1em;
+          display: block;
+          font-size: 1.17em;
+          font-weight: bold;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
       }
   */
   /* Faire en sorte que la balise h3 
@@ -234,6 +243,10 @@ header {
   font-family: casus, questa, serif;
   font-style: normal;
 }
+.chic-francaise > .content:hover {
+  transform: scale(1.5);
+  opacity: 0.6;
+}
 
 /* ****************************************************
  * div class="delice-papilles"
@@ -245,6 +258,15 @@ header {
   0px 0px 30px #e91414,
   0px 0px 40px #e91414; */
   box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
+}
+.delice-papilles > .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Faire en sorte que la balise h3 
        * ressemble à peu près au niveau :
        * taille du font ET son positionnement
@@ -278,6 +300,10 @@ header {
   text-decoration: none;
   font-family: "SegoePrint";
 }
+.delice-papilles > .content:hover {
+  transform: scale(1.5);
+  opacity: 0.6;
+}
 
 /* ****************************************************
  * div class="palette-gout"
@@ -289,6 +315,15 @@ header {
   0px 0px 30px #e91414,
   0px 0px 40px #e91414; */
   box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
+}
+.palette-gout > .content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.8s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Faire en sorte que la balise h3 
        * ressemble à peu près au niveau :
        * taille du font ET son positionnement
@@ -311,6 +346,10 @@ header {
   color: #72bf56;
   text-decoration: none;
   font-family: "SegoePrint";
+}
+.palette-gout > .content:hover {
+  transform: scale(1.5);
+  opacity: 0.6;
 }
 
 /* **********************************************************
