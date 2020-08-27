@@ -69,9 +69,9 @@ header {
 /* Kaushan_scriptregular pour le titre "La palette du gout" */
 @font-face {
     font-family: 'kaushan_scriptregular';
-    src: url('../KaushanScript-FontZillion/Fonts/kaushanscript-regular.ttf') format('truetype');
-    src: url('../KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff2') format('woff2'),
-        url('../KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff') format('woff');
+    src: url('../../fonts_police/KaushanScript-FontZillion/Fonts/kaushanscript-regular.ttf') format('truetype');
+    src: url('../../fonts_police/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('../../fonts_police/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -81,8 +81,8 @@ header {
   * de "Le délice des papilles" ET "La palette du gout" */
 @font-face {
     font-family: 'SegoePrint';
-    src: url('../MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2') format('woff2'),
-        url('../MyFontsWebfontsKit/webFonts/SegoePrint/font.woff') format('woff');
+    src: url('../../fonts_police/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2') format('woff2'),
+        url('../../fonts_police/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
