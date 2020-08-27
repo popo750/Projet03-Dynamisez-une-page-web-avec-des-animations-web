@@ -93,7 +93,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-.container .nav .box {
+
+/* *********************************************
+ * div class="box"___Generalites
+ ********************************************* */
+.box {
   /* border: 3px solid #455A64; */
   width: 300px;
   height: 400px;
@@ -103,8 +107,13 @@ header {
   justify-content: center;
   align-items: center; */
   text-align: center;
+  /* box-shadow: 0px 0px 10px #e91414, 
+  0px 0px 20px #e91414,
+  0px 0px 30px #e91414,
+  0px 0px 40px #e91414; */
+  box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
 }
-.container .nav .box > .content {
+.box > .content {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -113,7 +122,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.container .nav .box > .content:hover {
+.box > .content:hover {
   transform: scale(1.5);
   opacity: 0.6;
 }
@@ -124,29 +133,6 @@ header {
 .note-enchantee {
   background-color: #fcdfdb;
   color: #3c1218;
-  /* box-shadow: 0px 0px 10px #e91414, 
-  0px 0px 20px #e91414,
-  0px 0px 30px #e91414,
-  0px 0px 40px #e91414; */
-  box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
-  /*
-  &>.content {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      transition: all .8s linear;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-      /*
-      &:hover {
-          transform: scale(1.5);
-          opacity: .6;
-      } 
-  } */
 }
 .note-enchantee i {
   background: linear-gradient(to right, #f15861, #f78f6a);
@@ -163,9 +149,6 @@ header {
   font-family: ccsignlanguage, sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-.note-enchantee h2:hover {
-  color: hotpink;
 }
 .note-enchantee h3 {
   /* Pour le titre "menu" avec la balise h1
@@ -210,38 +193,24 @@ header {
  ***************************************************** */
 .chic-francaise {
   background-color: #fff5fe;
-  /* box-shadow: 0px 0px 10px #e91414, 
-  0px 0px 20px #e91414,
-  0px 0px 30px #e91414,
-  0px 0px 40px #e91414; */
-  box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
-}
-.chic-francaise > .content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.8s linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* Pour le titre "menu" avec la balise h3
 
-      h3, :is(article, aside, nav, section) 
-      :is(article, aside, nav, section) h1 {
-          display: block;
-          font-size: 1.17em;
-          font-weight: bold;
-          margin-block-start: 1em;
-          margin-block-end: 1em;
-      }
-  */
+          h3, :is(article, aside, nav, section) 
+          :is(article, aside, nav, section) h1 {
+              display: block;
+              font-size: 1.17em;
+              font-weight: bold;
+              margin-block-start: 1em;
+              margin-block-end: 1em;
+          }
+      */
   /* Faire en sorte que la balise h3 
-       * ressemble à peu près au niveau :
-       * taille du font ET son positionnement
-       * aux caractéristiques initiales de la balise h1 
-  */
+           * ressemble à peu près au niveau :
+           * taille du font ET son positionnement
+           * aux caractéristiques initiales de la balise h1 
+      */
 }
-.chic-francaise > .content h2 {
+.chic-francaise h2 {
   /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
   background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
   background-clip: text;
@@ -250,20 +219,16 @@ header {
   font-family: "Croissant One", cursive;
   font-size: 20px;
 }
-.chic-francaise > .content h3 {
+.chic-francaise h3 {
   padding-top: 20px;
   font-size: 2em;
   font-weight: bold;
 }
-.chic-francaise > .content a {
+.chic-francaise a {
   color: #c77412;
   text-decoration: none;
   font-family: casus, questa, serif;
   font-style: normal;
-}
-.chic-francaise > .content:hover {
-  transform: scale(1.5);
-  opacity: 0.6;
 }
 
 /* ****************************************************
@@ -271,56 +236,38 @@ header {
  ***************************************************** */
 .delice-papilles {
   background-color: #f9f9f9;
-  /* box-shadow: 0px 0px 10px #e91414, 
-  0px 0px 20px #e91414,
-  0px 0px 30px #e91414,
-  0px 0px 40px #e91414; */
-  box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
-}
-.delice-papilles > .content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.8s linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* Faire en sorte que la balise h3 
-       * ressemble à peu près au niveau :
-       * taille du font ET son positionnement
-       * aux caractéristiques initiales de la balise h1 
-  */
+           * ressemble à peu près au niveau :
+           * taille du font ET son positionnement
+           * aux caractéristiques initiales de la balise h1 
+      */
 }
-.delice-papilles > .content h2 {
+.delice-papilles h2 {
   background: linear-gradient(to right, #0235e1, #0889fb);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-   * du site : https://fonts.adobe.com/
-   */
+       * du site : https://fonts.adobe.com/
+       */
   /* alana bold */
   /*
-  font-family: alana, sans-serif;
-  font-weight: 700;
-  font-style: normal;*/
+      font-family: alana, sans-serif;
+      font-weight: 700;
+      font-style: normal;*/
   /* alana regular */
   font-family: alana, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
 }
-.delice-papilles > .content h3 {
+.delice-papilles h3 {
   font-size: 2em;
 }
-.delice-papilles > .content a {
+.delice-papilles a {
   color: #0887fb;
   text-decoration: none;
   font-family: "SegoePrint";
-}
-.delice-papilles > .content:hover {
-  transform: scale(1.5);
-  opacity: 0.6;
 }
 
 /* ****************************************************
@@ -328,46 +275,28 @@ header {
  ***************************************************** */
 .palette-gout {
   background-color: #fdfffd;
-  /* box-shadow: 0px 0px 10px #e91414, 
-  0px 0px 20px #e91414,
-  0px 0px 30px #e91414,
-  0px 0px 40px #e91414; */
-  box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
-}
-.palette-gout > .content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.8s linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* Faire en sorte que la balise h3 
-       * ressemble à peu près au niveau :
-       * taille du font ET son positionnement
-       * aux caractéristiques initiales de la balise h1 
-  */
+           * ressemble à peu près au niveau :
+           * taille du font ET son positionnement
+           * aux caractéristiques initiales de la balise h1 
+      */
 }
-.palette-gout > .content h2 {
+.palette-gout h2 {
   background: linear-gradient(to right, #499c40, #beff7f);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "kaushan_scriptregular";
 }
-.palette-gout > .content h3 {
+.palette-gout h3 {
   padding-top: 20px;
   font-size: 2em;
   font-weight: bold;
 }
-.palette-gout > .content a {
+.palette-gout a {
   color: #72bf56;
   text-decoration: none;
   font-family: "SegoePrint";
-}
-.palette-gout > .content:hover {
-  transform: scale(1.5);
-  opacity: 0.6;
 }
 
 /* **********************************************************
