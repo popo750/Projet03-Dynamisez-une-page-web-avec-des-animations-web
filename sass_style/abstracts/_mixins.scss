@@ -20,43 +20,46 @@
     padding-bottom: 15px;
 }
 
-
-/* *******************************************
- * mixins for file "footer.scss" 
- ******************************************* */
-@mixin footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    font-size: 20px;
-}
-
 /* *******************************************
  * mixins for file "accueil.scss" 
  ******************************************* */
 @mixin h3-become-h1 {
-    /* Pour le titre "menu" avec la balise h1
-     * Peopriétés css initiales de la balise h1
+    /* Pour le titre "menu" avec la balise h3 
 
-    .container .nav .box .content h1 {
-	    padding-top: 20px;
-    }
-
-    h1 {
-	    display: block;
-	    font-size: 2em;
-	    font-weight: bold;
-	    margin-block-start: .67em;
-	    margin-block-end: .67em;
-    }
-    */
+        h3,
+        :is(article, aside, nav, section) :is(article, aside, nav, section) h1 {
+            display: block;
+            font-size: 1.17em;
+            font-weight: bold;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        } */
 
     /* Faire en sorte que la balise h3 
-     * ressemble à peu près au niveau :
-     * taille du font ET son positionnement
-     * aux caractéristiques initiales de la balise h1 
-     */
+         * ressemble à peu près au niveau :
+         * taille du font ET son positionnement
+         * aux caractéristiques initiales de la balise h1 
+        */
+
+    /* Pour le titre "menu" avec la balise h1
+         * Propriétés css initiales de la balise h1
+         * origine mozilla firefox
+
+        .container .nav .box .content h1 {
+            padding-top: 20px;
+        }
+        
+        h1 {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+            margin-block-start: .67em;
+            margin-block-end: .67em;
+        }
+    */
+
     padding-top: 20px;
     font-size: 2em;
     font-weight: bold;
+
 }

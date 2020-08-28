@@ -2,8 +2,8 @@
 
 /* color background et text for header, footer 
   et la section prochainement */
-$mint-background-color: #579c87;
-$gold-text-color: #fdcb46;
+$mint: #579c87;
+$gold: #fdcb46;
 
 
 /* *************************************************************
@@ -14,7 +14,7 @@ $color-box-shadow: #ededed;
 
 /* différents couleurs degradés des titres h2 */
 $degrade-note-enchantee: to right, #f15861, #f78f6a;
-$degrade-chic-franaise: 160deg, #d8852e 30%, #8f5aff 70%;
+$degrade-chic-francaise: 160deg, #d8852e 30%, #8f5aff 70%;
 $degrade-delice-papilles: to right, #0235e1, #0889fb;
 $degrade-palette-gout: to right, #499c40, #beff7f;
 
@@ -22,10 +22,10 @@ $degrade-palette-gout: to right, #499c40, #beff7f;
 /* *************************************************************
  * Declaration de Variables pour les fichiers "menu.scss"  
  ************************************************************* */
- $background-color-menu01: #fcdfdb;
- $background-color-menu02: #fff5fe;
- $background-color-menu03: #edefef;
- $background-color-menu04: #fdfffd;
+ $bg-color-menu01: #fcdfdb;
+ $bg-color-menu02: #fff5fe;
+ $bg-color-menu03: #edefef;
+ $bg-color-menu04: #fdfffd;
 
 
  $red-underline: rgba(255, 0, 0, 0.5);
