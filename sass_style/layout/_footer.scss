@@ -18,10 +18,10 @@ footer {
     font-size: 20px;
     
     @include font-montserrat-medium;
-
+    
     & a {
         display: inline-block;
-        color: #fdcb46;
+        color: $gold;
         text-decoration: none;
         font-weight: bold;
     }
