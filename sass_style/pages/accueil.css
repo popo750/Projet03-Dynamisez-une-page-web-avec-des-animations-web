@@ -1,4 +1,31 @@
 @charset "UTF-8";
+/* *******************************************
+ * mixins for all files in repo "pages"
+ ******************************************* */
+/* *******************************************
+ * mixins for file "accueil.scss" 
+ ******************************************* */
+/* $colors */
+/* color background et text for header, footer 
+  et la section prochainement */
+/* *************************************************************
+ * Declaration de Variables pour le fichier "accueil.scss"  
+ ************************************************************* */
+/* color du box-shadow des 4 menus */
+/* différents couleurs degradés des titres h2 */
+/* **************************************************************************
+ * Declaration de Variables pour les fichiers "accueil.scss" et "menu.scss"  
+ ************************************************************************* */
+/* ****************************************
+* Colors for word "menu"
+**************************************** */
+/* ****************************************
+* Balise span for effet de soulignement
+**************************************** */
+/* *********************************************
+* Declaration de Variables Espacement
+* padding left and right for h3
+********************************************* */
 @import url("//hello.myfonts.net/count/3bf52d");
 * {
   /* Enlever Padding ET Margin */
@@ -182,9 +209,9 @@ header {
 }
 .container .nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* *********************************************

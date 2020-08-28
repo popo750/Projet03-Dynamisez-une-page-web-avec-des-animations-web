@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
 @import '../base/reset-body';
 @import '../base/typography';
 @import '../components/animations';
@@ -24,10 +26,8 @@
     margin: 0 auto;
 
     & .nav {
-        display: flex;
+        @include flex-center;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -53,9 +53,7 @@
         overflow: hidden;
         transition: all .8s linear;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
 
         &:hover {
             transform: scale(1.5);
@@ -118,11 +116,11 @@
  * div class="note-enchantee"
  ***************************************************** */
 .note-enchantee {
-    background-color: #fcdfdb;
+    background-color: $bg-color-menu01;
     color: #3c1218;
 
     & i {
-        background: linear-gradient(to right, #f15861, #f78f6a);
+        background: linear-gradient($degrade-note-enchantee);
         margin-bottom: 5px;
         font-size: 40px;
     }
@@ -143,11 +141,11 @@
  * div class="chic-francaise"
  ***************************************************** */
 .chic-francaise {
-    background-color: #fff5fe;
+    background-color: $bg-color-menu02;
 
     & h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
-        background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
+        background: linear-gradient($degrade-chic-francaise);
         font-family: 'Croissant One', cursive;
         font-size: 20px;
     }
@@ -164,10 +162,10 @@
  * div class="delice-papilles"
  ***************************************************** */
 .delice-papilles {
-    background-color: #f9f9f9;
+    background-color: $bg-color-menu03-accueil;
 
     & h2 {
-        background: linear-gradient(to right, #0235e1, #0889fb);
+        background: linear-gradient($degrade-delice-papilles);
         //font-family: 'Parisienne', cursive;
         @include font-alana-regular;
     }
@@ -184,15 +182,15 @@
  * div class="palette-gout"
  ***************************************************** */
 .palette-gout {
-    background-color: #fdfffd;
+    background-color: $bg-color-menu04;
 
     & h2 {
-        background: linear-gradient(to right, #499c40, #beff7f);
+        background: linear-gradient($degrade-palette-gout);
         font-family: 'kaushan_scriptregular';
     }
 
     & .link-menu04 {
-        color: #72bf56;
+        color: $middle-green-menu04;
         font-family: 'SegoePrint';
     }
 }
@@ -210,9 +208,7 @@
     font-size: 25px;
     
     @include font-montserrat-medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     & p {
         padding-right: 10px;
@@ -223,7 +219,7 @@
         width: 10px;
         height: 10px;
         border-radius: 100%;
-        background-color: #fdcb46;
+        background-color: $gold;
         margin: 0 10px;
 
         -webkit-animation: dottedPreloader 1s linear infinite alternate;
