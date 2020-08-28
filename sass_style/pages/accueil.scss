@@ -128,24 +128,13 @@
     }
 
     & .no-effect {
-        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-         * du site : https://fonts.adobe.com/
-         */
-        font-family: ccsignlanguage, sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        @include font-ccsignlanguage;
     }
 
     & .link-menu01 {
         color: #3c1218;
         text-transform: uppercase;
-        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-         * du site : https://fonts.adobe.com/
-         * Autres possibilités de
-         * font-family: sketchnote-text,  sofia-pro-soft, */
-        font-family: montag, sans-serif;
-        font-weight: 400;
-        font-style: italic;
+        @include font-montag;
     }
 }
 
@@ -180,19 +169,7 @@
     & h2 {
         background: linear-gradient(to right, #0235e1, #0889fb);
         //font-family: 'Parisienne', cursive;
-        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-             * du site : https://fonts.adobe.com/
-             */
-        /* alana bold */
-        /*
-            font-family: alana, sans-serif;
-            font-weight: 700;
-            font-style: normal;*/
-        /* alana regular */
-        font-family: alana, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 30px;
+        @include font-alana-regular;
     }
 
     & .link-menu03 {
@@ -219,7 +196,6 @@
         font-family: 'SegoePrint';
     }
 }
-
 
 
 /* **********************************************************
@@ -265,52 +241,6 @@
         &:nth-child(6) {
             animation-delay: -0.2s;
         }
-    }
-}
-
-
-/* ***********************************************************
- * footer > div class="mentions" 
- * AND
- * footer > div class="contact" 
- *********************************************************** */
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    font-size: 20px;
-    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-     * du site : https://fonts.adobe.com/
-     */
-    /* font-family: Montserrat Medium */
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-
-    & a {
-        display: inline-block;
-        color: #fdcb46;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    div {
-        position: relative;
-        display: inline-block;
-        animation-name: animateText;
-        animation-duration: 0.8s;
-        transform-origin: 50% 50%;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        /*
-        &:hover,
-        &:focus {
-            animation-name: animateText;
-            animation-duration: 0.8s;
-            transform-origin: 50% 50%;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        } */
     }
 }
 
