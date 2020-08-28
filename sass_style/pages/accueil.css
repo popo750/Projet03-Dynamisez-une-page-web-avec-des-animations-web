@@ -253,20 +253,10 @@ header {
  ***************************************************** */
 .palette-gout {
   background-color: #fdfffd;
-  /* Faire en sorte que la balise h3 
-           * ressemble à peu près au niveau :
-           * taille du font ET son positionnement
-           * aux caractéristiques initiales de la balise h1 
-      */
 }
 .palette-gout h2 {
   background: linear-gradient(to right, #499c40, #beff7f);
   font-family: "kaushan_scriptregular";
-}
-.palette-gout h3 {
-  padding-top: 20px;
-  font-size: 2em;
-  font-weight: bold;
 }
 .palette-gout .link-menu04 {
   color: #72bf56;
