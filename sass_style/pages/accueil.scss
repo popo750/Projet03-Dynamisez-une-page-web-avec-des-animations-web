@@ -221,6 +221,7 @@
 }
 
 
+
 /* **********************************************************
  * div class="prochainement"
  ********************************************************** */
@@ -231,13 +232,8 @@
     width: 25%;
     text-align: center;
     font-size: 25px;
-    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-     * du site : https://fonts.adobe.com/
-     */
-    /* font-family: Montserrat Medium */
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    
+    @include font-montserrat-medium;
     display: flex;
     justify-content: center;
     align-items: center;
