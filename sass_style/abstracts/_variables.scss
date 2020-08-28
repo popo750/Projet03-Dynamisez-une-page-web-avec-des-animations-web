@@ -19,22 +19,31 @@ $degrade-delice-papilles: to right, #0235e1, #0889fb;
 $degrade-palette-gout: to right, #499c40, #beff7f;
 
 
-/* *************************************************************
- * Declaration de Variables pour les fichiers "menu.scss"  
- ************************************************************* */
+/* **************************************************************************
+ * Declaration de Variables pour les fichiers "accueil.scss" et "menu.scss"  
+ ************************************************************************* */
  $bg-color-menu01: #fcdfdb;
  $bg-color-menu02: #fff5fe;
  $bg-color-menu03-accueil: #f9f9f9;
  $bg-color-menu03: #edefef;
  $bg-color-menu04: #fdfffd;
 
+  /* ****************************************
+  * Colors for word "menu"
+  **************************************** */
+$brown-menu02-accueil: #c77412;
+$blue-menu03-accueil: #0887fb;
+$green-menu04-accueil: #72bf56;
 
+  /* ****************************************
+  * Balise span for effet de soulignement
+  **************************************** */
  $red-underline: rgba(255, 0, 0, 0.5);
  $light-brown-menu02: #c67412;
  $light-purple-menu02: #a56799;
  $dark-purple-menu02: #6e4ccc;
  $dark-blue-menu03: #0228dd;
- $middle-blue-menu03: #0670f3;
+ $middle-blue-menu03: #0670f3; 
  $light-blue-menu03: #229df9;
  $dark-green-menu04: #499c40;
  $middle-green-menu04: #72bf56;
@@ -51,24 +60,3 @@ $degrade-palette-gout: to right, #499c40, #beff7f;
  $padding035: 35px;
  $padding04: 40px;
  $padding05: 60px;
-
-
- /* ***********************************************
-  * Balise span for effet de soulignement
-  *********************************************** */
-  /* colors for menu01.scss */
-  $red-opak: to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 4px, transparent 5px;
-
-  /* colors for menu02.scss */
-  $light-brown-top: to top, #c67412 0%, #c67412 4px, transparent 5px;
-  $light-purple-top: to top, #a56799 0%, #a56799 4px, transparent 5px;
-  $dark-purple-top: to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px;
-
-  /* colors for menu03.scss */
-  $dark-blue-top: to top, #0228dd 0%, #0228dd 4px, transparent 5px;
-  $middle-blue-top: to top, #0670f3 0%, #0670f3 4px, transparent 5px; 
-  $light-blue-top: to top, #229df9 0%, #229df9 4px, transparent 5px;
-  
-  /* colors for menu04.scss */
-  $green-top: to top, #beff7f 0%, #beff7f 4px, transparent 5px;
-
