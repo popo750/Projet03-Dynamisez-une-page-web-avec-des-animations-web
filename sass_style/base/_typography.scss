@@ -52,6 +52,16 @@
     font-style: normal;
 }
 
+@mixin font-Aktiv-Grotesk-Bold {
+    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+         * du site : https://fonts.adobe.com/
+         */
+    /* Aktiv Grotesk Bold */
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 @mixin font-ccsignlanguage {
     /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
      * du site : https://fonts.adobe.com/
