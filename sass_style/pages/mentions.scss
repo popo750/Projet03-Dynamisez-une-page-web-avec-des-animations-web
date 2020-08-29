@@ -1,91 +1,10 @@
-/* @import must be at top of file, otherwise CSS will not work 
- * pour font-family: SegoePrint */
-@import url("//hello.myfonts.net/count/3bf52d");
-
-
-* {
-    /* Enlever Padding ET Margin */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 175vh;
-}
-
-/* Position tout en haut : header 
-     Avec le code ci-dessus ( * {... } 
-     Pas besoin de positionner le header tout en haut 
-     avec le code ci-dessous
-     header { ... } */
-/*header {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
- } */
-
-/* Position tout en bas : footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-header,
-.prochainement,
-footer {
-    /*
-     background-color: #00897B;
-     color: gold; */
-    background-color: #579c87;
-    color: #fdcb46;
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-      * du site : https://fonts.adobe.com/
-      */
-    /* 
-      * Tussilago Regular = font-weight: 500
-      * Tussilago Heavy = font-weight: 900 */
-    /*
-     font-family: tussilago, sans-serif;
-     font-weight: 500;
-     font-style: normal; */
-    /* Aktiv Grotesk Medium */
-
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: -2px;
-}
-
-/* Kaushan_scriptregular pour le titre "La palette du gout" */
-@font-face {
-    font-family: 'kaushan_scriptregular';
-    src: url('../../fonts_police/KaushanScript-FontZillion/Fonts/kaushanscript-regular.ttf') format('truetype');
-    src: url('../../fonts_police/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff2') format('woff2'),
-        url('../../fonts_police/KaushanScript-FontZillion/webfontkit-20200726-101409/kaushanscript-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* segoe print pour les titres "menu" 
-  * de "Le délice des papilles" ET "La palette du gout" */
-@font-face {
-    font-family: 'SegoePrint';
-    src: url('../../fonts_police/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff2') format('woff2'),
-        url('../../fonts_police/MyFontsWebfontsKit/webFonts/SegoePrint/font.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/reset-body';
+@import '../base/typography';
+@import '../components/animations';
+@import '../layout/footer';
+@import '../layout/header';
 
 /* *************************************************
  * Position div class container 
@@ -103,20 +22,12 @@ h2 {
 
 .little {
     & h2 {
-        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-         * du site : https://fonts.adobe.com/
-         */
-        /* Aktiv Grotesk Bold */
-        font-family: aktiv-grotesk, sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        @include font-Aktiv-Grotesk-Bold;
     }
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     & .menu {
         padding: 50px;
@@ -132,9 +43,7 @@ h2 {
 
 .submenu {
     margin: 32px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 
     & .bord-left {
         width: 200px;
@@ -175,9 +84,7 @@ h2 {
     padding-bottom: 20px;
 
     & .sublist {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-family: 'SegoePrint';
     }
 
@@ -198,38 +105,9 @@ h2 {
         }
 
         & .ohmyfood {
-            /* Aktiv Grotesk Bold */
-        font-family: aktiv-grotesk, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 20px;
+            @include font-Aktiv-Grotesk-Bold;
+            font-size: 20px;
         }
     }
 
-}
-
-
-/* ***********************************************************
- * footer > div class="mentions" 
- * AND
- * footer > div class="contact" 
- *********************************************************** */
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    font-size: 20px;
-    /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-     * du site : https://fonts.adobe.com/
-     */
-    /* font-family: Montserrat Medium */
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-
-    & a {
-        color: #fdcb46;
-        text-decoration: none;
-        font-weight: bold;
-    }
 }
