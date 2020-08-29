@@ -1,8 +1,7 @@
 /* *******************************************
  * mixins for all files in repo "pages"
  ******************************************* */
-@mixin background-text($degrade) {
-    background: linear-gradient($degrade);
+@mixin background-text {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
