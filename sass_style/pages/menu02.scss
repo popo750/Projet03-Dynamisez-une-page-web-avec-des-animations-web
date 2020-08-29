@@ -1,53 +1,10 @@
-* {
-    /* Enlever Padding ET Margin */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 175vh;
-}
-
-/* Position tout en haut : header 
-    Avec le code ci-dessus ( * {... } 
-    Pas besoin de positionner le header tout en haut 
-    avec le code ci-dessous
-    header { ... } */
-/*header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-} */
-
-/* Position tout en bas : footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-header,
-footer {
-    background-color: #579c87;
-    color: #fdcb46;
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-     /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-     * du site : https://fonts.adobe.com/
-     */
-    /* Aktiv Grotesk Medium */
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: -2px;
-}
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/reset-body';
+@import '../base/typography';
+@import '../components/animations';
+@import '../layout/footer';
+@import '../layout/header';
 
 /* *************************************************
  * Position div class container 
@@ -62,20 +19,12 @@ h2 {
     & h2 {
         /* padding: Haut Gauche Bas Droite */
         padding: 50px 0 20px 0;
-        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
-         * du site : https://fonts.adobe.com/
-         */
-        /* Aktiv Grotesk Bold */
-        font-family: aktiv-grotesk, sans-serif;
-        font-weight: 700;
-        font-style: normal;
+        @include font-Aktiv-Grotesk-Bold;
     }
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     & .menu {
         /* padding: Haut Gauche Bas Droite */
@@ -84,17 +33,14 @@ h2 {
         padding: 50px;
         padding-top: 100px;
         padding-bottom: 150px;*/
-        background-color: #fff5fe;
-        /* background-color: #a2e58e; */
+        background-color: $bg-color-menu02;
 
         & .title {
             text-align: center;
             padding-bottom: 30px;
             /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
             background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+            @include background-text;
             font-family: 'Croissant One', cursive;
             font-size: 22px;
         }
@@ -102,33 +48,21 @@ h2 {
     }
 }
 
-.container>.nav>.note-enchantee h2 {
-    color: greenyellow;
-
-    &:hover {
-        color: hotpink;
-    }
-}
 
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
-.submenu01 {
+ .submenu-origin {
     margin: 32px auto;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & .bord-left {
-        /*
-        width: 180px;
-        height: 2px;
-        background-color: #c67412; */
         width: 0px;
         height: 0px;
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
-        border-right: 160px solid #c67412;
 
         position: relative;
         right: 15px;
@@ -143,240 +77,141 @@ h2 {
             left: 160px;
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
-            border-left: 20px solid #c67412;
-
         }
     }
 
     & h3 {
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: #fff5fe;
-        color: #c67412;
+        background-color: $bg-color-menu02;
         font-size: 20px;
-        /* Baltica Bold */
-        font-family: baltica, serif;
-        font-weight: 700;
-        font-style: normal;
+        @include font-baltica;
+    }
+
+    & span {
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+
+        position: relative;
+        left: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            right: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    }
+}
+
+.submenu01 {
+
+    & .bord-left {
+        border-right: 160px solid #c67412;
+
+        &:before {
+            border-left: 20px solid #c67412;
+        }
+    }
+
+    & h3 {
+        padding-left: $padding01;
+        padding-right: $padding01;
+        color: #c67412;
     }
 
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 5px) no-repeat;
-        /* Propriété 02 : 
-     * background-size : XX largeur XX hauteur;
-     * background-size GAIT DISPARAITRE le background linear-gradient */
-        background-size: 0 100%;
-        /* Etape 04 : */
-        transition: background-size .3s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
 
     & .bord-right {
-        /*
-        width: 180px;
-        height: 2px;
-        background-color: #c67412; */
-        width: 0px;
-        height: 0px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         border-left: 160px solid #c67412;
 
-        position: relative;
-        left: 15px;
-
         &:after {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: -5px;
-            right: 160px;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
             border-right: 20px solid #c67412;
-
         }
     }
 }
 
 .submenu02 {
-    margin: 32px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     & .bord-left {
-        width: 0px;
-        height: 0px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         border-right: 160px solid #a56799;
 
-        position: relative;
-        right: 15px;
-
         &:before {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: -5px;
-            left: 160px;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
             border-left: 20px solid #a56799;
-
         }
     }
 
     & h3 {
-        padding-left: 35px;
-        padding-right: 35px;
-        background-color: #fff5fe;
+        padding-left: $padding035;
+        padding-right: $padding035;
         color: #a56799;
-        font-size: 20px;
-        /* Baltica Bold */
-        font-family: baltica, serif;
-        font-weight: 700;
-        font-style: normal;
     }
 
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
-        /* Propriété 02 : 
-     * background-size : XX largeur XX hauteur;
-     * background-size GAIT DISPARAITRE le background linear-gradient */
-        background-size: 0 100%;
-        /* Etape 04 : */
-        transition: background-size .3s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
 
     & .bord-right {
-        /*
-        width: 180px;
-        height: 2px;
-        background-color: #c67412; */
-        width: 0px;
-        height: 0px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         border-left: 160px solid #a56799;
 
-        position: relative;
-        left: 15px;
-
         &:after {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: -5px;
-            right: 160px;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
             border-right: 20px solid #a56799;
-
         }
     }
 }
 
 .submenu03 {
-    margin: 32px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     & .bord-left {
-        width: 0px;
-        height: 0px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         border-right: 160px solid #6e4ccc;
 
-        position: relative;
-        right: 15px;
-
         &:before {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: -5px;
-            left: 160px;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
             border-left: 20px solid #6e4ccc;
-
         }
     }
 
     & h3 {
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: #fff5fe;
+        padding-left: $padding02;
+        padding-right: $padding02;
         color: #6e4ccc;
-        font-size: 20px;
-        /* Baltica Bold */
-        font-family: baltica, serif;
-        font-weight: 700;
-        font-style: normal;
     }
 
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
-        /* Propriété 02 : 
-     * background-size : XX largeur XX hauteur;
-     * background-size GAIT DISPARAITRE le background linear-gradient */
-        background-size: 0 100%;
-        /* Etape 04 : */
-        transition: background-size .3s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
 
     & .bord-right {
-        /*
-        width: 180px;
-        height: 2px;
-        background-color: #c67412; */
-        width: 0px;
-        height: 0px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         border-left: 160px solid #6e4ccc;
 
-        position: relative;
-        left: 15px;
-
         &:after {
-            content: "";
-            display: block;
-            width: 0px;
-            height: 0px;
-            position: absolute;
-            top: -5px;
-            right: 160px;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
             border-right: 20px solid #6e4ccc;
-
         }
     }
 }
@@ -409,33 +244,11 @@ h2 {
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
  .repas {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    /* Capitolina regular */
-    font-family: capitolina, serif;
-    font-weight: 400;
-    font-style: normal;
+    @include repas;
+    @include font-capitolina;
 
     & .price {
         margin-left: 20px;
     }
 
-}
-/* ***********************************************************
- * footer > div class="mentions" 
- * AND
- * footer > div class="contact" 
- *********************************************************** */
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 50px;
-    font-size: 20px;
-
-    & a {
-        color: #fdcb46;
-        text-decoration: none;
-        font-weight: bold;
-    }
 }
