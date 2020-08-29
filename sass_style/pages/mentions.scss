@@ -31,7 +31,7 @@ h2 {
 
     & .menu {
         padding: 50px;
-        background-color: #edefef;
+        background-color: $bg-color-menu03;
 
         & .title {
             text-align: center;
@@ -48,19 +48,19 @@ h2 {
     & .bord-left {
         width: 200px;
         height: 5px;
-        background: linear-gradient(to right, #499c40, #beff7f);
+        background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
     }
 
     & h3 {
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #edefef;
+        padding-left: $padding03;
+        padding-right: $padding03;
+        background-color: $bg-color-menu03;
         font-size: 20px;
     }
 
     & span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #fdcb46 0%, #fdcb46 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $gold 0%, $gold 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -76,12 +76,12 @@ h2 {
     & .bord-right {
         width: 200px;
         height: 5px;
-        background: linear-gradient(to left, #499c40, #beff7f);
+        background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
     }
 }
 
 .liste section {
-    padding-bottom: 20px;
+    padding-bottom: $padding02;
 
     & .sublist {
         @include flex-center;
@@ -101,7 +101,7 @@ h2 {
         }
 
         & .resto {
-            color: #fdcb46;
+            color: $gold;
         }
 
         & .ohmyfood {
