@@ -88,7 +88,7 @@ h2 {
      * background-size GAIT DISPARAITRE le background linear-gradient */
         background-size: 0 100%;
         /* Etape 04 : */
-        transition: background-size .3s;
+        transition: background-size .7s;
 
         &:hover {
             background-size: 100% 100%;

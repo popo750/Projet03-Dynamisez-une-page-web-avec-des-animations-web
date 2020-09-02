@@ -291,7 +291,7 @@ h2 {
   * background-size GAIT DISPARAITRE le background linear-gradient */
   background-size: 0 100%;
   /* Etape 04 : */
-  transition: background-size 0.3s;
+  transition: background-size 0.7s;
 }
 .submenu-origin span:hover {
   background-size: 100% 100%;
