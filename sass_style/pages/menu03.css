@@ -292,17 +292,6 @@ h2 {
   font-size: 20px;
   font-weight: normal;
 }
-.submenu-origin span {
-  /* Propriété 02 : 
-  * background-size : XX largeur XX hauteur;
-  * background-size GAIT DISPARAITRE le background linear-gradient */
-  background-size: 0 100%;
-  /* Etape 04 : */
-  transition: background-size 0.3s;
-}
-.submenu-origin span:hover {
-  background-size: 100% 100%;
-}
 .submenu-origin .bord-right {
   width: 220px;
   height: 5px;
@@ -330,6 +319,15 @@ h2 {
 .submenu01 span {
   /* Propriété 01 : */
   background: linear-gradient(to top, #0228dd 0%, #0228dd 4px, transparent 5px) no-repeat;
+  /* Propriété 02 : 
+   * background-size : XX largeur XX hauteur;
+   * background-size GAIT DISPARAITRE le background linear-gradient */
+  background-size: 0 100%;
+  /* Etape 04 : */
+  transition: background-size 0.7s;
+}
+.submenu01 span:hover {
+  background-size: 100% 100%;
 }
 .submenu01 .bord-right {
   box-shadow: 0 5px 0 #0228dd;
@@ -347,6 +345,15 @@ h2 {
 .submenu02 span {
   /* Propriété 01 : */
   background: linear-gradient(to top, #0670f3 0%, #0670f3 4px, transparent 5px) no-repeat;
+  /* Propriété 02 : 
+   * background-size : XX largeur XX hauteur;
+   * background-size GAIT DISPARAITRE le background linear-gradient */
+  background-size: 0 100%;
+  /* Etape 04 : */
+  transition: background-size 0.7s;
+}
+.submenu02 span:hover {
+  background-size: 100% 100%;
 }
 .submenu02 .bord-right {
   box-shadow: 0 5px 0 #0670f3;
@@ -364,6 +371,15 @@ h2 {
 .submenu03 span {
   /* Propriété 01 : */
   background: linear-gradient(to top, #229df9 0%, #229df9 4px, transparent 5px) no-repeat;
+  /* Propriété 02 : 
+   * background-size : XX largeur XX hauteur;
+   * background-size GAIT DISPARAITRE le background linear-gradient */
+  background-size: 0 100%;
+  /* Etape 04 : */
+  transition: background-size 0.7s;
+}
+.submenu03 span:hover {
+  background-size: 100% 100%;
 }
 .submenu03 .bord-right {
   box-shadow: 0 5px 0 #229df9;

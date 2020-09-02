@@ -52,7 +52,7 @@ h2 {
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin {
+.submenu-origin {
     margin: 32px auto;
     display: flex;
     align-items: center;
@@ -84,19 +84,6 @@ h2 {
         background-color: $bg-color-menu02;
         font-size: 20px;
         @include font-baltica;
-    }
-
-    & span {
-        /* Propriété 02 : 
-     * background-size : XX largeur XX hauteur;
-     * background-size GAIT DISPARAITRE le background linear-gradient */
-        background-size: 0 100%;
-        /* Etape 04 : */
-        transition: background-size .3s;
-
-        &:hover {
-            background-size: 100% 100%;
-        }
     }
 
     & .bord-right {
@@ -145,6 +132,16 @@ h2 {
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
     }
 
     & .bord-right {
@@ -175,6 +172,16 @@ h2 {
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
     }
 
     & .bord-right {
@@ -205,6 +212,16 @@ h2 {
     & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
     }
 
     & .bord-right {
@@ -243,7 +260,7 @@ h2 {
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
- .repas {
+.repas {
     @include repas;
     @include font-capitolina;
 
