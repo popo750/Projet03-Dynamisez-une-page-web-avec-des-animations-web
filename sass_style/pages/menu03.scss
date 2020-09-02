@@ -26,6 +26,11 @@ h2 {
 .container {
     @include flex-center;
 
+    // media queries portable
+        {
+        @include flex-center;
+    }
+
     & .menu {
         /* padding: Haut Gauche Bas Droite */
         padding: 20px 25px 150px 25px;
@@ -35,6 +40,11 @@ h2 {
         padding-bottom: 150px;*/
         background-color: $bg-color-menu03;
         font-family: 'SegoePrint';
+
+        // media queries portable
+            {
+            @include flex-center;
+        }
 
         & .title {
             text-align: center;
