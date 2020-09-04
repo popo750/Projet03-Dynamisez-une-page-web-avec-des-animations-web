@@ -1,0 +1,48 @@
+.container-menu01 {
+
+    & .menu01 {
+        padding: 50px;
+        background-color: $bg-color-menu01;
+
+        & .title-menu01 {
+            padding-bottom: 20px;
+
+            & i {
+                font-size: 60px;
+                /* Dégradé color : #f05561 puis #f6916a */
+                background: linear-gradient(to right, #f15861, #f78f6a);
+                @include background-text;
+                padding-bottom: 10px;
+            }
+
+            & h2 {
+                @include font-ccsignlanguage;
+                font-size: 35px;
+            }
+        }
+
+        & .pied-menu01 {
+            padding-top: $padding03;
+            @include flex-center;
+        }
+    }
+}
+
+
+/* *********************************
+ * div class pied
+ ********************************* */
+ .pied-menu01 {
+
+    & i {
+        background: linear-gradient(to right, #f15861, #f78f6a);
+        @include background-text;
+        font-size: 50px;
+    }
+
+    & h2 {
+        margin-left: 10px;
+        @include font-ccsignlanguage;
+        font-size: 30px;
+    }
+}
