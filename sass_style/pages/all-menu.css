@@ -245,7 +245,7 @@ footer div {
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
-.repas-all-menu {
+.repas {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;

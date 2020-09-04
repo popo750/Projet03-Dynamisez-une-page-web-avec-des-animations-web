@@ -206,12 +206,11 @@ footer div {
  * Position div class container 
  ************************************************ */
 .titre-h2 {
-  text-align: center;
   /* padding: Haut Gauche Bas Droite */
   padding: 50px 0 20px 0;
 }
 
-.container-menu-of-2-3-4 .menu-of-2-3-4 {
+.container-all-menu .menu-of-2-3-4 {
   /* padding: Haut Gauche Bas Droite */
   padding: 20px 25px 150px 25px;
   /*
@@ -219,7 +218,7 @@ footer div {
   padding-top: 100px;
   padding-bottom: 150px;*/
 }
-.container-menu-of-2-3-4 .menu-of-2-3-4 .title-menu-of-2-3-4 {
+.container-all-menu .menu-of-2-3-4 .title-bg-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

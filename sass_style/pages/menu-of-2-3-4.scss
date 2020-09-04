@@ -12,12 +12,11 @@
  * Position div class container 
  ************************************************ */
  .titre-h2 {
-    text-align: center;
     /* padding: Haut Gauche Bas Droite */
     padding: 50px 0 20px 0;
 }
 
-.container-menu-of-2-3-4 {
+.container-all-menu {
 
     & .menu-of-2-3-4 {
         /* padding: Haut Gauche Bas Droite */
@@ -27,7 +26,7 @@
         padding-top: 100px;
         padding-bottom: 150px;*/
 
-        & .title-menu-of-2-3-4 {
+        & .title-bg-text {
             @include background-text;
         }
     }
