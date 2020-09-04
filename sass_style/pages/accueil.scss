@@ -1,10 +1,7 @@
-@import '../abstracts/mixins';
-@import '../abstracts/variables';
-@import '../base/reset-body';
-@import '../base/typography';
-@import '../components/animations';
-@import '../layout/footer';
-@import '../layout/header';
+
+/* *************************************************
+ * Fichier Accueil.scss
+ ************************************************ */
 
 @mixin box-shadow-around-boxmenu {
     /* box-shadow: 0px 0px 10px #e91414, 
@@ -25,7 +22,7 @@
     padding: 20px;
     margin: 0 auto;
 
-    & .nav {
+    .nav {
         @include flex-center;
         flex-wrap: wrap;
     }
@@ -47,7 +44,7 @@
 
     @include box-shadow-around-boxmenu;
 
-    &>.content {
+    >.content {
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -60,7 +57,7 @@
             opacity: .6;
         }
 
-        & .effect-color-text {
+         .effect-color-text {
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -99,13 +96,13 @@
             margin-block-end: .67em;
         }
         */
-        & h3 {
+         h3 {
             padding-top: 20px;
             font-size: 2em;
             font-weight: bold;
         }
 
-        & a {
+         a {
             text-decoration: none;
         }
     }
@@ -119,17 +116,17 @@
     background-color: $bg-color-menu01;
     color: #3c1218;
 
-    & i {
+     i {
         background: linear-gradient($degrade-note-enchantee);
         margin-bottom: 5px;
         font-size: 40px;
     }
 
-    & .no-effect {
+     .no-effect {
         @include font-ccsignlanguage;
     }
 
-    & .link-menu01 {
+     .link-menu01 {
         color: #3c1218;
         text-transform: uppercase;
         @include font-montag;
@@ -143,14 +140,14 @@
 .chic-francaise {
     background-color: $bg-color-menu02;
 
-    & h2 {
+     h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
         background: linear-gradient($degrade-chic-francaise);
         font-family: 'Croissant One', cursive;
         font-size: 20px;
     }
 
-    & .link-menu02 {
+     .link-menu02 {
         color: #c77412;
         font-family: casus, questa, serif;
         font-style: normal;
@@ -164,13 +161,13 @@
 .delice-papilles {
     background-color: $bg-color-menu03-accueil;
 
-    & h2 {
+     h2 {
         background: linear-gradient($degrade-delice-papilles);
         //font-family: 'Parisienne', cursive;
         @include font-alana-regular;
     }
 
-    & .link-menu03 {
+     .link-menu03 {
         color: #0887fb;
         font-family: 'SegoePrint';
     }
@@ -184,12 +181,12 @@
 .palette-gout {
     background-color: $bg-color-menu04;
 
-    & h2 {
+     h2 {
         background: linear-gradient($degrade-palette-gout);
         font-family: 'kaushan_scriptregular';
     }
 
-    & .link-menu04 {
+     .link-menu04 {
         color: $middle-green-menu04;
         font-family: 'SegoePrint';
     }
@@ -210,11 +207,11 @@
     @include font-montserrat-medium;
     @include flex-center;
 
-    & p {
+     p {
         padding-right: 10px;
     }
 
-    & span {
+     span {
         display: inline-block;
         width: 10px;
         height: 10px;

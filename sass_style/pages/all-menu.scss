@@ -1,15 +1,22 @@
-/* ************************************
- * Fichier menu-of-1-2-3-4.scss
- ************************************ */
 
+/* ************************************
+ * Fichier all-menu.scss
+ ************************************ */
+ @import '../abstracts/variables';
+ @import '../base/reset-body';
+ @import '../base/typography';
+ @import '../abstracts/mixins';
+ @import '../components/animations';
+ @import '../layout/header';
+ @import '../layout/footer';
 /* *************************************************
  * Position div class container 
  ************************************************ */
- h2 {
+ .h2-all-menu {
     text-align: center;
 }
 
-.little {
+.little-all-menu {
     & h2 {
         /* padding: Haut Gauche Bas Droite */
         padding: 50px 0 20px 0;
@@ -17,10 +24,10 @@
     }
 }
 
-.container-menu-of-1-2-3-4 {
+.container-all-menu {
     @include flex-center;
 
-    & .menu .title {
+    & .title-all-menu {
         text-align: center;
     }
 }
@@ -29,7 +36,7 @@
  * Tous les div class="submenu" ( 01, 02 et 03 )
  * dans une class="submenu-origin"
  ***************************************************** */
-.submenu-origin {
+.submenu-origin-all-menu {
     margin: 32px auto;
     @include flex-center;
 
@@ -41,6 +48,6 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
-.repas {
+.repas-all-menu {
     @include repas;
 }
