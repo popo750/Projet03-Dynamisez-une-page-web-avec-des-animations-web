@@ -205,7 +205,8 @@ footer div {
 /* *************************************************
  * Position div class container 
  ************************************************ */
-.h2-all-menu {
+.little-all-menu,
+.title-all-menu {
   text-align: center;
 }
 
@@ -225,9 +226,6 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container-all-menu .title-all-menu {
-  text-align: center;
 }
 
 /* ****************************************************
