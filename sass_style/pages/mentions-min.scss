@@ -1,0 +1,92 @@
+/* *************************************************
+ * Position div class container 
+ ************************************************ */
+ .title-mentions {
+    text-align: center;
+    font-family: 'Croissant One', cursive;
+}
+
+.little {
+    & h2 {
+        @include font-Aktiv-Grotesk-Bold;
+    }
+}
+
+.menu-mentions {
+    padding: 50px;
+    background-color: $bg-color-menu03;
+
+    & .title-mentions-legales {
+        padding-bottom: 20px;
+        //color: #fdcb46
+    }
+}
+
+.submenu-mentions {
+
+    & .bord-left {
+        width: 200px;
+        height: 5px;
+        background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
+    }
+
+    & h3 {
+        padding-left: $padding03;
+        padding-right: $padding03;
+        background-color: $bg-color-menu03;
+        font-size: 20px;
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, $gold 0%, $gold 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+      * background-size : XX largeur XX hauteur;
+      * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .3s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        width: 200px;
+        height: 5px;
+        background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
+    }
+}
+
+.liste-mentions section {
+    padding-bottom: $padding02;
+
+    & .sublist {
+        @include flex-center;
+        font-family: 'SegoePrint';
+    }
+
+    & .staff li {
+        transform: translateX(15%);
+    }
+
+    & li {
+        padding: 5px 0;
+        list-style: none;
+
+        & span {
+            font-weight: 600;
+        }
+
+        & .resto {
+            color: $gold;
+        }
+
+        & .ohmyfood {
+            @include font-Aktiv-Grotesk-Bold;
+            font-size: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,202 @@
+.menu03 {
+    background-color: $bg-color-menu03;
+    font-family: 'SegoePrint';
+
+    & .title-menu03 {
+        padding-bottom: 20px;
+        background: linear-gradient($degrade-delice-papilles);
+        @include background-text;
+        font-family: 'Parisienne', cursive;
+        /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
+             * du site : https://fonts.adobe.com/
+             */
+        /* alana bold */
+        /*
+            font-family: alana, sans-serif;
+            font-weight: 700;
+            font-style: normal; */
+        /* alana regular */
+        /*font-family: alana, sans-serif;
+            font-weight: 400;
+            font-style: normal; */
+        font-size: 45px;
+    }
+}
+
+
+/* ****************************************************
+ * Tous les div class="submenu" ( 01, 02 et 03 )
+ ***************************************************** */
+ .submenu-origin-menu03 {
+    margin: 32px auto;
+    @include flex-center;
+
+    & .bord-left {
+        width: 220px;
+        height: 5px;
+        padding: 5px;
+        /* Arrondir bordure Gauche Bas */
+        border-bottom-left-radius: 20px 1em;
+
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 9px;
+            right: -5px;
+            width: 0;
+            height: 0;
+            border-right: 6px solid transparent;
+        }
+
+    }
+
+    & h3 {
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: $bg-color-menu03;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    & .bord-right {
+        width: 220px;
+        height: 5px;
+        padding: 5px;
+        /* Arrondir bordure Gauche Bas */
+        border-bottom-right-radius: 20px 1em;
+
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+        }
+    }
+}
+
+.submenu01-menu03 {
+
+    & .bord-left {
+        box-shadow: 0 5px 0 #0228dd;
+
+        &:after {
+            border-bottom: 6px solid #0228dd;
+        }
+
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #0228dd 0%, #0228dd 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+         * background-size : XX largeur XX hauteur;
+         * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        box-shadow: 0 5px 0 #0228dd;
+
+        &:before {
+            border-bottom: 6px solid #0228dd;
+        }
+    }
+}
+
+.submenu02-menu03 {
+
+    & .bord-left {
+        box-shadow: 0 5px 0 #0670f3;
+
+        &:after {
+            border-bottom: 6px solid #0670f3;
+        }
+
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #0670f3 0%, #0670f3 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+         * background-size : XX largeur XX hauteur;
+         * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        box-shadow: 0 5px 0 #0670f3;
+
+        &:before {
+            border-bottom: 6px solid #0670f3;
+        }
+    }
+}
+
+.submenu03-menu03 {
+
+    & .bord-left {
+        box-shadow: 0 5px 0 #229df9;
+
+        &:after {
+            border-bottom: 6px solid #229df9;
+        }
+
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #229df9 0%, #229df9 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+         * background-size : XX largeur XX hauteur;
+         * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        box-shadow: 0 5px 0 #229df9;
+
+        &:before {
+            border-bottom: 6px solid #229df9;
+        }
+    }
+}
+
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste > div class repas
+ ************************************************************************* */
+ .repas {
+
+    & .price-menu03 {
+        margin-left: 5px;
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

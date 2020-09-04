@@ -5,24 +5,21 @@
 /* *************************************************
  * Position div class container 
  ************************************************ */
- .titre-h2 {
+.titre-h2 {
     /* padding: Haut Gauche Bas Droite */
     padding: 50px 0 20px 0;
 }
 
-.container-all-menu {
-
-    & .menu-of-2-3-4 {
-        /* padding: Haut Gauche Bas Droite */
-        padding: 20px 25px 150px 25px;
-        /*
+.menu-of-2-3-4 {
+    /* padding: Haut Gauche Bas Droite */
+    padding: 20px 25px 150px 25px;
+    /*
         padding: 50px;
         padding-top: 100px;
         padding-bottom: 150px;*/
 
-        & .title-bg-text {
-            @include background-text;
-        }
+    & .title-bg-text {
+        @include background-text;
     }
 }
 

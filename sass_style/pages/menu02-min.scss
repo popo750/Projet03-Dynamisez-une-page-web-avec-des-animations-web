@@ -1,0 +1,223 @@
+.menu02 {
+    background-color: $bg-color-menu02;
+
+    & .title-menu02 {
+        padding-bottom: 30px;
+        /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
+        background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
+        @include background-text;
+        font-family: 'Croissant One', cursive;
+        font-size: 22px;
+    }
+
+}
+
+
+/* ****************************************************
+ * Tous les div class="submenu" ( 01, 02 et 03 )
+ ***************************************************** */
+ .submenu-origin-menu02 {
+
+    & .bord-left {
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+
+        position: relative;
+        right: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            left: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    }
+
+    & h3 {
+        background-color: $bg-color-menu02;
+        font-size: 20px;
+        @include font-baltica;
+    }
+
+    & .bord-right {
+        /*
+        width: 180px;
+        height: 2px;
+        background-color: #c67412; */
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+
+        position: relative;
+        left: 15px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: -5px;
+            right: 160px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    }
+}
+
+.submenu01-menu02 {
+
+    & .bord-left {
+        border-right: 160px solid #c67412;
+
+        &:before {
+            border-left: 20px solid #c67412;
+        }
+    }
+
+    & h3 {
+        padding-left: $padding01;
+        padding-right: $padding01;
+        color: #c67412;
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        border-left: 160px solid #c67412;
+
+        &:after {
+            border-right: 20px solid #c67412;
+        }
+    }
+}
+
+.submenu02-menu02 {
+
+    & .bord-left {
+        border-right: 160px solid #a56799;
+
+        &:before {
+            border-left: 20px solid #a56799;
+        }
+    }
+
+    & h3 {
+        padding-left: $padding035;
+        padding-right: $padding035;
+        color: #a56799;
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        border-left: 160px solid #a56799;
+
+        &:after {
+            border-right: 20px solid #a56799;
+        }
+    }
+}
+
+.submenu03-menu02 {
+
+    & .bord-left {
+        border-right: 160px solid #6e4ccc;
+
+        &:before {
+            border-left: 20px solid #6e4ccc;
+        }
+    }
+
+    & h3 {
+        padding-left: $padding02;
+        padding-right: $padding02;
+        color: #6e4ccc;
+    }
+
+    & span {
+        /* Propriété 01 : */
+        background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
+        /* Propriété 02 : 
+     * background-size : XX largeur XX hauteur;
+     * background-size GAIT DISPARAITRE le background linear-gradient */
+        background-size: 0 100%;
+        /* Etape 04 : */
+        transition: background-size .7s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .bord-right {
+        border-left: 160px solid #6e4ccc;
+
+        &:after {
+            border-right: 20px solid #6e4ccc;
+        }
+    }
+}
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste
+ ************************************************************************* */
+ .sub01 {
+    color: #c67412;
+}
+
+.sub02 {
+    color: #a56799;
+}
+
+.sub03 {
+    color: #6e4ccc;
+}
+
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste > div class repas
+ ************************************************************************* */
+.repas-menu02 {
+    @include repas;
+    @include font-capitolina;
+
+    & .price-menu02 {
+        margin-left: 20px;
+    }
+
+}
