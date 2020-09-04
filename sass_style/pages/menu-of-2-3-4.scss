@@ -1,0 +1,39 @@
+/* ************************************
+ * Fichier menu-of-2-3-4.scss
+ ************************************ */
+
+/* *************************************************
+ * Position div class container 
+ ************************************************ */
+ .titre-h2 {
+    /* padding: Haut Gauche Bas Droite */
+    padding: 50px 0 20px 0;
+}
+
+.container-all-menu {
+
+    & .menu-of-2-3-4 {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 20px 25px 150px 25px;
+        /*
+        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 150px;*/
+
+        & .title-bg-text {
+            @include background-text;
+        }
+    }
+}
+
+
+/* *********************************************
+ * class liste 
+ ********************************************* */
+.liste {
+    /* padding: Haut Gauche Bas Droite */
+    /* padding: 0px 50px 0px 50px; */
+    /* ou */
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 70px;
+}

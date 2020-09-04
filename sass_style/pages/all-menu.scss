@@ -1,0 +1,44 @@
+
+/* ************************************
+ * Fichier all-menu.scss
+ ************************************ */
+ 
+/* *************************************************
+ * Position div class container 
+ ************************************************ */
+ .little-all-menu,
+ .title-all-menu {
+    text-align: center;
+}
+
+.little-all-menu {
+    & h2 {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 50px 0 20px 0;
+        @include font-Aktiv-Grotesk-Bold;
+    }
+}
+
+.container-all-menu {
+    @include flex-center;
+}
+
+/* ****************************************************
+ * Tous les div class="submenu" ( 01, 02 et 03 )
+ * dans une class="submenu-origin"
+ ***************************************************** */
+.submenu-origin-all-menu {
+    margin: 32px auto;
+    @include flex-center;
+
+    & h3 {
+        font-size: 20px;
+    }
+}
+
+/* **************************************************************************
+ * div class container > div class menu > div class liste > div class repas
+ ************************************************************************* */
+.repas {
+    @include repas;
+}
