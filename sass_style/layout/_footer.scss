@@ -11,15 +11,15 @@ footer {
  * AND
  * footer > div class="contact" 
  *********************************************************** */
- footer {
+footer {
     display: flex;
     justify-content: space-between;
     padding: 15px 50px;
     font-size: 20px;
-    
+
     @include font-montserrat-medium;
-    
-    & a {
+
+    a {
         display: inline-block;
         color: $gold;
         text-decoration: none;
@@ -45,6 +45,3 @@ footer {
         } */
     }
 }
-
-
-

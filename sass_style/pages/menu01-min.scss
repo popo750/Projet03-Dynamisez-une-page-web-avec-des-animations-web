@@ -1,27 +1,33 @@
+/* ************************************
+ * Fichier menu01-min.scss
+ ************************************ */
+ /* **********************************************************************
+ * div class="container-all-menu container-menu01" > div class="menu01"
+ ********************************************************************** */
 .container-menu01 {
 
-    & .menu01 {
+    .menu01 {
         padding: 50px 0px;
         background-color: $bg-color-menu01;
 
-        & .title-menu01 {
+        .title-menu01 {
             padding-bottom: 20px;
 
-            & i {
+            i {
                 font-size: 60px;
                 /* Dégradé color : #f05561 puis #f6916a */
-                background: linear-gradient(to right, #f15861, #f78f6a);
+                background: linear-gradient($degrade-note-enchantee);
                 @include background-text;
                 padding-bottom: 10px;
             }
 
-            & h2 {
+            h2 {
                 @include font-ccsignlanguage;
                 font-size: 35px;
             }
         }
 
-        & .pied-menu01 {
+        .pied-menu01 {
             padding-top: $padding03;
             @include flex-center;
         }
@@ -32,12 +38,12 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu01 {
+.submenu-origin-menu01 {
     width: 600px;
     height: 5px;
     background-color: #000;
 
-    & h3 {
+    h3 {
         background-color: $bg-color-menu01;
         font-size: 20px;
         /* font-family: Uberhand Pro Medium __ font-weight: 500 */
@@ -52,9 +58,9 @@
         font-weight: bold;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $red-underline 0%, $red-underline 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -74,7 +80,7 @@
 
 .submenu01-menu01 {
 
-    & h3 {
+    h3 {
         padding-left: $padding05;
         padding-right: $padding05;
     }
@@ -83,7 +89,7 @@
 
 .submenu02-menu01 {
 
-    & h3 {
+    h3 {
         padding-left: $padding04;
         padding-right: $padding04;
     }
@@ -92,7 +98,7 @@
 
 .submenu03-menu01 {
 
-    & h3 {
+    h3 {
         padding-left: $padding02;
         padding-right: $padding02;
     }
@@ -103,7 +109,7 @@
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
 .repas {
-    
+
     .name-menu01 {
         margin-left: -10px;
         /* font-family: Shadows Into Light Regular; */
@@ -126,13 +132,13 @@
  ********************************* */
 .pied-menu01 {
 
-    & i {
-        background: linear-gradient(to right, #f15861, #f78f6a);
+    i {
+        background: linear-gradient($degrade-note-enchantee);
         @include background-text;
         font-size: 50px;
     }
 
-    & h2 {
+    h2 {
         margin-left: 10px;
         @include font-ccsignlanguage;
         font-size: 30px;

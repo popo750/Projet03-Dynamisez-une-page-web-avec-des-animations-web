@@ -1,8 +1,15 @@
+/* ************************************
+ * Fichier menu04-min.scss
+ ************************************ */
+ /* *****************************************************
+ * div class="container-all-menu" > div class="menu04"
+ ***************************************************** */
+
 .menu04 {
     background-color: $bg-color-menu04;
     font-family: 'SegoePrint';
 
-    & .title-menu04 {
+    .title-menu04 {
         padding-bottom: 20px;
         background: linear-gradient($degrade-palette-gout);
         @include background-text;
@@ -15,21 +22,21 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu04 {
+.submenu-origin-menu04 {
     margin: 32px auto;
     @include flex-center;
 
-    & .bord-left {
+    .bord-left {
         height: 5px;
         background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
     }
 
-    & h3 {
+    h3 {
         background-color: $bg-color-menu04;
         font-size: 20px;
     }
 
-    & .bord-right {
+    .bord-right {
         height: 5px;
         background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
     }
@@ -37,16 +44,16 @@
 
 .submenu01-menu04 {
 
-    & .bord-left {
+    .bord-left {
         width: 280px;
     }
 
-    & h3 {
+    h3 {
         padding-left: 70px;
         padding-right: 70px;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $dark-green-menu04 0%, $dark-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -61,23 +68,23 @@
         }
     }
 
-    & .bord-right {
+    .bord-right {
         width: 280px;
     }
 }
 
 .submenu02-menu04 {
 
-    & .bord-left {
+    .bord-left {
         width: 270px;
     }
 
-    & h3 {
+    h3 {
         padding-left: $padding02;
         padding-right: $padding02;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $middle-green-menu04 0%, $middle-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -92,23 +99,23 @@
         }
     }
 
-    & .bord-right {
+    .bord-right {
         width: 270px;
     }
 }
 
 .submenu03-menu04 {
 
-    & .bord-left {
+    .bord-left {
         width: 270px;
     }
 
-    & h3 {
+    h3 {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $light-green-menu04 0%, $light-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -123,7 +130,7 @@
         }
     }
 
-    & .bord-right {
+    .bord-right {
         width: 270px;
     }
 }
@@ -132,9 +139,9 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
- .repas {
+.repas {
 
-    & .price-menu04 {
+    .price-menu04 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 20px;

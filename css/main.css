@@ -519,6 +519,12 @@ footer div {
   padding: 0px 70px;
 }
 
+/* ************************************
+ * Fichier menu01-min.scss
+ ************************************ */
+/* **********************************************************************
+* div class="container-all-menu container-menu01" > div class="menu01"
+********************************************************************** */
 .container-menu01 .menu01 {
   padding: 50px 0px;
   background-color: #fcdfdb;
@@ -645,6 +651,12 @@ footer div {
   font-size: 30px;
 }
 
+/* ************************************
+ * Fichier menu02-min.scss
+ ************************************ */
+/* **********************************************
+* div class="container-all-menu" > div class="menu02"
+************************************************* */
 .menu02 {
   background-color: #fff5fe;
 }
@@ -837,6 +849,12 @@ footer div {
   margin-left: 20px;
 }
 
+/* ************************************
+ * Fichier menu03-min.scss
+ ************************************ */
+/* *********************************************
+* div class="container" > div class="menu03"
+********************************************* */
 .menu03 {
   background-color: #edefef;
   font-family: "SegoePrint";
@@ -1003,6 +1021,12 @@ footer div {
   font-weight: bold;
 }
 
+/* ************************************
+ * Fichier menu04-min.scss
+ ************************************ */
+/* *****************************************************
+* div class="container-all-menu" > div class="menu04"
+***************************************************** */
 .menu04 {
   background-color: #fdfffd;
   font-family: "SegoePrint";
@@ -1122,7 +1146,7 @@ footer div {
 }
 
 /* *************************************************
- * Position div class container 
+ * Fichier mentions-min.scss
  ************************************************ */
 .title-mentions {
   text-align: center;

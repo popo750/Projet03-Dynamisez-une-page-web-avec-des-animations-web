@@ -1,8 +1,14 @@
+/* ************************************
+ * Fichier menu03-min.scss
+ ************************************ */
+ /* *********************************************
+ * div class="container" > div class="menu03"
+ ********************************************* */
 .menu03 {
     background-color: $bg-color-menu03;
     font-family: 'SegoePrint';
 
-    & .title-menu03 {
+    .title-menu03 {
         padding-bottom: 20px;
         background: linear-gradient($degrade-delice-papilles);
         @include background-text;
@@ -27,11 +33,11 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu03 {
+.submenu-origin-menu03 {
     margin: 32px auto;
     @include flex-center;
 
-    & .bord-left {
+    .bord-left {
         width: 220px;
         height: 5px;
         padding: 5px;
@@ -52,7 +58,7 @@
 
     }
 
-    & h3 {
+    h3 {
         padding-top: 10px;
         padding-left: 30px;
         padding-right: 30px;
@@ -61,7 +67,7 @@
         font-weight: normal;
     }
 
-    & .bord-right {
+    .bord-right {
         width: 220px;
         height: 5px;
         padding: 5px;
@@ -84,18 +90,18 @@
 
 .submenu01-menu03 {
 
-    & .bord-left {
-        box-shadow: 0 5px 0 #0228dd;
+    .bord-left {
+        box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #0228dd;
+            border-bottom: 6px solid $dark-blue-menu03;
         }
 
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #0228dd 0%, #0228dd 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $dark-blue-menu03 0%, $dark-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -108,29 +114,29 @@
         }
     }
 
-    & .bord-right {
-        box-shadow: 0 5px 0 #0228dd;
+    .bord-right {
+        box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #0228dd;
+            border-bottom: 6px solid $dark-blue-menu03;
         }
     }
 }
 
 .submenu02-menu03 {
 
-    & .bord-left {
-        box-shadow: 0 5px 0 #0670f3;
+    .bord-left {
+        box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #0670f3;
+            border-bottom: 6px solid $middle-blue-menu03;
         }
 
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #0670f3 0%, #0670f3 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $middle-blue-menu03 0%, $middle-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -143,29 +149,29 @@
         }
     }
 
-    & .bord-right {
-        box-shadow: 0 5px 0 #0670f3;
+    .bord-right {
+        box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #0670f3;
+            border-bottom: 6px solid $middle-blue-menu03;
         }
     }
 }
 
 .submenu03-menu03 {
 
-    & .bord-left {
-        box-shadow: 0 5px 0 #229df9;
+    .bord-left {
+        box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #229df9;
+            border-bottom: 6px solid $light-blue-menu03;
         }
 
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #229df9 0%, #229df9 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $light-blue-menu03 0%, $light-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -178,11 +184,11 @@
         }
     }
 
-    & .bord-right {
-        box-shadow: 0 5px 0 #229df9;
+    .bord-right {
+        box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #229df9;
+            border-bottom: 6px solid $light-blue-menu03;
         }
     }
 }
@@ -191,9 +197,9 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
- .repas {
+.repas {
 
-    & .price-menu03 {
+    .price-menu03 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 18px;

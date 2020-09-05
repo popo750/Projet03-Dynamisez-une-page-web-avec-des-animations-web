@@ -1,10 +1,16 @@
+/* ************************************
+ * Fichier menu02-min.scss
+ ************************************ */
+ /* **********************************************
+ * div class="container-all-menu" > div class="menu02"
+ ************************************************* */
 .menu02 {
     background-color: $bg-color-menu02;
 
-    & .title-menu02 {
+    .title-menu02 {
         padding-bottom: 30px;
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
-        background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
+        background: linear-gradient($degrade-chic-francaise);
         @include background-text;
         font-family: 'Croissant One', cursive;
         font-size: 22px;
@@ -16,9 +22,9 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu02 {
+.submenu-origin-menu02 {
 
-    & .bord-left {
+    .bord-left {
         width: 0px;
         height: 0px;
         border-top: 5px solid transparent;
@@ -40,13 +46,13 @@
         }
     }
 
-    & h3 {
+    h3 {
         background-color: $bg-color-menu02;
         font-size: 20px;
         @include font-baltica;
     }
 
-    & .bord-right {
+    .bord-right {
         /*
         width: 180px;
         height: 2px;
@@ -75,23 +81,23 @@
 
 .submenu01-menu02 {
 
-    & .bord-left {
-        border-right: 160px solid #c67412;
+    .bord-left {
+        border-right: 160px solid $light-brown-menu02;
 
         &:before {
-            border-left: 20px solid #c67412;
+            border-left: 20px solid $light-brown-menu02;
         }
     }
 
-    & h3 {
+    h3 {
         padding-left: $padding01;
         padding-right: $padding01;
-        color: #c67412;
+        color: $light-brown-menu02;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $light-brown-menu02 0%, $light-brown-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -104,34 +110,34 @@
         }
     }
 
-    & .bord-right {
-        border-left: 160px solid #c67412;
+    .bord-right {
+        border-left: 160px solid $light-brown-menu02;
 
         &:after {
-            border-right: 20px solid #c67412;
+            border-right: 20px solid $light-brown-menu02;
         }
     }
 }
 
 .submenu02-menu02 {
 
-    & .bord-left {
-        border-right: 160px solid #a56799;
+    .bord-left {
+        border-right: 160px solid $light-purple-menu02;
 
         &:before {
-            border-left: 20px solid #a56799;
+            border-left: 20px solid $light-purple-menu02;
         }
     }
 
-    & h3 {
+    h3 {
         padding-left: $padding035;
         padding-right: $padding035;
-        color: #a56799;
+        color: $light-purple-menu02;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $light-purple-menu02 0%, $light-purple-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -144,34 +150,34 @@
         }
     }
 
-    & .bord-right {
-        border-left: 160px solid #a56799;
+    .bord-right {
+        border-left: 160px solid $light-purple-menu02;
 
         &:after {
-            border-right: 20px solid #a56799;
+            border-right: 20px solid $light-purple-menu02;
         }
     }
 }
 
 .submenu03-menu02 {
 
-    & .bord-left {
-        border-right: 160px solid #6e4ccc;
+    .bord-left {
+        border-right: 160px solid $dark-purple-menu02;
 
         &:before {
-            border-left: 20px solid #6e4ccc;
+            border-left: 20px solid $dark-purple-menu02;
         }
     }
 
-    & h3 {
+    h3 {
         padding-left: $padding02;
         padding-right: $padding02;
-        color: #6e4ccc;
+        color: $dark-purple-menu02;
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $dark-purple-menu02 0%, $dark-purple-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -184,11 +190,11 @@
         }
     }
 
-    & .bord-right {
-        border-left: 160px solid #6e4ccc;
+    .bord-right {
+        border-left: 160px solid $dark-purple-menu02;
 
         &:after {
-            border-right: 20px solid #6e4ccc;
+            border-right: 20px solid $dark-purple-menu02;
         }
     }
 }
@@ -196,16 +202,16 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste
  ************************************************************************* */
- .sub01 {
-    color: #c67412;
+.sub01 {
+    color: $light-brown-menu02;
 }
 
 .sub02 {
-    color: #a56799;
+    color: $light-purple-menu02;
 }
 
 .sub03 {
-    color: #6e4ccc;
+    color: $dark-purple-menu02;
 }
 
 
@@ -216,7 +222,7 @@
     @include repas;
     @include font-capitolina;
 
-    & .price-menu02 {
+    .price-menu02 {
         margin-left: 20px;
     }
 
