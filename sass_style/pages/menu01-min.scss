@@ -2,7 +2,7 @@
  * Fichier Menu01-min.scss
  ***************************************************** */
 .body-menu01 {
-
+    height: 175vh;
     /* Sur les téléviseurs */
     @media all and (max-width: 1920px) {
         height: 145vh;
