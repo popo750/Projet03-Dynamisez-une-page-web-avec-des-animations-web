@@ -1,3 +1,43 @@
+/* ****************************************************
+ * Fichier Menu01-min.scss
+ ***************************************************** */
+.body-menu01 {
+
+    /* Sur les téléviseurs */
+    @media all and (max-width: 1920px) {
+        height: 145vh;
+    }
+
+    /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 130vh;
+    }
+
+    /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 135vh;
+    }
+
+    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+    // media queries Portable
+    @media all and (max-width: 1024px) {
+        height: 130vh;
+    }
+
+    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+    // media queries Portable
+    @media all and (max-width: 650px) {
+        height: 145vh;
+    }
+
+    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+    // media queries Portable
+    @media all and (max-width: 500px) {
+        height: 145vh;
+    }
+
+}
+
 .container-menu01 {
 
     & .menu01 {

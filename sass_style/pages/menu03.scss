@@ -26,8 +26,15 @@ h2 {
 .container {
     @include flex-center;
 
-    // media queries portable
-        {
+    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+    // media queries Tablette
+    @media all and (max-width: 1024px) {
+        @include flex-center;
+    }
+
+    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+    // media queries Portable
+    @media all and (max-width: 650px) {
         @include flex-center;
     }
 
@@ -41,8 +48,10 @@ h2 {
         background-color: $bg-color-menu03;
         font-family: 'SegoePrint';
 
-        // media queries portable
-            {
+
+        /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+        // media queries Portable
+        @media all and (max-width: 650px) {
             @include flex-center;
         }
 
@@ -65,6 +74,18 @@ h2 {
             font-weight: 400;
             font-style: normal; */
             font-size: 45px;
+
+            /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+            // media queries Tablette
+            @media all and (max-width: 1024px) {
+                @include flex-center;
+            }
+
+            /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
+            // media queries Portable
+            @media all and (max-width: 650px) {
+                @include flex-center;
+            }
         }
     }
 }
