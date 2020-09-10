@@ -11,39 +11,34 @@ footer {
  * AND
  * footer > div class="contact" 
  *********************************************************** */
- footer {
+footer {
     display: flex;
     justify-content: space-between;
     padding: 15px 50px;
     font-size: 20px;
-    
+
     @include font-montserrat-medium;
 
-        /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-    // media queries Portable
+
     @media all and (max-width: 1920px) {
         font-size: 25px;
     }
 
-    /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-        // media queries Portable
-        @media all and (max-width: 650px) {
-            font-size: 18px;
-        }
+    @media all and (max-width: 650px) {
+        font-size: 18px;
+    }
 
-        /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-        // media queries Portable
-        @media all and (max-width: 500px) {
-            font-size: 16px;
-            padding: 12px 30px;
-        }
 
-        /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-        // media queries Portable
-        @media all and (max-width: 350px) {
-            font-size: 14px;
-        }
-    
+    @media all and (max-width: 500px) {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+
+    @media all and (max-width: 350px) {
+        font-size: 14px;
+    }
+
     & a {
         display: inline-block;
         color: $gold;
@@ -70,6 +65,3 @@ footer {
         } */
     }
 }
-
-
-
