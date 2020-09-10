@@ -250,7 +250,8 @@ footer div {
 /* *************************************************
  *  Fichier Accueil.scss
  ************************************************ */
-body {
+.body-accueil {
+  height: 160vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
@@ -259,38 +260,33 @@ body {
   /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
   /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
-@media all and (max-width: 1920px) {
-  body {
+@media all and (min-width: 1280px) and (max-width: 1920px) {
+  .body-accueil {
     height: 160vh;
   }
 }
-@media all and (min-width: 1280px) and (max-width: 1920px) {
-  body {
-    height: 170vh;
-  }
-}
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-  body {
-    height: 170vh;
+  .body-accueil {
+    height: 160vh;
   }
 }
 @media all and (max-width: 1024px) {
-  body {
-    height: 255vh;
+  .body-accueil {
+    height: 245vh;
   }
 }
 @media all and (max-width: 650px) {
-  body {
-    height: 215vh;
-  }
-}
-@media all and (max-width: 500px) {
-  body {
+  .body-accueil {
     height: 205vh;
   }
 }
+@media all and (max-width: 500px) {
+  .body-accueil {
+    height: 190vh;
+  }
+}
 @media all and (max-width: 350px) {
-  body {
+  .body-accueil {
     height: 195vh;
   }
 }
@@ -884,6 +880,7 @@ body {
  * Fichier Menu01-min.scss
  ***************************************************** */
 .body-menu01 {
+  height: 175vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
@@ -1052,6 +1049,7 @@ body {
  * Fichier Menu02-min.scss
  ***************************************************** */
 .body-menu02 {
+  height: 175vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
@@ -1281,6 +1279,7 @@ body {
  * Fichier Menu03-min.scss
  ***************************************************** */
 .body-menu03 {
+  height: 175vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
@@ -1490,6 +1489,7 @@ body {
  * Fichier Menu04-min.scss
  ***************************************************** */
 .body-menu04 {
+  height: 175vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
@@ -1645,6 +1645,7 @@ body {
  * Fichier Mentions-min.scss
  ***************************************************** */
 .body-mentions {
+  height: 175vh;
   /* Sur les téléviseurs */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
   /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
