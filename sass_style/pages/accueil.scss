@@ -6,15 +6,15 @@
 
     /* Sur les téléviseurs */
     @media all and (min-width: 1280px) and (max-width: 1920px) {
-        height: 160vh;
+        height: 200vh;
     }
 
     @media all and (min-width: 1024px) and (max-width: 1280px) {
-        height: 160vh;
+        height: 170vh;
     }
 
     @media all and (max-width: 1024px) {
-        height: 245vh;
+        height: 270vh;
     }
 
     @media all and (max-width: 650px) {
@@ -22,11 +22,11 @@
     }
 
     @media all and (max-width: 500px) {
-        height: 190vh;
+        height: 280vh;
     }
 
-    @media all and (max-width: 350px) {
-        height: 195vh;
+    @media all and (max-width: 400px) {
+        height: 320vh;
     }
 }
 
@@ -46,6 +46,7 @@
  * Position div class container 
  ************************************************ */
 .container {
+    //position: relative;
     width: 1000px;
     padding: 20px;
     margin: 0 auto;
@@ -53,6 +54,12 @@
     @media all and (max-width: 1920px) {
         width: 1400px;
     }
+
+    @media all and (min-width: 1024px) and (max-width: 1400px) {
+        width: 1200px;
+        //transform: translateX(20%);
+        //margin-right: 20%;
+    } 
 
     @media all and (max-width: 1024px) {
         width: 600px;
@@ -99,6 +106,12 @@
         height: 500px;
         margin: 80px 100px;
     }
+
+    @media all and (min-width: 1024px) and (max-width: 1400px) {
+        width: 350px;
+        height: 450px;
+        margin: 40px 60px;
+    } 
 
     @media all and (max-width: 1024px) {
         width: 350px;
@@ -378,11 +391,12 @@
     @media all and (min-width: 1280px) and (max-width: 1920px) {
         width: 30%;
     }
-
+    
     @media all and (min-width: 1024px) and (max-width: 1280px) {
         width: 38%;
         //transform: translateX(20%);
-    }
+        //margin-right: 20%;
+    } 
 
     @media all and (max-width: 1024px) {
         margin-top: 20px;

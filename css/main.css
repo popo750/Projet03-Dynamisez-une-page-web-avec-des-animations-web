@@ -103,8 +103,6 @@ header {
   font-style: normal;
   font-size: 25px;
   letter-spacing: -2px;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   header {
@@ -114,12 +112,12 @@ header {
 }
 @media all and (max-width: 1024px) {
   header {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media all and (max-width: 650px) {
   header {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media all and (max-width: 500px) {
@@ -153,14 +151,15 @@ footer {
   font-family: montserrat, sans-serif;
   font-weight: 500;
   font-style: normal;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   footer {
     font-size: 25px;
+  }
+}
+@media all and (max-width: 1024px) {
+  footer {
+    font-size: 20px;
   }
 }
 @media all and (max-width: 650px) {
@@ -253,26 +252,20 @@ footer div {
 .body-accueil {
   height: 160vh;
   /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-accueil {
-    height: 160vh;
+    height: 200vh;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   .body-accueil {
-    height: 160vh;
+    height: 170vh;
   }
 }
 @media all and (max-width: 1024px) {
   .body-accueil {
-    height: 245vh;
+    height: 270vh;
   }
 }
 @media all and (max-width: 650px) {
@@ -282,12 +275,12 @@ footer div {
 }
 @media all and (max-width: 500px) {
   .body-accueil {
-    height: 190vh;
+    height: 280vh;
   }
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .body-accueil {
-    height: 195vh;
+    height: 320vh;
   }
 }
 
@@ -298,13 +291,15 @@ footer div {
   width: 1000px;
   padding: 20px;
   margin: 0 auto;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .container {
     width: 1400px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1400px) {
+  .container {
+    width: 1200px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -329,7 +324,6 @@ footer div {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1024px) {
   .container .nav {
@@ -355,16 +349,19 @@ footer div {
   0px 0px 30px #e91414,
   0px 0px 40px #e91414; */
   box-shadow: inset 0px 0px 5px #ededed, 0px 0px 10px #ededed, 0px 0px 20px #ededed, 0px 0px 30px #ededed;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .box {
     width: 400px;
     height: 500px;
     margin: 80px 100px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1400px) {
+  .box {
+    width: 350px;
+    height: 450px;
+    margin: 40px 60px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -434,8 +431,6 @@ footer div {
 .box > .content:hover {
   transform: scale(1.5);
   opacity: 0.6;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 500px) {
   .box > .content:hover {
@@ -456,10 +451,6 @@ footer div {
   padding-top: 20px;
   font-size: 2em;
   font-weight: bold;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .box > .content h3 {
@@ -496,8 +487,6 @@ footer div {
   background: linear-gradient(to right, #f15861, #f78f6a);
   margin-bottom: 5px;
   font-size: 40px;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .note-enchantee i {
@@ -516,10 +505,6 @@ footer div {
   font-family: ccsignlanguage, sans-serif;
   font-weight: 400;
   font-style: normal;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .note-enchantee .no-effect {
@@ -564,9 +549,6 @@ footer div {
   background: linear-gradient(160deg, #d8852e 30%, #8f5aff 70%);
   font-family: "Croissant One", cursive;
   font-size: 20px;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .chic-francaise h2 {
@@ -610,9 +592,6 @@ footer div {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .delice-papilles h2 {
@@ -643,9 +622,6 @@ footer div {
 .palette-gout h2 {
   background: linear-gradient(to right, #499c40, #beff7f);
   font-family: "kaushan_scriptregular";
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .palette-gout h2 {
@@ -687,15 +663,6 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .prochainement {
@@ -763,8 +730,6 @@ footer div {
   -webkit-animation: dottedPreloader 1s linear infinite alternate;
   -moz-animation: dottedPreloader 1s linear infinite alternate;
   animation: dottedPreloader 1s linear infinite alternate;
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 650px) {
   .prochainement span {
@@ -812,6 +777,7 @@ footer div {
 }
 
 .container-all-menu {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -850,6 +816,13 @@ footer div {
   /* padding: Haut Gauche Bas Droite */
   padding: 50px 0 20px 0;
 }
+@media all and (max-width: 500px) {
+  .titre-h2 {
+    font-size: 20px;
+    /* padding: Haut Gauche Bas Droite */
+    padding: 30px 0 10px 0;
+  }
+}
 
 .menu-of-2-3-4 {
   /* padding: Haut Gauche Bas Droite */
@@ -882,11 +855,6 @@ footer div {
 .body-menu01 {
   height: 175vh;
   /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .body-menu01 {
@@ -1051,11 +1019,6 @@ footer div {
 .body-menu02 {
   height: 175vh;
   /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-menu02 {
@@ -1280,13 +1243,6 @@ footer div {
  ***************************************************** */
 .body-menu03 {
   height: 175vh;
-  /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-menu03 {
@@ -1491,11 +1447,6 @@ footer div {
 .body-menu04 {
   height: 175vh;
   /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-menu04 {
@@ -1647,11 +1598,6 @@ footer div {
 .body-mentions {
   height: 175vh;
   /* Sur les téléviseurs */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
-  /*Pour tous les Mobiles qui ont une largeur maximale du Périphérique*/
 }
 @media all and (max-width: 1920px) {
   .body-mentions {
@@ -1660,27 +1606,22 @@ footer div {
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-mentions {
-    height: 120vh;
+    height: 160vh;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   .body-mentions {
-    height: 120vh;
+    height: 180vh;
   }
 }
 @media all and (max-width: 1024px) {
   .body-mentions {
-    height: 120vh;
-  }
-}
-@media all and (max-width: 650px) {
-  .body-mentions {
-    height: 115vh;
+    height: 170vh;
   }
 }
 @media all and (max-width: 500px) {
   .body-mentions {
-    height: 110vh;
+    height: 150vh;
   }
 }
 
@@ -1706,8 +1647,23 @@ footer div {
   padding: 50px;
   background-color: #edefef;
 }
+@media all and (max-width: 1024px) {
+  .menu-mentions {
+    padding: 30px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu-mentions {
+    padding: 10px;
+  }
+}
 .menu-mentions .title-mentions-legales {
   padding-bottom: 20px;
+}
+@media all and (max-width: 1024px) {
+  .menu-mentions .title-mentions-legales {
+    padding-bottom: 5px;
+  }
 }
 
 .submenu-mentions .bord-left {
@@ -1715,11 +1671,44 @@ footer div {
   height: 5px;
   background: linear-gradient(to right, #499c40, #beff7f);
 }
+@media all and (max-width: 1024px) {
+  .submenu-mentions .bord-left {
+    width: 150px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-mentions .bord-left {
+    width: 100px;
+  }
+}
 .submenu-mentions h3 {
   padding-left: 30px;
   padding-right: 30px;
   background-color: #edefef;
   font-size: 20px;
+}
+@media all and (max-width: 500px) {
+  .submenu-mentions h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+  }
+}
+.submenu-mentions .staff-title {
+  padding-left: 47px;
+  padding-right: 47px;
+}
+@media all and (max-width: 1024px) {
+  .submenu-mentions .staff-title {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-mentions .staff-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .submenu-mentions span {
   /* Propriété 01 : */
@@ -1739,15 +1728,40 @@ footer div {
   height: 5px;
   background: linear-gradient(to left, #499c40, #beff7f);
 }
+@media all and (max-width: 1024px) {
+  .submenu-mentions .bord-right {
+    width: 150px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-mentions .bord-right {
+    width: 100px;
+  }
+}
 
 .liste-mentions section {
   padding-bottom: 20px;
+}
+@media all and (max-width: 1024px) {
+  .liste-mentions section {
+    padding-bottom: 10px;
+  }
 }
 .liste-mentions section .sublist {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "SegoePrint";
+}
+@media all and (max-width: 1024px) {
+  .liste-mentions section .sublist {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 650px) {
+  .liste-mentions section .sublist {
+    font-size: 12px;
+  }
 }
 .liste-mentions section .staff li {
   transform: translateX(15%);
@@ -1771,6 +1785,11 @@ footer div {
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
+}
+@media all and (max-width: 650px) {
+  .liste-mentions section li .ohmyfood {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
