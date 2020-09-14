@@ -863,27 +863,27 @@ footer div {
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-menu01 {
-    height: 130vh;
+    height: 165vh;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   .body-menu01 {
-    height: 135vh;
+    height: 165vh;
   }
 }
 @media all and (max-width: 1024px) {
   .body-menu01 {
-    height: 130vh;
+    height: 150vh;
   }
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 750px) {
   .body-menu01 {
-    height: 145vh;
+    height: 175vh;
   }
 }
 @media all and (max-width: 500px) {
   .body-menu01 {
-    height: 145vh;
+    height: 175vh;
   }
 }
 
@@ -891,8 +891,28 @@ footer div {
   padding: 50px 0px;
   background-color: #fcdfdb;
 }
+@media all and (max-width: 750px) {
+  .container-menu01 .menu01 {
+    padding: 35px 0px;
+  }
+}
+@media all and (max-width: 500px) {
+  .container-menu01 .menu01 {
+    padding: 20px 0px;
+  }
+}
 .container-menu01 .menu01 .title-menu01 {
   padding-bottom: 20px;
+}
+@media all and (max-width: 750px) {
+  .container-menu01 .menu01 .title-menu01 {
+    padding-bottom: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  .container-menu01 .menu01 .title-menu01 {
+    padding-bottom: 10px;
+  }
 }
 .container-menu01 .menu01 .title-menu01 i {
   font-size: 60px;
@@ -903,6 +923,16 @@ footer div {
   color: transparent;
   padding-bottom: 10px;
 }
+@media all and (max-width: 750px) {
+  .container-menu01 .menu01 .title-menu01 i {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 500px) {
+  .container-menu01 .menu01 .title-menu01 i {
+    font-size: 40px;
+  }
+}
 .container-menu01 .menu01 .title-menu01 h2 {
   /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
    * du site : https://fonts.adobe.com/
@@ -912,11 +942,31 @@ footer div {
   font-style: normal;
   font-size: 35px;
 }
+@media all and (max-width: 750px) {
+  .container-menu01 .menu01 .title-menu01 h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 500px) {
+  .container-menu01 .menu01 .title-menu01 h2 {
+    font-size: 25px;
+  }
+}
 .container-menu01 .menu01 .pied-menu01 {
   padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media all and (max-width: 750px) {
+  .container-menu01 .menu01 .pied-menu01 {
+    padding-top: 20px;
+  }
+}
+@media all and (max-width: 500px) {
+  .container-menu01 .menu01 .pied-menu01 {
+    padding-top: 10px;
+  }
 }
 
 /* ****************************************************
@@ -926,6 +976,32 @@ footer div {
   width: 600px;
   height: 5px;
   background-color: #000;
+}
+@media all and (max-width: 750px) {
+  .submenu-origin-menu01 {
+    width: 550px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu01 {
+    width: 450px;
+  }
+}
+@media all and (max-width: 450px) {
+  .submenu-origin-menu01 {
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .submenu-origin-menu01 {
+    width: 350px;
+  }
+}
+@media all and (max-width: 350px) {
+  .submenu-origin-menu01 {
+    width: 300px;
+    height: 4px;
+  }
 }
 .submenu-origin-menu01 h3 {
   background-color: #fcdfdb;
@@ -940,6 +1016,11 @@ footer div {
   font-style: normal; */
   font-family: "SegoePrint";
   font-weight: bold;
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu01 h3 {
+    font-size: 15px;
+  }
 }
 .submenu-origin-menu01 span {
   /* Propriété 01 : */
@@ -957,6 +1038,16 @@ footer div {
 
 .liste-menu01 {
   padding: 0 60px;
+}
+@media all and (max-width: 750px) {
+  .liste-menu01 {
+    padding: 0 40px;
+  }
+}
+@media all and (max-width: 500px) {
+  .liste-menu01 {
+    padding: 0 40px;
+  }
 }
 
 .submenu01-menu01 h3 {
@@ -986,10 +1077,38 @@ footer div {
   font-style: normal; */
   font-family: "SegoePrint";
 }
+@media all and (max-width: 750px) {
+  .repas .name-menu01 {
+    margin-left: 0px;
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas .name-menu01 {
+    font-size: 12px;
+  }
+}
 .repas .price-menu01 {
   margin-right: -10px;
   font-family: "SegoePrint";
   font-weight: bold;
+}
+@media all and (max-width: 750px) {
+  .repas .price-menu01 {
+    margin-right: -5px;
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas .price-menu01 {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas .price-menu01 {
+    font-size: 12px;
+  }
 }
 
 /* *********************************
@@ -1002,6 +1121,16 @@ footer div {
   color: transparent;
   font-size: 50px;
 }
+@media all and (max-width: 750px) {
+  .pied-menu01 i {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 500px) {
+  .pied-menu01 i {
+    font-size: 30px;
+  }
+}
 .pied-menu01 h2 {
   margin-left: 10px;
   /* Recherche de Fonts Police provenant de l'image "menu-1b.png"
@@ -1011,6 +1140,16 @@ footer div {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
+}
+@media all and (max-width: 750px) {
+  .pied-menu01 h2 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 500px) {
+  .pied-menu01 h2 {
+    font-size: 20px;
+  }
 }
 
 /* ****************************************************
@@ -1059,6 +1198,17 @@ footer div {
   font-family: "Croissant One", cursive;
   font-size: 22px;
 }
+@media all and (max-width: 750px) {
+  .menu02 .title-menu02 {
+    padding-bottom: 20px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu02 .title-menu02 {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
 
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
@@ -1089,6 +1239,17 @@ footer div {
   font-family: baltica, serif;
   font-weight: 700;
   font-style: normal;
+}
+@media all and (max-width: 750px) {
+  .submenu-origin-menu02 h3 {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu02 h3 {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 .submenu-origin-menu02 .bord-right {
   /*
@@ -1179,6 +1340,16 @@ footer div {
 .submenu03-menu02 .bord-left {
   border-right: 160px solid #6e4ccc;
 }
+@media all and (max-width: 750px) {
+  .submenu03-menu02 .bord-left {
+    border-right: 130px solid #6e4ccc;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu03-menu02 .bord-left {
+    border-right: 100px solid #6e4ccc;
+  }
+}
 .submenu03-menu02 .bord-left:before {
   border-left: 20px solid #6e4ccc;
 }
@@ -1202,6 +1373,16 @@ footer div {
 }
 .submenu03-menu02 .bord-right {
   border-left: 160px solid #6e4ccc;
+}
+@media all and (max-width: 750px) {
+  .submenu03-menu02 .bord-right {
+    border-left: 130px solid #6e4ccc;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu03-menu02 .bord-right {
+    border-left: 100px solid #6e4ccc;
+  }
 }
 .submenu03-menu02 .bord-right:after {
   border-right: 20px solid #6e4ccc;
@@ -1234,8 +1415,29 @@ footer div {
   font-weight: 400;
   font-style: normal;
 }
+@media all and (max-width: 750px) {
+  .repas-menu02 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas-menu02 {
+    font-size: 12px;
+  }
+}
 .repas-menu02 .price-menu02 {
   margin-left: 20px;
+}
+@media all and (max-width: 750px) {
+  .repas-menu02 .price-menu02 {
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas-menu02 .price-menu02 {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 /* ****************************************************

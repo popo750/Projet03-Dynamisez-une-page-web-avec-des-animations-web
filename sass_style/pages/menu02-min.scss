@@ -36,6 +36,15 @@
         @include background-text;
         font-family: 'Croissant One', cursive;
         font-size: 22px;
+
+        @media all and (max-width: 750px) {
+            padding-bottom: 20px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-bottom: 15px;
+            font-size: 16px;
+        }
     }
 
 }
@@ -72,6 +81,15 @@
         background-color: $bg-color-menu02;
         font-size: 20px;
         @include font-baltica;
+
+        @media all and (max-width: 750px) {
+            font-size: 18px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 14px;
+            text-align: center;
+        }
     }
 
     & .bord-right {
@@ -186,6 +204,15 @@
     & .bord-left {
         border-right: 160px solid #6e4ccc;
 
+        @media all and (max-width: 750px) {
+            border-right: 130px solid #6e4ccc;
+        }
+    
+        @media all and (max-width: 500px) {
+            border-right: 100px solid #6e4ccc;
+        }
+
+
         &:before {
             border-left: 20px solid #6e4ccc;
         }
@@ -214,6 +241,14 @@
 
     & .bord-right {
         border-left: 160px solid #6e4ccc;
+
+        @media all and (max-width: 750px) {
+            border-left: 130px solid #6e4ccc;
+        }
+    
+        @media all and (max-width: 500px) {
+            border-left: 100px solid #6e4ccc;
+        }
 
         &:after {
             border-right: 20px solid #6e4ccc;
@@ -244,8 +279,25 @@
     @include repas;
     @include font-capitolina;
 
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
     & .price-menu02 {
         margin-left: 20px;
+
+        @media all and (max-width: 750px) {
+            margin-left: 10px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
     }
 
 }

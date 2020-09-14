@@ -3,29 +3,30 @@
  ***************************************************** */
 .body-menu01 {
     height: 175vh;
+
     /* Sur les téléviseurs */
     @media all and (max-width: 1920px) {
         height: 145vh;
     }
 
     @media all and (min-width: 1280px) and (max-width: 1920px) {
-        height: 130vh;
+        height: 165vh;
     }
 
     @media all and (min-width: 1024px) and (max-width: 1280px) {
-        height: 135vh;
+        height: 165vh;
     }
 
     @media all and (max-width: 1024px) {
-        height: 130vh;
+        height: 150vh;
     }
 
-    @media all and (max-width: 650px) {
-        height: 145vh;
+    @media all and (max-width: 750px) {
+        height: 175vh;
     }
 
     @media all and (max-width: 500px) {
-        height: 145vh;
+        height: 175vh;
     }
 
 }
@@ -36,8 +37,24 @@
         padding: 50px 0px;
         background-color: $bg-color-menu01;
 
+        @media all and (max-width: 750px) {
+            padding: 35px 0px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding: 20px 0px;
+        }
+
         & .title-menu01 {
             padding-bottom: 20px;
+
+            @media all and (max-width: 750px) {
+                padding-bottom: 15px;
+            }
+
+            @media all and (max-width: 500px) {
+                padding-bottom: 10px;
+            }
 
             & i {
                 font-size: 60px;
@@ -45,17 +62,41 @@
                 background: linear-gradient(to right, #f15861, #f78f6a);
                 @include background-text;
                 padding-bottom: 10px;
+
+                @media all and (max-width: 750px) {
+                    font-size: 50px;
+                }
+
+                @media all and (max-width: 500px) {
+                    font-size: 40px;
+                }
             }
 
             & h2 {
                 @include font-ccsignlanguage;
                 font-size: 35px;
+
+                @media all and (max-width: 750px) {
+                    font-size: 30px;
+                }
+
+                @media all and (max-width: 500px) {
+                    font-size: 25px;
+                }
             }
         }
 
         & .pied-menu01 {
             padding-top: $padding03;
             @include flex-center;
+
+            @media all and (max-width: 750px) {
+                padding-top: $padding02;
+            }
+
+            @media all and (max-width: 500px) {
+                padding-top: $padding01;
+            }
         }
     }
 }
@@ -64,10 +105,31 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu01 {
+.submenu-origin-menu01 {
     width: 600px;
     height: 5px;
     background-color: #000;
+
+    @media all and (max-width: 750px) {
+        width: 550px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 450px;
+    }
+
+    @media all and (max-width: 450px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 350px;
+    }
+
+    @media all and (max-width: 350px) {
+        width: 300px;
+        height: 4px;
+    }
 
     & h3 {
         background-color: $bg-color-menu01;
@@ -82,6 +144,10 @@
         font-style: normal; */
         font-family: 'SegoePrint';
         font-weight: bold;
+
+        @media all and (max-width: 500px) {
+            font-size: 15px;
+        }
     }
 
     & span {
@@ -102,6 +168,14 @@
 
 .liste-menu01 {
     padding: 0 60px;
+
+    @media all and (max-width: 750px) {
+        padding: 0 40px;
+    }
+
+    @media all and (max-width: 500px) {
+        padding: 0 40px;
+    }
 }
 
 .submenu01-menu01 {
@@ -135,7 +209,7 @@
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
 .repas {
-    
+
     .name-menu01 {
         margin-left: -10px;
         /* font-family: Shadows Into Light Regular; */
@@ -144,12 +218,35 @@
         font-weight: 500;
         font-style: normal; */
         font-family: 'SegoePrint';
+
+        @media all and (max-width: 750px) {
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 12px;
+        }
     }
 
     .price-menu01 {
         margin-right: -10px;
         font-family: 'SegoePrint';
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            margin-right: -5px;
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 12px;
+        }
     }
 }
 
@@ -162,11 +259,28 @@
         background: linear-gradient(to right, #f15861, #f78f6a);
         @include background-text;
         font-size: 50px;
+
+        @media all and (max-width: 750px) {
+            font-size: 40px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 30px;
+
+        }
     }
 
     & h2 {
         margin-left: 10px;
         @include font-ccsignlanguage;
         font-size: 30px;
+
+        @media all and (max-width: 750px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 20px;
+        }
     }
 }
