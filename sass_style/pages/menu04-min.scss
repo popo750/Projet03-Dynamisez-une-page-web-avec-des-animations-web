@@ -5,31 +5,51 @@
     height: 175vh;
     /* Sur les téléviseurs */
     @media all and (min-width: 1280px) and (max-width: 1920px) {
-        height: 140vh;
+        height: 210vh;
     }
 
     @media all and (min-width: 1024px) and (max-width: 1280px) {
-        height: 135vh;
+        height: 205vh;
     }
 
     @media all and (max-width: 1024px) {
-        height: 130vh;
+        height: 200vh;
     }
 
-    @media all and (max-width: 650px) {
-        height: 130vh;
+    @media all and (max-width: 750px) {
+        height: 220vh;
     }
 
     @media all and (max-width: 500px) {
-        height: 130vh;
+        height: 200vh;
     }
 
 }
 
 .menu04 {
-    background-color: $bg-color-menu04;
-    //background-color: red;
+    //background-color: $bg-color-menu04;
+    background-color: red;
     font-family: 'SegoePrint';
+
+    @media all and (max-width: 850px) {
+        width: 800px;
+    }
+
+    @media all and (max-width: 750px) {
+        width: 600px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 300px;
+    }
 
     & .title-menu04 {
         padding-bottom: 20px;
@@ -37,6 +57,19 @@
         @include background-text;
         font-family: 'kaushan_scriptregular';
         font-size: 42px;
+
+        @media all and (max-width: 750px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -56,6 +89,25 @@
     & h3 {
         background-color: $bg-color-menu04;
         font-size: 20px;
+        text-align: center;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 17px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 12px;
+        }
     }
 
     & .bord-right {
@@ -73,6 +125,21 @@
     & h3 {
         padding-left: 70px;
         padding-right: 70px;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
     & span {
@@ -104,6 +171,21 @@
     & h3 {
         padding-left: $padding02;
         padding-right: $padding02;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
     & span {
@@ -135,6 +217,7 @@
     & h3 {
         padding-left: 15px;
         padding-right: 15px;
+
     }
 
     & span {
@@ -163,10 +246,44 @@
  ************************************************************************* */
  .repas {
 
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 13px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 10px;
+    }
+
     & .price-menu04 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 20px;
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            font-size: 18px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 600px) {
+            font-size: 16px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 12px;
+        }
     }
 }

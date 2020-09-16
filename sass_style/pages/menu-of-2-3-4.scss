@@ -10,9 +10,8 @@
     padding: 50px 0 20px 0;
 
     @media all and (max-width: 500px) {
-        font-size: 20px;
         /* padding: Haut Gauche Bas Droite */
-    padding: 30px 0 10px 0;
+        padding: 30px 0 10px 0;
     }
 }
 
@@ -23,6 +22,11 @@
         padding: 50px;
         padding-top: 100px;
         padding-bottom: 150px;*/
+
+    @media all and (max-width: 500px) {
+        /* padding: Haut Gauche Bas Droite */
+        padding: 20px 10px 80px 10px;
+    }
 
     & .title-bg-text {
         @include background-text;
@@ -39,4 +43,19 @@
     /* ou */
     /* padding: Haut-Bas  Gauche-Droite */
     padding: 0px 70px;
+
+    @media all and (max-width: 750px) {
+        /* padding: Haut-Bas  Gauche-Droite */
+        padding: 0px 50px;
+    }
+
+    @media all and (max-width: 500px) {
+        /* padding: Haut-Bas  Gauche-Droite */
+        padding: 0px 40px;
+    }
+
+    @media all and (max-width: 400px) {
+        /* padding: Haut-Bas  Gauche-Droite */
+        padding: 0px 20px;
+    }
 }

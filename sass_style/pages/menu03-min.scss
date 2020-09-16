@@ -1,7 +1,7 @@
 /* ****************************************************
  * Fichier Menu03-min.scss
  ***************************************************** */
- .body-menu03 {
+.body-menu03 {
     height: 175vh;
 
     @media all and (min-width: 1280px) and (max-width: 1920px) {
@@ -35,6 +35,26 @@
     background-color: $bg-color-menu03;
     font-family: 'SegoePrint';
 
+    @media all and (max-width: 850px) {
+        width: 800px;
+    }
+    
+    @media all and (max-width: 750px) {
+        width: 600px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 300px;
+    }
+
     & .title-menu03 {
         padding-bottom: 20px;
         background: linear-gradient($degrade-delice-papilles);
@@ -53,6 +73,19 @@
             font-weight: 400;
             font-style: normal; */
         font-size: 45px;
+
+        @media all and (max-width: 750px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -60,7 +93,7 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
- .submenu-origin-menu03 {
+.submenu-origin-menu03 {
     margin: 32px auto;
     @include flex-center;
 
@@ -72,6 +105,14 @@
         border-bottom-left-radius: 20px 1em;
 
         position: relative;
+
+        @media all and (max-width: 750px) {
+            width: 160px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
 
         &:after {
             content: '';
@@ -92,6 +133,26 @@
         background-color: $bg-color-menu03;
         font-size: 20px;
         font-weight: normal;
+
+        text-align: center;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 17px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 12px;
+        }
     }
 
     & .bord-right {
@@ -102,6 +163,14 @@
         border-bottom-right-radius: 20px 1em;
 
         position: relative;
+
+        @media all and (max-width: 750px) {
+            width: 160px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
 
         &:before {
             content: '';
@@ -118,17 +187,17 @@
 .submenu01-menu03 {
 
     & .bord-left {
-        box-shadow: 0 5px 0 #0228dd;
+        box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #0228dd;
+            border-bottom: 6px solid $dark-blue-menu03;
         }
 
     }
 
     & span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #0228dd 0%, #0228dd 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $dark-blue-menu03 0%, $dark-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -142,10 +211,10 @@
     }
 
     & .bord-right {
-        box-shadow: 0 5px 0 #0228dd;
+        box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #0228dd;
+            border-bottom: 6px solid $dark-blue-menu03;
         }
     }
 }
@@ -153,17 +222,17 @@
 .submenu02-menu03 {
 
     & .bord-left {
-        box-shadow: 0 5px 0 #0670f3;
+        box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #0670f3;
+            border-bottom: 6px solid $middle-blue-menu03;
         }
 
     }
 
     & span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #0670f3 0%, #0670f3 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $middle-blue-menu03 0%, $middle-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -177,10 +246,10 @@
     }
 
     & .bord-right {
-        box-shadow: 0 5px 0 #0670f3;
+        box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #0670f3;
+            border-bottom: 6px solid $middle-blue-menu03;
         }
     }
 }
@@ -188,17 +257,17 @@
 .submenu03-menu03 {
 
     & .bord-left {
-        box-shadow: 0 5px 0 #229df9;
+        box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:after {
-            border-bottom: 6px solid #229df9;
+            border-bottom: 6px solid $light-blue-menu03;
         }
 
     }
 
     & span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, #229df9 0%, #229df9 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, $light-blue-menu03 0%, $light-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
          * background-size : XX largeur XX hauteur;
          * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -212,10 +281,10 @@
     }
 
     & .bord-right {
-        box-shadow: 0 5px 0 #229df9;
+        box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:before {
-            border-bottom: 6px solid #229df9;
+            border-bottom: 6px solid $light-blue-menu03;
         }
     }
 }
@@ -224,12 +293,45 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
- .repas {
+.repas {
+
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 13px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 10px;
+    }
 
     & .price-menu03 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 18px;
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 12px;
+        }
     }
 }

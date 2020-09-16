@@ -164,18 +164,18 @@ footer {
 }
 @media all and (max-width: 650px) {
   footer {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media all and (max-width: 500px) {
   footer {
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 30px;
   }
 }
 @media all and (max-width: 350px) {
   footer {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 footer a {
@@ -818,7 +818,6 @@ footer div {
 }
 @media all and (max-width: 500px) {
   .titre-h2 {
-    font-size: 20px;
     /* padding: Haut Gauche Bas Droite */
     padding: 30px 0 10px 0;
   }
@@ -831,6 +830,12 @@ footer div {
       padding: 50px;
       padding-top: 100px;
       padding-bottom: 150px;*/
+}
+@media all and (max-width: 500px) {
+  .menu-of-2-3-4 {
+    /* padding: Haut Gauche Bas Droite */
+    padding: 20px 10px 80px 10px;
+  }
 }
 .menu-of-2-3-4 .title-bg-text {
   background-clip: text;
@@ -847,6 +852,24 @@ footer div {
   /* ou */
   /* padding: Haut-Bas  Gauche-Droite */
   padding: 0px 70px;
+}
+@media all and (max-width: 750px) {
+  .liste {
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 50px;
+  }
+}
+@media all and (max-width: 500px) {
+  .liste {
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 40px;
+  }
+}
+@media all and (max-width: 400px) {
+  .liste {
+    /* padding: Haut-Bas  Gauche-Droite */
+    padding: 0px 20px;
+  }
 }
 
 /* ****************************************************
@@ -1188,6 +1211,26 @@ footer div {
 .menu02 {
   background-color: #fff5fe;
 }
+@media all and (max-width: 750px) {
+  .menu02 {
+    width: 600px;
+  }
+}
+@media all and (max-width: 600px) {
+  .menu02 {
+    width: 500px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu02 {
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .menu02 {
+    width: 400px;
+  }
+}
 .menu02 .title-menu02 {
   padding-bottom: 30px;
   /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
@@ -1232,6 +1275,20 @@ footer div {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
+@media all and (max-width: 750px) {
+  .submenu-origin-menu02 .bord-left:before {
+    position: absolute;
+    top: -5px;
+    left: 130px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu02 .bord-left:before {
+    position: absolute;
+    top: -5px;
+    left: 100px;
+  }
+}
 .submenu-origin-menu02 h3 {
   background-color: #fff5fe;
   font-size: 20px;
@@ -1239,6 +1296,7 @@ footer div {
   font-family: baltica, serif;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 @media all and (max-width: 750px) {
   .submenu-origin-menu02 h3 {
@@ -1248,7 +1306,6 @@ footer div {
 @media all and (max-width: 500px) {
   .submenu-origin-menu02 h3 {
     font-size: 14px;
-    text-align: center;
   }
 }
 .submenu-origin-menu02 .bord-right {
@@ -1274,9 +1331,33 @@ footer div {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
+@media all and (max-width: 750px) {
+  .submenu-origin-menu02 .bord-right:after {
+    position: absolute;
+    top: -5px;
+    right: 130px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu02 .bord-right:after {
+    position: absolute;
+    top: -5px;
+    right: 100px;
+  }
+}
 
 .submenu01-menu02 .bord-left {
   border-right: 160px solid #c67412;
+}
+@media all and (max-width: 750px) {
+  .submenu01-menu02 .bord-left {
+    border-right: 130px solid #c67412;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu01-menu02 .bord-left {
+    border-right: 100px solid #c67412;
+  }
 }
 .submenu01-menu02 .bord-left:before {
   border-left: 20px solid #c67412;
@@ -1302,12 +1383,32 @@ footer div {
 .submenu01-menu02 .bord-right {
   border-left: 160px solid #c67412;
 }
+@media all and (max-width: 750px) {
+  .submenu01-menu02 .bord-right {
+    border-left: 130px solid #c67412;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu01-menu02 .bord-right {
+    border-left: 100px solid #c67412;
+  }
+}
 .submenu01-menu02 .bord-right:after {
   border-right: 20px solid #c67412;
 }
 
 .submenu02-menu02 .bord-left {
   border-right: 160px solid #a56799;
+}
+@media all and (max-width: 750px) {
+  .submenu02-menu02 .bord-left {
+    border-right: 130px solid #a56799;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu02-menu02 .bord-left {
+    border-right: 100px solid #a56799;
+  }
 }
 .submenu02-menu02 .bord-left:before {
   border-left: 20px solid #a56799;
@@ -1332,6 +1433,16 @@ footer div {
 }
 .submenu02-menu02 .bord-right {
   border-left: 160px solid #a56799;
+}
+@media all and (max-width: 750px) {
+  .submenu02-menu02 .bord-right {
+    border-left: 130px solid #a56799;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu02-menu02 .bord-right {
+    border-left: 100px solid #a56799;
+  }
 }
 .submenu02-menu02 .bord-right:after {
   border-right: 20px solid #a56799;
@@ -1481,6 +1592,31 @@ footer div {
   background-color: #edefef;
   font-family: "SegoePrint";
 }
+@media all and (max-width: 850px) {
+  .menu03 {
+    width: 800px;
+  }
+}
+@media all and (max-width: 750px) {
+  .menu03 {
+    width: 600px;
+  }
+}
+@media all and (max-width: 600px) {
+  .menu03 {
+    width: 500px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu03 {
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .menu03 {
+    width: 300px;
+  }
+}
 .menu03 .title-menu03 {
   padding-bottom: 20px;
   background: linear-gradient(to right, #0235e1, #0889fb);
@@ -1502,6 +1638,22 @@ footer div {
       font-style: normal; */
   font-size: 45px;
 }
+@media all and (max-width: 750px) {
+  .menu03 .title-menu03 {
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu03 .title-menu03 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 400px) {
+  .menu03 .title-menu03 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
 
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
@@ -1520,6 +1672,16 @@ footer div {
   border-bottom-left-radius: 20px 1em;
   position: relative;
 }
+@media all and (max-width: 750px) {
+  .submenu-origin-menu03 .bord-left {
+    width: 160px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu03 .bord-left {
+    width: 100px;
+  }
+}
 .submenu-origin-menu03 .bord-left:after {
   content: "";
   position: absolute;
@@ -1536,6 +1698,28 @@ footer div {
   background-color: #edefef;
   font-size: 20px;
   font-weight: normal;
+  text-align: center;
+}
+@media all and (max-width: 750px) {
+  .submenu-origin-menu03 h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu03 h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 400px) {
+  .submenu-origin-menu03 h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
 }
 .submenu-origin-menu03 .bord-right {
   width: 220px;
@@ -1544,6 +1728,16 @@ footer div {
   /* Arrondir bordure Gauche Bas */
   border-bottom-right-radius: 20px 1em;
   position: relative;
+}
+@media all and (max-width: 750px) {
+  .submenu-origin-menu03 .bord-right {
+    width: 160px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu03 .bord-right {
+    width: 100px;
+  }
 }
 .submenu-origin-menu03 .bord-right:before {
   content: "";
@@ -1636,11 +1830,52 @@ footer div {
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
+@media all and (max-width: 750px) {
+  .repas {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 400px) {
+  .repas {
+    font-size: 10px;
+  }
+}
 .repas .price-menu03 {
   margin-left: 5px;
   margin-top: -5px;
   font-size: 18px;
   font-weight: bold;
+}
+@media all and (max-width: 750px) {
+  .repas .price-menu03 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas .price-menu03 {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas .price-menu03 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  .repas .price-menu03 {
+    font-size: 12px;
+  }
 }
 
 /* ****************************************************
@@ -1652,33 +1887,58 @@ footer div {
 }
 @media all and (min-width: 1280px) and (max-width: 1920px) {
   .body-menu04 {
-    height: 140vh;
+    height: 210vh;
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
   .body-menu04 {
-    height: 135vh;
+    height: 205vh;
   }
 }
 @media all and (max-width: 1024px) {
   .body-menu04 {
-    height: 130vh;
+    height: 200vh;
   }
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 750px) {
   .body-menu04 {
-    height: 130vh;
+    height: 220vh;
   }
 }
 @media all and (max-width: 500px) {
   .body-menu04 {
-    height: 130vh;
+    height: 200vh;
   }
 }
 
 .menu04 {
-  background-color: #fdfffd;
+  background-color: red;
   font-family: "SegoePrint";
+}
+@media all and (max-width: 850px) {
+  .menu04 {
+    width: 800px;
+  }
+}
+@media all and (max-width: 750px) {
+  .menu04 {
+    width: 600px;
+  }
+}
+@media all and (max-width: 600px) {
+  .menu04 {
+    width: 500px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu04 {
+    width: 400px;
+  }
+}
+@media all and (max-width: 400px) {
+  .menu04 {
+    width: 300px;
+  }
 }
 .menu04 .title-menu04 {
   padding-bottom: 20px;
@@ -1688,6 +1948,22 @@ footer div {
   color: transparent;
   font-family: "kaushan_scriptregular";
   font-size: 42px;
+}
+@media all and (max-width: 750px) {
+  .menu04 .title-menu04 {
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu04 .title-menu04 {
+    font-size: 25px;
+  }
+}
+@media all and (max-width: 400px) {
+  .menu04 .title-menu04 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 /* ****************************************************
@@ -1706,6 +1982,28 @@ footer div {
 .submenu-origin-menu04 h3 {
   background-color: #fdfffd;
   font-size: 20px;
+  text-align: center;
+}
+@media all and (max-width: 750px) {
+  .submenu-origin-menu04 h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu-origin-menu04 h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 400px) {
+  .submenu-origin-menu04 h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
 }
 .submenu-origin-menu04 .bord-right {
   height: 5px;
@@ -1718,6 +2016,24 @@ footer div {
 .submenu01-menu04 h3 {
   padding-left: 70px;
   padding-right: 70px;
+}
+@media all and (max-width: 750px) {
+  .submenu01-menu04 h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu01-menu04 h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 400px) {
+  .submenu01-menu04 h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .submenu01-menu04 span {
   /* Propriété 01 : */
@@ -1742,6 +2058,24 @@ footer div {
 .submenu02-menu04 h3 {
   padding-left: 20px;
   padding-right: 20px;
+}
+@media all and (max-width: 750px) {
+  .submenu02-menu04 h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media all and (max-width: 500px) {
+  .submenu02-menu04 h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 400px) {
+  .submenu02-menu04 h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .submenu02-menu04 span {
   /* Propriété 01 : */
@@ -1787,11 +2121,53 @@ footer div {
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
+@media all and (max-width: 750px) {
+  .repas {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 400px) {
+  .repas {
+    font-size: 10px;
+  }
+}
 .repas .price-menu04 {
   margin-left: 5px;
   margin-top: -5px;
   font-size: 20px;
   font-weight: bold;
+}
+@media all and (max-width: 750px) {
+  .repas .price-menu04 {
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media all and (max-width: 600px) {
+  .repas .price-menu04 {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 500px) {
+  .repas .price-menu04 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  .repas .price-menu04 {
+    font-size: 12px;
+  }
 }
 
 /* ****************************************************
