@@ -35,6 +35,7 @@
 .menu03 {
     background-color: $bg-color-menu03;
     font-family: 'SegoePrint';
+    margin-bottom: 100px;
 
     @media all and (max-width: 850px) {
         width: 800px;

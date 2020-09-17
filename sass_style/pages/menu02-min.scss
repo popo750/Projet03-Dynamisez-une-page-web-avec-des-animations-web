@@ -1,10 +1,14 @@
 /* ****************************************************
  * Fichier Menu02-min.scss
  ***************************************************** */
+ /* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+ /*
 .body-menu02 {
     height: 175vh;
 
-    /* Sur les téléviseurs */
     @media all and (min-width: 1280px) and (max-width: 1920px) {
         height: 120vh;
     }
@@ -25,10 +29,11 @@
         height: 125vh;
     }
 
-}
+} */
 
 .menu02 {
     background-color: $bg-color-menu02;
+    margin-bottom: 100px;
 
     @media all and (max-width: 750px) {
         width: 600px;
@@ -43,7 +48,7 @@
     }
 
     @media all and (max-width: 400px) {
-        width: 400px;
+        width: 350px;
     }
 
     & .title-menu02 {

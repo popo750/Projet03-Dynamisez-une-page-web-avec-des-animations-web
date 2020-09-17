@@ -61,9 +61,6 @@
 
     @media all and (min-width: 1024px) and (max-width: 1400px) {
         max-width: 1200px;
-        min-width: 1200px;
-        //transform: translateX(20%);
-        //margin-right: 20%;
     } 
 
     @media all and (max-width: 1024px) {
@@ -77,7 +74,7 @@
     }
 
     @media all and (max-width: 350px) {
-        width: 300px;
+        max-width: 300px;
     }
 
     & .nav {
@@ -387,7 +384,7 @@
     @include font-montserrat-medium;
     @include flex-center;
 
-    margin-bottom: 300px;
+    margin-bottom: 350px;
 
     @media all and (max-width: 1920px) {
         padding: 10px 0;
@@ -403,8 +400,6 @@
     
     @media all and (min-width: 1024px) and (max-width: 1280px) {
         width: 38%;
-        //transform: translateX(20%);
-        //margin-right: 20%;
     } 
 
     @media all and (max-width: 1024px) {
@@ -414,7 +409,7 @@
 
     @media all and (max-width: 820px) {
         width: 55%;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     @media all and (max-width: 650px) {
@@ -451,8 +446,6 @@
         background-color: $gold;
         margin: 0 10px;
 
-        -webkit-animation: dottedPreloader 1s linear infinite alternate;
-        -moz-animation: dottedPreloader 1s linear infinite alternate;
         animation: dottedPreloader 1s linear infinite alternate;
 
         @media all and (max-width: 650px) {

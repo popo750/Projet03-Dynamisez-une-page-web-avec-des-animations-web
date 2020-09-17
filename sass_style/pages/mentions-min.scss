@@ -1,10 +1,14 @@
 /* ****************************************************
  * Fichier Mentions-min.scss
  ***************************************************** */
+/* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+/*
 .body-mentions {
     height: 175vh;
 
-    /* Sur les téléviseurs */
     @media all and (max-width: 1920px) {
         height: 145vh;
     }
@@ -25,7 +29,7 @@
         height: 150vh;
     }
 
-}
+} */
 
 /* *************************************************
  * Position div class container 
@@ -36,7 +40,7 @@
 }
 
 .little {
-    & h2 {
+    h2 {
         @include font-Aktiv-Grotesk-Bold;
     }
 }
@@ -44,16 +48,17 @@
 .menu-mentions {
     padding: 50px;
     background-color: $bg-color-menu03;
+    margin-bottom: 100px;
 
     @media all and (max-width: 1024px) {
         padding: 30px;
     }
 
     @media all and (max-width: 500px) {
-        padding: 10px;
+        padding: 15px;
     }
 
-    & .title-mentions-legales {
+    .title-mentions-legales {
         padding-bottom: 20px;
         //color: #fdcb46
 
@@ -65,7 +70,7 @@
 
 .submenu-mentions {
 
-    & .bord-left {
+    .bord-left {
         width: 200px;
         height: 5px;
         background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
@@ -79,7 +84,7 @@
         }
     }
 
-    & h3 {
+    h3 {
         padding-left: $padding03;
         padding-right: $padding03;
         background-color: $bg-color-menu03;
@@ -107,7 +112,7 @@
         }
     }
 
-    & span {
+    span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $gold 0%, $gold 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -122,7 +127,7 @@
         }
     }
 
-    & .bord-right {
+    .bord-right {
         width: 200px;
         height: 5px;
         background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
@@ -144,7 +149,7 @@
         padding-bottom: $padding01;
     }
 
-    & .sublist {
+    .sublist {
         @include flex-center;
         font-family: 'SegoePrint';
 
@@ -157,24 +162,20 @@
         }
     }
 
-    & .staff li {
-        transform: translateX(15%);
 
-    }
-
-    & li {
+    li {
         padding: 5px 0;
         list-style: none;
 
-        & span {
+        span {
             font-weight: 600;
         }
 
-        & .resto {
+        .resto {
             color: $gold;
         }
 
-        & .ohmyfood {
+        .ohmyfood {
             @include font-Aktiv-Grotesk-Bold;
             font-size: 20px;
 

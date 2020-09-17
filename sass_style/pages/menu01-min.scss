@@ -1,10 +1,14 @@
 /* ****************************************************
  * Fichier Menu01-min.scss
  ***************************************************** */
+/* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+/*
 .body-menu01 {
     height: 175vh;
 
-    /* Sur les téléviseurs */
     @media all and (max-width: 1920px) {
         height: 145vh;
     }
@@ -29,20 +33,37 @@
         height: 175vh;
     }
 
-}
+} */
 
 .container-menu01 {
 
     & .menu01 {
         padding: 50px 0px;
         background-color: $bg-color-menu01;
+        margin-bottom: 100px;
 
         @media all and (max-width: 750px) {
             padding: 35px 0px;
         }
 
         @media all and (max-width: 500px) {
-            padding: 20px 0px;
+            padding: 20px 5px;
+        }
+
+        @media all and (max-width: 750px) {
+            max-width: 600px;
+        }
+
+        @media all and (max-width: 600px) {
+            max-width: 500px;
+        }
+
+        @media all and (max-width: 500px) {
+            max-width: 450px;
+        }
+
+        @media all and (max-width: 400px) {
+            max-width: 350px;
         }
 
         & .title-menu01 {
@@ -114,21 +135,25 @@
         width: 550px;
     }
 
-    @media all and (max-width: 500px) {
+    @media all and (max-width: 600px) {
         width: 450px;
     }
 
-    @media all and (max-width: 450px) {
+    @media all and (max-width: 500px) {
         width: 400px;
+        height: 4px;
     }
 
-    @media all and (max-width: 400px) {
+    @media all and (max-width: 450px) {
         width: 350px;
     }
 
-    @media all and (max-width: 350px) {
+    @media all and (max-width: 400px) {
         width: 300px;
-        height: 4px;
+    }
+
+    @media all and (max-width: 350px) {
+        width: 200px;
     }
 
     & h3 {
@@ -146,7 +171,11 @@
         font-weight: bold;
 
         @media all and (max-width: 500px) {
-            font-size: 15px;
+            font-size: 18px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 16px;
         }
     }
 
@@ -183,6 +212,11 @@
     & h3 {
         padding-left: $padding05;
         padding-right: $padding05;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding04;
+            padding-right: $padding04;
+        }
     }
 
 }
@@ -192,6 +226,11 @@
     & h3 {
         padding-left: $padding04;
         padding-right: $padding04;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding03;
+            padding-right: $padding03;
+        }
     }
 
 }
@@ -201,6 +240,11 @@
     & h3 {
         padding-left: $padding02;
         padding-right: $padding02;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding01;
+            padding-right: $padding01;
+        }
     }
 
 }
@@ -236,7 +280,7 @@
 
         @media all and (max-width: 750px) {
             margin-right: -5px;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         @media all and (max-width: 600px) {
@@ -245,6 +289,10 @@
         }
 
         @media all and (max-width: 500px) {
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
             font-size: 12px;
         }
     }
