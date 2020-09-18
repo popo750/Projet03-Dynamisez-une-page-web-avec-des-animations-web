@@ -1,20 +1,75 @@
-/* ************************************
- * Fichier menu04-min.scss
- ************************************ */
- /* *****************************************************
- * div class="container-all-menu" > div class="menu04"
+/* ****************************************************
+ * Fichier Menu04-min.scss
  ***************************************************** */
+ /* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+ /*
+ .body-menu04 {
+    height: 175vh;
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 210vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 205vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 200vh;
+    }
+    @media all and (max-width: 750px) {
+        height: 220vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 200vh;
+    }
+} */
 
 .menu04 {
     background-color: $bg-color-menu04;
+    //background-color: red;
     font-family: 'SegoePrint';
+    margin-bottom: 100px;
 
-    .title-menu04 {
+    @media all and (max-width: 850px) {
+        width: 800px;
+    }
+
+    @media all and (max-width: 750px) {
+        width: 600px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 300px;
+    }
+
+    & .title-menu04 {
         padding-bottom: 20px;
         background: linear-gradient($degrade-palette-gout);
         @include background-text;
         font-family: 'kaushan_scriptregular';
         font-size: 42px;
+
+        @media all and (max-width: 750px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -22,21 +77,40 @@
 /* ****************************************************
  * Tous les div class="submenu" ( 01, 02 et 03 )
  ***************************************************** */
-.submenu-origin-menu04 {
+ .submenu-origin-menu04 {
     margin: 32px auto;
     @include flex-center;
 
-    .bord-left {
+    & .bord-left {
         height: 5px;
         background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
     }
 
-    h3 {
+    & h3 {
         background-color: $bg-color-menu04;
         font-size: 20px;
+        text-align: center;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 17px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 12px;
+        }
     }
 
-    .bord-right {
+    & .bord-right {
         height: 5px;
         background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
     }
@@ -44,16 +118,31 @@
 
 .submenu01-menu04 {
 
-    .bord-left {
+    & .bord-left {
         width: 280px;
     }
 
-    h3 {
+    & h3 {
         padding-left: 70px;
         padding-right: 70px;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $dark-green-menu04 0%, $dark-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -68,23 +157,38 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         width: 280px;
     }
 }
 
 .submenu02-menu04 {
 
-    .bord-left {
+    & .bord-left {
         width: 270px;
     }
 
-    h3 {
+    & h3 {
         padding-left: $padding02;
         padding-right: $padding02;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $middle-green-menu04 0%, $middle-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -99,23 +203,24 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         width: 270px;
     }
 }
 
 .submenu03-menu04 {
 
-    .bord-left {
+    & .bord-left {
         width: 270px;
     }
 
-    h3 {
+    & h3 {
         padding-left: 15px;
         padding-right: 15px;
+
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $light-green-menu04 0%, $light-green-menu04 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -130,7 +235,7 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         width: 270px;
     }
 }
@@ -139,12 +244,46 @@
 /* **************************************************************************
  * div class container > div class menu > div class liste > div class repas
  ************************************************************************* */
-.repas {
+ .repas {
 
-    .price-menu04 {
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 13px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 10px;
+    }
+
+    & .price-menu04 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 20px;
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            font-size: 18px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 600px) {
+            font-size: 16px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 12px;
+        }
     }
 }

@@ -19,7 +19,31 @@ footer {
 
     @include font-montserrat-medium;
 
-    a {
+
+    @media all and (max-width: 1920px) {
+        font-size: 25px;
+    }
+
+    @media all and (max-width: 1024px) {
+        font-size: 20px;
+    }
+
+    @media all and (max-width: 650px) {
+        font-size: 16px;
+    }
+
+
+    @media all and (max-width: 500px) {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+
+
+    @media all and (max-width: 350px) {
+        font-size: 12px;
+    }
+
+    & a {
         display: inline-block;
         color: $gold;
         text-decoration: none;

@@ -1,6 +1,33 @@
 /* *************************************************
  *  Fichier Accueil.scss
  ************************************************ */
+/* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+/*
+.body-accueil {
+    height: 160vh;
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 150vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 170vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 270vh;
+    }
+    @media all and (max-width: 650px) {
+        height: 205vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 280vh;
+    }
+    @media all and (max-width: 400px) {
+        height: 320vh;
+    }
+} */
+
 
 @mixin box-shadow-around-boxmenu {
     /* box-shadow: 0px 0px 10px #e91414, 
@@ -17,13 +44,40 @@
  * Position div class container 
  ************************************************ */
 .container {
-    width: 1000px;
+    //position: relative;
+    max-width: 1000px;
     padding: 20px;
     margin: 0 auto;
 
-    .nav {
+    @media all and (max-width: 1920px) {
+        max-width: 1400px;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1400px) {
+        max-width: 1200px;
+    }
+
+    @media all and (max-width: 1024px) {
+        max-width: 600px;
+        padding: 10px;
+    }
+
+    @media all and (max-width: 650px) {
+        max-width: 400px;
+        padding: 5px;
+    }
+
+    @media all and (max-width: 350px) {
+        max-width: 300px;
+    }
+
+    & .nav {
         @include flex-center;
         flex-wrap: wrap;
+
+        @media all and (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -43,7 +97,41 @@
 
     @include box-shadow-around-boxmenu;
 
-    >.content {
+    @media all and (max-width: 1920px) {
+        width: 400px;
+        height: 500px;
+        margin: 80px 100px;
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1400px) {
+        width: 350px;
+        height: 450px;
+        margin: 40px 60px;
+    }
+
+    @media all and (max-width: 1024px) {
+        width: 350px;
+        height: 450px;
+        margin: 60px 0px;
+    }
+
+    @media all and (max-width: 650px) {
+        height: 350px;
+
+    }
+
+    @media all and (max-width: 500px) {
+        width: 250px;
+        height: 330px;
+    }
+
+    @media all and (max-width: 350px) {
+        width: 200px;
+        height: 300px;
+    }
+
+
+    &>.content {
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -54,16 +142,23 @@
         &:hover {
             transform: scale(1.5);
             opacity: .6;
+
+            @media all and (max-width: 500px) {
+                transform: scale(1.4);
+            }
+
+            @media all and (max-width: 350px) {
+                transform: scale(1.3);
+            }
         }
 
-        .effect-color-text {
+        & .effect-color-text {
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
         }
 
         /* Pour le titre "menu" avec la balise h3 
-
         h3,
         :is(article, aside, nav, section) :is(article, aside, nav, section) h1 {
             display: block;
@@ -82,7 +177,6 @@
         /* Pour le titre "menu" avec la balise h1
          * Propriétés css initiales de la balise h1
          * origine mozilla firefox
-
         .container .nav .box .content h1 {
             padding-top: 20px;
         }
@@ -95,13 +189,29 @@
             margin-block-end: .67em;
         }
         */
-        h3 {
+        & h3 {
             padding-top: 20px;
             font-size: 2em;
             font-weight: bold;
+
+            @media all and (max-width: 1920px) {
+                font-size: 3em;
+            }
+
+            @media all and (max-width: 1024px) {
+                font-size: 3em;
+            }
+
+            @media all and (max-width: 500px) {
+                font-size: 1.7em;
+            }
+
+            @media all and (max-width: 350px) {
+                font-size: 1.5em;
+            }
         }
 
-        a {
+        & a {
             text-decoration: none;
         }
     }
@@ -115,17 +225,41 @@
     background-color: $bg-color-menu01;
     color: #3c1218;
 
-    i {
+    & i {
         background: linear-gradient($degrade-note-enchantee);
         margin-bottom: 5px;
         font-size: 40px;
+
+        @media all and (max-width: 1920px) {
+            font-size: 70px;
+        }
+
+        @media all and (max-width: 1024px) {
+            font-size: 50px;
+        }
     }
 
-    .no-effect {
+    & .no-effect {
         @include font-ccsignlanguage;
+
+        @media all and (max-width: 1920px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 1024px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 1.7em;
+        }
+
+        @media all and (max-width: 350px) {
+            font-size: 20px;
+        }
     }
 
-    .link-menu01 {
+    & .link-menu01 {
         color: #3c1218;
         text-transform: uppercase;
         @include font-montag;
@@ -139,14 +273,26 @@
 .chic-francaise {
     background-color: $bg-color-menu02;
 
-    h2 {
+    & h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
         background: linear-gradient($degrade-chic-francaise);
         font-family: 'Croissant One', cursive;
         font-size: 20px;
+
+        @media all and (max-width: 1920px) {
+            font-size: 30px;
+        }
+
+        @media all and (max-width: 1024px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 350px) {
+            font-size: 16px;
+        }
     }
 
-    .link-menu02 {
+    & .link-menu02 {
         color: #c77412;
         font-family: casus, questa, serif;
         font-style: normal;
@@ -160,13 +306,25 @@
 .delice-papilles {
     background-color: $bg-color-menu03-accueil;
 
-    h2 {
+    & h2 {
         background: linear-gradient($degrade-delice-papilles);
         //font-family: 'Parisienne', cursive;
         @include font-alana-regular;
+
+        @media all and (max-width: 1920px) {
+            font-size: 40px;
+        }
+
+        @media all and (max-width: 1024px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 350px) {
+            font-size: 25px;
+        }
     }
 
-    .link-menu03 {
+    & .link-menu03 {
         color: #0887fb;
         font-family: 'SegoePrint';
     }
@@ -180,12 +338,24 @@
 .palette-gout {
     background-color: $bg-color-menu04;
 
-    h2 {
+    & h2 {
         background: linear-gradient($degrade-palette-gout);
         font-family: 'kaushan_scriptregular';
+
+        @media all and (max-width: 1920px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 1024px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 350px) {
+            font-size: 22px;
+        }
     }
 
-    .link-menu04 {
+    & .link-menu04 {
         color: $middle-green-menu04;
         font-family: 'SegoePrint';
     }
@@ -206,11 +376,61 @@
     @include font-montserrat-medium;
     @include flex-center;
 
-    p {
+    margin-bottom: 350px;
+
+    @media all and (max-width: 1920px) {
+        padding: 10px 0;
+        width: 30%;
+        font-size: 30px;
+    }
+
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        width: 30%;
+        /* Pour voir le bloc "prochainement, mettre : " */
+
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        width: 38%;
+    }
+
+    @media all and (max-width: 1024px) {
+        margin-top: 20px;
+        width: 40%;
+    }
+
+    @media all and (max-width: 820px) {
+        width: 55%;
+        margin-bottom: 150px;
+    }
+
+    @media all and (max-width: 650px) {
+        width: 55%;
+        font-size: 20px;
+    }
+
+    @media all and (max-width: 500px) {
+        margin-top: 5px;
+        width: 60%;
+        font-size: 18px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 70%;
+        margin-bottom: 100px;
+    }
+
+    @media all and (max-width: 350px) {
+        margin-top: 15px;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    & p {
         padding-right: 10px;
     }
 
-    span {
+    & span {
         display: inline-block;
         width: 10px;
         height: 10px;
@@ -218,9 +438,17 @@
         background-color: $gold;
         margin: 0 10px;
 
-        -webkit-animation: dottedPreloader 1s linear infinite alternate;
-        -moz-animation: dottedPreloader 1s linear infinite alternate;
         animation: dottedPreloader 1s linear infinite alternate;
+
+        @media all and (max-width: 650px) {
+            width: 7px;
+            height: 7px;
+        }
+
+        @media all and (max-width: 350px) {
+            width: 4px;
+            height: 4px;
+        }
 
         &:nth-child(1) {
             animation-delay: -0.8s;

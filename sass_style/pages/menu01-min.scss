@@ -1,35 +1,116 @@
-/* ************************************
- * Fichier menu01-min.scss
- ************************************ */
- /* **********************************************************************
- * div class="container-all-menu container-menu01" > div class="menu01"
- ********************************************************************** */
+/* ****************************************************
+ * Fichier Menu01-min.scss
+ ***************************************************** */
+/* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+/*
+.body-menu01 {
+    height: 175vh;
+    @media all and (max-width: 1920px) {
+        height: 145vh;
+    }
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 165vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 165vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 150vh;
+    }
+    @media all and (max-width: 750px) {
+        height: 175vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 175vh;
+    }
+} */
+
 .container-menu01 {
 
-    .menu01 {
+    & .menu01 {
         padding: 50px 0px;
         background-color: $bg-color-menu01;
+        margin-bottom: 100px;
 
-        .title-menu01 {
+        @media all and (max-width: 750px) {
+            padding: 35px 0px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding: 20px 5px;
+        }
+
+        @media all and (max-width: 750px) {
+            max-width: 600px;
+        }
+
+        @media all and (max-width: 600px) {
+            max-width: 500px;
+        }
+
+        @media all and (max-width: 500px) {
+            max-width: 450px;
+        }
+
+        @media all and (max-width: 400px) {
+            max-width: 350px;
+        }
+
+        & .title-menu01 {
             padding-bottom: 20px;
 
-            i {
-                font-size: 60px;
-                /* Dégradé color : #f05561 puis #f6916a */
-                background: linear-gradient($degrade-note-enchantee);
-                @include background-text;
+            @media all and (max-width: 750px) {
+                padding-bottom: 15px;
+            }
+
+            @media all and (max-width: 500px) {
                 padding-bottom: 10px;
             }
 
-            h2 {
+            & i {
+                font-size: 60px;
+                /* Dégradé color : #f05561 puis #f6916a */
+                background: linear-gradient(to right, #f15861, #f78f6a);
+                @include background-text;
+                padding-bottom: 10px;
+
+                @media all and (max-width: 750px) {
+                    font-size: 50px;
+                }
+
+                @media all and (max-width: 500px) {
+                    font-size: 40px;
+                }
+            }
+
+            & h2 {
                 @include font-ccsignlanguage;
                 font-size: 35px;
+
+                @media all and (max-width: 750px) {
+                    font-size: 30px;
+                }
+
+                @media all and (max-width: 500px) {
+                    font-size: 25px;
+                }
             }
         }
 
-        .pied-menu01 {
+        & .pied-menu01 {
             padding-top: $padding03;
             @include flex-center;
+
+            @media all and (max-width: 750px) {
+                padding-top: $padding02;
+            }
+
+            @media all and (max-width: 500px) {
+                padding-top: $padding01;
+            }
         }
     }
 }
@@ -43,7 +124,32 @@
     height: 5px;
     background-color: #000;
 
-    h3 {
+    @media all and (max-width: 750px) {
+        width: 550px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 450px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+        height: 4px;
+    }
+
+    @media all and (max-width: 450px) {
+        width: 350px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 300px;
+    }
+
+    @media all and (max-width: 350px) {
+        width: 200px;
+    }
+
+    & h3 {
         background-color: $bg-color-menu01;
         font-size: 20px;
         /* font-family: Uberhand Pro Medium __ font-weight: 500 */
@@ -56,11 +162,19 @@
         font-style: normal; */
         font-family: 'SegoePrint';
         font-weight: bold;
+
+        @media all and (max-width: 500px) {
+            font-size: 18px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 16px;
+        }
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
-        background: linear-gradient(to top, $red-underline 0%, $red-underline 4px, transparent 5px) no-repeat;
+        background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
      * background-size : XX largeur XX hauteur;
      * background-size GAIT DISPARAITRE le background linear-gradient */
@@ -76,31 +190,54 @@
 
 .liste-menu01 {
     padding: 0 60px;
+
+    @media all and (max-width: 750px) {
+        padding: 0 40px;
+    }
+
+    @media all and (max-width: 500px) {
+        padding: 0 40px;
+    }
 }
 
 .submenu01-menu01 {
 
-    h3 {
+    & h3 {
         padding-left: $padding05;
         padding-right: $padding05;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding04;
+            padding-right: $padding04;
+        }
     }
 
 }
 
 .submenu02-menu01 {
 
-    h3 {
+    & h3 {
         padding-left: $padding04;
         padding-right: $padding04;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding03;
+            padding-right: $padding03;
+        }
     }
 
 }
 
 .submenu03-menu01 {
 
-    h3 {
+    & h3 {
         padding-left: $padding02;
         padding-right: $padding02;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding01;
+            padding-right: $padding01;
+        }
     }
 
 }
@@ -118,12 +255,39 @@
         font-weight: 500;
         font-style: normal; */
         font-family: 'SegoePrint';
+
+        @media all and (max-width: 750px) {
+            margin-left: 0px;
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 12px;
+        }
     }
 
     .price-menu01 {
         margin-right: -10px;
         font-family: 'SegoePrint';
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            margin-right: -5px;
+            font-size: 16px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 12px;
+        }
     }
 }
 
@@ -132,15 +296,32 @@
  ********************************* */
 .pied-menu01 {
 
-    i {
-        background: linear-gradient($degrade-note-enchantee);
+    & i {
+        background: linear-gradient(to right, #f15861, #f78f6a);
         @include background-text;
         font-size: 50px;
+
+        @media all and (max-width: 750px) {
+            font-size: 40px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 30px;
+
+        }
     }
 
-    h2 {
+    & h2 {
         margin-left: 10px;
         @include font-ccsignlanguage;
         font-size: 30px;
+
+        @media all and (max-width: 750px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 20px;
+        }
     }
 }

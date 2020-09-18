@@ -1,14 +1,56 @@
-/* ************************************
- * Fichier menu03-min.scss
- ************************************ */
- /* *********************************************
- * div class="container-all-menu" > div class="menu03"
- ********************************************* */
+/* ****************************************************
+ * Fichier Menu03-min.scss
+ ***************************************************** */
+ /*
+.body-menu03 {
+    height: 175vh;
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 140vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 135vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 140vh;
+    }
+    @media all and (max-width: 750px) {
+        height: 150vh;
+    }
+    @media all and (max-width: 650px) {
+        height: 145vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 145vh;
+    }
+} */
+
+
 .menu03 {
     background-color: $bg-color-menu03;
     font-family: 'SegoePrint';
+    margin-bottom: 100px;
 
-    .title-menu03 {
+    @media all and (max-width: 850px) {
+        width: 800px;
+    }
+    
+    @media all and (max-width: 750px) {
+        width: 600px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 300px;
+    }
+
+    & .title-menu03 {
         padding-bottom: 20px;
         background: linear-gradient($degrade-delice-papilles);
         @include background-text;
@@ -26,6 +68,19 @@
             font-weight: 400;
             font-style: normal; */
         font-size: 45px;
+
+        @media all and (max-width: 750px) {
+            font-size: 35px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 25px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -37,7 +92,7 @@
     margin: 32px auto;
     @include flex-center;
 
-    .bord-left {
+    & .bord-left {
         width: 220px;
         height: 5px;
         padding: 5px;
@@ -45,6 +100,14 @@
         border-bottom-left-radius: 20px 1em;
 
         position: relative;
+
+        @media all and (max-width: 750px) {
+            width: 160px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
 
         &:after {
             content: '';
@@ -58,16 +121,36 @@
 
     }
 
-    h3 {
+    & h3 {
         padding-top: 10px;
         padding-left: 30px;
         padding-right: 30px;
         background-color: $bg-color-menu03;
         font-size: 20px;
         font-weight: normal;
+
+        text-align: center;
+
+        @media all and (max-width: 750px) {
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 17px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 400px) {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 12px;
+        }
     }
 
-    .bord-right {
+    & .bord-right {
         width: 220px;
         height: 5px;
         padding: 5px;
@@ -75,6 +158,14 @@
         border-bottom-right-radius: 20px 1em;
 
         position: relative;
+
+        @media all and (max-width: 750px) {
+            width: 160px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
 
         &:before {
             content: '';
@@ -90,7 +181,7 @@
 
 .submenu01-menu03 {
 
-    .bord-left {
+    & .bord-left {
         box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:after {
@@ -99,7 +190,7 @@
 
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $dark-blue-menu03 0%, $dark-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -114,7 +205,7 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         box-shadow: 0 5px 0 $dark-blue-menu03;
 
         &:before {
@@ -125,7 +216,7 @@
 
 .submenu02-menu03 {
 
-    .bord-left {
+    & .bord-left {
         box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:after {
@@ -134,7 +225,7 @@
 
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $middle-blue-menu03 0%, $middle-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -149,7 +240,7 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         box-shadow: 0 5px 0 $middle-blue-menu03;
 
         &:before {
@@ -160,7 +251,7 @@
 
 .submenu03-menu03 {
 
-    .bord-left {
+    & .bord-left {
         box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:after {
@@ -169,7 +260,7 @@
 
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $light-blue-menu03 0%, $light-blue-menu03 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -184,7 +275,7 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         box-shadow: 0 5px 0 $light-blue-menu03;
 
         &:before {
@@ -199,10 +290,43 @@
  ************************************************************************* */
 .repas {
 
-    .price-menu03 {
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 13px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 10px;
+    }
+
+    & .price-menu03 {
         margin-left: 5px;
         margin-top: -5px;
         font-size: 18px;
         font-weight: bold;
+
+        @media all and (max-width: 750px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 15px;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 12px;
+        }
     }
 }

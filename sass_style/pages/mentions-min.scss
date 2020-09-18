@@ -1,7 +1,34 @@
+/* ****************************************************
+ * Fichier Mentions-min.scss
+ ***************************************************** */
+/* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+/*
+.body-mentions {
+    height: 175vh;
+    @media all and (max-width: 1920px) {
+        height: 145vh;
+    }
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 160vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 180vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 170vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 150vh;
+    }
+} */
+
 /* *************************************************
- * Fichier mentions-min.scss
+ * Position div class container 
  ************************************************ */
-.title-mentions {
+ .title-mentions {
     text-align: center;
     font-family: 'Croissant One', cursive;
 }
@@ -15,10 +42,23 @@
 .menu-mentions {
     padding: 50px;
     background-color: $bg-color-menu03;
+    margin-bottom: 100px;
+
+    @media all and (max-width: 1024px) {
+        padding: 30px;
+    }
+
+    @media all and (max-width: 500px) {
+        padding: 15px;
+    }
 
     .title-mentions-legales {
         padding-bottom: 20px;
         //color: #fdcb46
+
+        @media all and (max-width: 1024px) {
+            padding-bottom: 5px;
+        }
     }
 }
 
@@ -28,6 +68,14 @@
         width: 200px;
         height: 5px;
         background: linear-gradient(to right, $dark-green-menu04, $light-green-menu04);
+
+        @media all and (max-width: 1024px) {
+            width: 150px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
     }
 
     h3 {
@@ -35,6 +83,27 @@
         padding-right: $padding03;
         background-color: $bg-color-menu03;
         font-size: 20px;
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding01;
+            padding-right: $padding01;
+            font-size: 17px;
+        }
+    }
+
+    .staff-title {
+        padding-left: 47px;
+        padding-right: 47px;
+
+        @media all and (max-width: 1024px) {
+            padding-left: $padding04;
+            padding-right: $padding04;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-left: $padding02;
+            padding-right: $padding02;
+        }
     }
 
     span {
@@ -56,20 +125,37 @@
         width: 200px;
         height: 5px;
         background: linear-gradient(to left, $dark-green-menu04, $light-green-menu04);
+
+        @media all and (max-width: 1024px) {
+            width: 150px;
+        }
+
+        @media all and (max-width: 500px) {
+            width: 100px;
+        }
     }
 }
 
 .liste-mentions section {
     padding-bottom: $padding02;
 
+    @media all and (max-width: 1024px) {
+        padding-bottom: $padding01;
+    }
+
     .sublist {
         @include flex-center;
         font-family: 'SegoePrint';
+
+        @media all and (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+        @media all and (max-width: 650px) {
+            font-size: 12px;
+        }
     }
 
-    .staff li {
-        transform: translateX(15%);
-    }
 
     li {
         padding: 5px 0;
@@ -86,6 +172,10 @@
         .ohmyfood {
             @include font-Aktiv-Grotesk-Bold;
             font-size: 20px;
+
+            @media all and (max-width: 650px) {
+                font-size: 16px;
+            }
         }
     }
 

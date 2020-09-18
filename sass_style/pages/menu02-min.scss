@@ -1,19 +1,66 @@
-/* ************************************
- * Fichier menu02-min.scss
- ************************************ */
- /* **********************************************
- * div class="container-all-menu" > div class="menu02"
- ************************************************* */
+/* ****************************************************
+ * Fichier Menu02-min.scss
+ ***************************************************** */
+ /* D'après le mentor, dans la generalité des cas,
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
+ /*
+.body-menu02 {
+    height: 175vh;
+    @media all and (min-width: 1280px) and (max-width: 1920px) {
+        height: 120vh;
+    }
+    @media all and (min-width: 1024px) and (max-width: 1280px) {
+        height: 120vh;
+    }
+    @media all and (max-width: 1024px) {
+        height: 115vh;
+    }
+    @media all and (max-width: 650px) {
+        height: 130vh;
+    }
+    @media all and (max-width: 500px) {
+        height: 125vh;
+    }
+} */
+
 .menu02 {
     background-color: $bg-color-menu02;
+    margin-bottom: 100px;
 
-    .title-menu02 {
+    @media all and (max-width: 750px) {
+        width: 600px;
+    }
+
+    @media all and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media all and (max-width: 500px) {
+        width: 400px;
+    }
+
+    @media all and (max-width: 400px) {
+        width: 350px;
+    }
+
+    & .title-menu02 {
         padding-bottom: 30px;
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
         background: linear-gradient($degrade-chic-francaise);
         @include background-text;
         font-family: 'Croissant One', cursive;
         font-size: 22px;
+
+        @media all and (max-width: 750px) {
+            padding-bottom: 20px;
+        }
+
+        @media all and (max-width: 500px) {
+            padding-bottom: 15px;
+            font-size: 16px;
+        }
     }
 
 }
@@ -24,7 +71,7 @@
  ***************************************************** */
 .submenu-origin-menu02 {
 
-    .bord-left {
+    & .bord-left {
         width: 0px;
         height: 0px;
         border-top: 5px solid transparent;
@@ -43,16 +90,38 @@
             left: 160px;
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
+
+            @media all and (max-width: 750px) {
+                position: absolute;
+                top: -5px;
+                left: 130px;
+            }
+
+            @media all and (max-width: 500px) {
+                position: absolute;
+                top: -5px;
+                left: 100px;
+            }
         }
     }
 
-    h3 {
+    & h3 {
         background-color: $bg-color-menu02;
         font-size: 20px;
         @include font-baltica;
+
+        text-align: center;
+
+        @media all and (max-width: 750px) {
+            font-size: 18px;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 14px;
+        }
     }
 
-    .bord-right {
+    & .bord-right {
         /*
         width: 180px;
         height: 2px;
@@ -75,27 +144,47 @@
             right: 160px;
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
+
+            @media all and (max-width: 750px) {
+                position: absolute;
+                top: -5px;
+                right: 130px;
+            }
+
+            @media all and (max-width: 500px) {
+                position: absolute;
+                top: -5px;
+                right: 100px;
+            }
         }
     }
 }
 
 .submenu01-menu02 {
 
-    .bord-left {
+    & .bord-left {
         border-right: 160px solid $light-brown-menu02;
+
+        @media all and (max-width: 750px) {
+            border-right: 130px solid $light-brown-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-right: 100px solid $light-brown-menu02;
+        }
 
         &:before {
             border-left: 20px solid $light-brown-menu02;
         }
     }
 
-    h3 {
+    & h3 {
         padding-left: $padding01;
         padding-right: $padding01;
         color: $light-brown-menu02;
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $light-brown-menu02 0%, $light-brown-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -110,8 +199,16 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         border-left: 160px solid $light-brown-menu02;
+
+        @media all and (max-width: 750px) {
+            border-left: 130px solid $light-brown-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-left: 100px solid $light-brown-menu02;
+        }
 
         &:after {
             border-right: 20px solid $light-brown-menu02;
@@ -121,21 +218,29 @@
 
 .submenu02-menu02 {
 
-    .bord-left {
+    & .bord-left {
         border-right: 160px solid $light-purple-menu02;
+
+        @media all and (max-width: 750px) {
+            border-right: 130px solid $light-purple-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-right: 100px solid $light-purple-menu02;
+        }
 
         &:before {
             border-left: 20px solid $light-purple-menu02;
         }
     }
 
-    h3 {
+    & h3 {
         padding-left: $padding035;
         padding-right: $padding035;
         color: $light-purple-menu02;
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $light-purple-menu02 0%, $light-purple-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -150,8 +255,16 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         border-left: 160px solid $light-purple-menu02;
+
+        @media all and (max-width: 750px) {
+            border-left: 130px solid $light-purple-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-left: 100px solid $light-purple-menu02;
+        }
 
         &:after {
             border-right: 20px solid $light-purple-menu02;
@@ -161,21 +274,30 @@
 
 .submenu03-menu02 {
 
-    .bord-left {
+    & .bord-left {
         border-right: 160px solid $dark-purple-menu02;
+
+        @media all and (max-width: 750px) {
+            border-right: 130px solid $dark-purple-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-right: 100px solid $dark-purple-menu02;
+        }
+
 
         &:before {
             border-left: 20px solid $dark-purple-menu02;
         }
     }
 
-    h3 {
+    & h3 {
         padding-left: $padding02;
         padding-right: $padding02;
         color: $dark-purple-menu02;
     }
 
-    span {
+    & span {
         /* Propriété 01 : */
         background: linear-gradient(to top, $dark-purple-menu02 0%, $dark-purple-menu02 4px, transparent 5px) no-repeat;
         /* Propriété 02 : 
@@ -190,8 +312,16 @@
         }
     }
 
-    .bord-right {
+    & .bord-right {
         border-left: 160px solid $dark-purple-menu02;
+
+        @media all and (max-width: 750px) {
+            border-left: 130px solid $dark-purple-menu02;
+        }
+
+        @media all and (max-width: 500px) {
+            border-left: 100px solid $dark-purple-menu02;
+        }
 
         &:after {
             border-right: 20px solid $dark-purple-menu02;
@@ -222,8 +352,25 @@
     @include repas;
     @include font-capitolina;
 
-    .price-menu02 {
+    @media all and (max-width: 750px) {
+        font-size: 15px;
+    }
+
+    @media all and (max-width: 500px) {
+        font-size: 12px;
+    }
+
+    & .price-menu02 {
         margin-left: 20px;
+
+        @media all and (max-width: 750px) {
+            margin-left: 10px;
+        }
+
+        @media all and (max-width: 600px) {
+            display: flex;
+            align-items: flex-end;
+        }
     }
 
 }
