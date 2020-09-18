@@ -1146,17 +1146,13 @@ footer div {
   margin-right: -10px;
   font-family: "SegoePrint";
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
 }
 @media all and (max-width: 750px) {
   .repas .price-menu01 {
     margin-right: -5px;
     font-size: 16px;
-  }
-}
-@media all and (max-width: 600px) {
-  .repas .price-menu01 {
-    display: flex;
-    align-items: flex-end;
   }
 }
 @media all and (max-width: 500px) {
@@ -1215,9 +1211,9 @@ footer div {
  * Fichier Menu02-min.scss
  ***************************************************** */
 /* D'après le mentor, dans la generalité des cas,
- Ne pas mettre de propriétés css pour le body
- que ce soit pour fixer width, height ou position (absolute, relative)
- A PART pour mettre de la couleur */
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
 /*
 .body-menu02 {
     height: 175vh;
@@ -1568,16 +1564,12 @@ footer div {
 }
 .repas-menu02 .price-menu02 {
   margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
 }
 @media all and (max-width: 750px) {
   .repas-menu02 .price-menu02 {
     margin-left: 10px;
-  }
-}
-@media all and (max-width: 600px) {
-  .repas-menu02 .price-menu02 {
-    display: flex;
-    align-items: flex-end;
   }
 }
 
@@ -1874,16 +1866,12 @@ footer div {
   margin-top: -5px;
   font-size: 18px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
 }
 @media all and (max-width: 750px) {
   .repas .price-menu03 {
     font-size: 15px;
-  }
-}
-@media all and (max-width: 600px) {
-  .repas .price-menu03 {
-    display: flex;
-    align-items: flex-end;
   }
 }
 @media all and (max-width: 500px) {
@@ -1901,33 +1889,27 @@ footer div {
  * Fichier Menu04-min.scss
  ***************************************************** */
 /* D'après le mentor, dans la generalité des cas,
- Ne pas mettre de propriétés css pour le body
- que ce soit pour fixer width, height ou position (absolute, relative)
- A PART pour mettre de la couleur */
+  Ne pas mettre de propriétés css pour le body
+  que ce soit pour fixer width, height ou position (absolute, relative)
+  A PART pour mettre de la couleur */
 /*
  .body-menu04 {
     height: 175vh;
-
     @media all and (min-width: 1280px) and (max-width: 1920px) {
         height: 210vh;
     }
-
     @media all and (min-width: 1024px) and (max-width: 1280px) {
         height: 205vh;
     }
-
     @media all and (max-width: 1024px) {
         height: 200vh;
     }
-
     @media all and (max-width: 750px) {
         height: 220vh;
     }
-
     @media all and (max-width: 500px) {
         height: 200vh;
     }
-
 } */
 .menu04 {
   background-color: #fdfffd;
@@ -1936,7 +1918,7 @@ footer div {
 }
 @media all and (max-width: 850px) {
   .menu04 {
-    width: 800px;
+    width: 750px;
   }
 }
 @media all and (max-width: 750px) {
@@ -2165,12 +2147,12 @@ footer div {
   margin-top: -5px;
   font-size: 20px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
 }
 @media all and (max-width: 750px) {
   .repas .price-menu04 {
     font-size: 18px;
-    display: flex;
-    align-items: flex-end;
   }
 }
 @media all and (max-width: 600px) {

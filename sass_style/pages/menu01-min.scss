@@ -271,14 +271,12 @@
         font-family: 'SegoePrint';
         font-weight: bold;
 
+        display: flex;
+        align-items: flex-end;
+
         @media all and (max-width: 750px) {
             margin-right: -5px;
             font-size: 16px;
-        }
-
-        @media all and (max-width: 600px) {
-            display: flex;
-            align-items: flex-end;
         }
 
         @media all and (max-width: 500px) {
