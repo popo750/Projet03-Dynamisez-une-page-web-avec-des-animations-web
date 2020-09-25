@@ -1,0 +1,22 @@
+{
+  "name": "projet03-dynamisez-une-page-web-avec-des-animations-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass_style/main.scss:./css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popo750/Projet03-Dynamisez-une-page-web-avec-des-animations-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/popo750/Projet03-Dynamisez-une-page-web-avec-des-animations-web/issues"
+  },
+  "homepage": "https://github.com/popo750/Projet03-Dynamisez-une-page-web-avec-des-animations-web#readme"
+}
