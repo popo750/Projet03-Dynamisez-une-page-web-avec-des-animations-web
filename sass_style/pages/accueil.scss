@@ -86,8 +86,8 @@
  ********************************************* */
 .box {
     /* border: 3px solid #455A64; */
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     margin: 30px;
     /*
     display: flex;
@@ -104,7 +104,7 @@
     }
 
     @media all and (min-width: 1024px) and (max-width: 1400px) {
-        width: 350px;
+        width: 400px;
         height: 450px;
         margin: 40px 60px;
     }
@@ -138,9 +138,9 @@
         transition: all .8s linear;
 
         @include flex-center;
-
+        /*
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.3);
             opacity: .6;
 
             @media all and (max-width: 500px) {
@@ -150,7 +150,7 @@
             @media all and (max-width: 350px) {
                 transform: scale(1.3);
             }
-        }
+        } */
 
         & .effect-color-text {
             background-clip: text;
@@ -225,6 +225,19 @@
     background-color: $bg-color-menu01;
     color: #3c1218;
 
+    & .content-note:hover {
+        transform: scale(1.4);
+        opacity: .6;
+
+        @media all and (max-width: 1024px) {
+            transform: scale(1.3);
+        }
+        /*
+        @media all and (max-width: 400px) {
+            transform: scale(1.3);
+        } */
+    } 
+
     & i {
         background: linear-gradient($degrade-note-enchantee);
         margin-bottom: 5px;
@@ -254,7 +267,7 @@
             font-size: 1.7em;
         }
 
-        @media all and (max-width: 350px) {
+        @media all and (max-width: 400px) {
             font-size: 20px;
         }
     }
@@ -273,6 +286,19 @@
 .chic-francaise {
     background-color: $bg-color-menu02;
 
+    & .content-chic:hover {
+        transform: scale(1.1);
+        opacity: .6;
+
+        @media all and (max-width: 1024px) {
+            transform: scale(1.2);
+        }
+        /*
+        @media all and (max-width: 400px) {
+            transform: scale(1.2);
+        } */
+    } 
+
     & h2 {
         /*background: linear-gradient(to bottom right, #d8852e 30%, #8f5aff 70%); */
         background: linear-gradient($degrade-chic-francaise);
@@ -287,7 +313,7 @@
             font-size: 25px;
         }
 
-        @media all and (max-width: 350px) {
+        @media all and (max-width: 400px) {
             font-size: 16px;
         }
     }
@@ -306,6 +332,19 @@
 .delice-papilles {
     background-color: $bg-color-menu03-accueil;
 
+    & .content-delice:hover {
+        transform: scale(1.3);
+        opacity: .6;
+
+        @media all and (max-width: 750px) {
+            transform: scale(1.2);
+        }
+        /*
+        @media all and (max-width: 400px) {
+            transform: scale(1.25);
+        } */
+    } 
+
     & h2 {
         background: linear-gradient($degrade-delice-papilles);
         //font-family: 'Parisienne', cursive;
@@ -319,7 +358,7 @@
             font-size: 35px;
         }
 
-        @media all and (max-width: 350px) {
+        @media all and (max-width: 400px) {
             font-size: 25px;
         }
     }
@@ -338,6 +377,19 @@
 .palette-gout {
     background-color: $bg-color-menu04;
 
+    & .content-gout:hover {
+        transform: scale(1.4);
+        opacity: .6;
+
+        @media all and (max-width: 750px) {
+            transform: scale(1.3);
+        }
+        /*
+        @media all and (max-width: 400px) {
+            transform: scale(1.3);
+        } */
+    } 
+
     & h2 {
         background: linear-gradient($degrade-palette-gout);
         font-family: 'kaushan_scriptregular';
@@ -350,7 +402,7 @@
             font-size: 35px;
         }
 
-        @media all and (max-width: 350px) {
+        @media all and (max-width: 400px) {
             font-size: 22px;
         }
     }
